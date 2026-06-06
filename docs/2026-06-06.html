@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>레고 할인 2026-06-06</title>
+  <style>
+    :root {
+      --yellow: #FFD700;
+      --red: #e63946;
+      --green: #2a9d8f;
+      --blue: #457b9d;
+      --bg: #f8f9fa;
+      --card-bg: #fff;
+      --text: #212529;
+      --muted: #6c757d;
+      --border: #dee2e6;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+           background: var(--bg); color: var(--text); padding: 16px; }
+    header { background: var(--text); color: #fff; padding: 16px 20px;
+             border-radius: 10px; margin-bottom: 24px; }
+    header h1 { font-size: 1.4rem; display: flex; align-items: center; gap: 10px; }
+    header p { font-size: .85rem; color: #adb5bd; margin-top: 4px; }
+    .stats { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 24px; }
+    .stat { background: var(--card-bg); border: 1px solid var(--border);
+            border-radius: 8px; padding: 12px 16px; flex: 1; min-width: 120px; text-align: center; }
+    .stat-num { font-size: 1.6rem; font-weight: 700; }
+    .stat-label { font-size: .75rem; color: var(--muted); margin-top: 2px; }
+    .cat { margin-bottom: 32px; }
+    .cat-header { display: flex; align-items: center; gap: 10px;
+                  padding: 10px 14px; border-radius: 8px 8px 0 0;
+                  font-weight: 700; font-size: 1rem; }
+    .cat-40 { background: var(--red); color: #fff; }
+    .cat-30 { background: var(--blue); color: #fff; }
+    .cat-20 { background: var(--green); color: #fff; }
+    .cat-none { background: #868e96; color: #fff; }
+    .badge { background: rgba(255,255,255,0.25); border-radius: 20px;
+             padding: 2px 10px; font-size: .8rem; }
+    table { width: 100%; border-collapse: collapse; background: var(--card-bg);
+            border: 1px solid var(--border); border-top: none; }
+    th { background: #f1f3f5; text-align: left; padding: 9px 12px;
+         font-size: .8rem; color: var(--muted); font-weight: 600; white-space: nowrap; }
+    td { padding: 10px 12px; border-top: 1px solid var(--border);
+         font-size: .88rem; vertical-align: middle; }
+    tr:hover td { background: #f8f9fa; }
+    .price-final { font-weight: 700; font-size: 1rem; }
+    .price-original { color: var(--muted); text-decoration: line-through; font-size: .8rem; }
+    .pct { font-weight: 700; }
+    .pct-40 { color: var(--red); }
+    .pct-30 { color: var(--blue); }
+    .pct-20 { color: var(--green); }
+    .item-no { font-family: monospace; color: var(--muted); font-size: .8rem; }
+    .buy-btn { display: inline-block; padding: 5px 12px; border-radius: 5px;
+               background: var(--yellow); color: var(--text); font-weight: 600;
+               font-size: .8rem; text-decoration: none; white-space: nowrap; }
+    .buy-btn:hover { background: #e6c200; }
+    .empty { padding: 20px; text-align: center; color: var(--muted); font-size: .9rem;
+             background: var(--card-bg); border: 1px solid var(--border); border-top: none; }
+    footer { text-align: center; color: var(--muted); font-size: .78rem;
+             margin-top: 32px; padding-top: 16px; border-top: 1px solid var(--border); }
+    @media (max-width: 640px) {
+      th:nth-child(3), td:nth-child(3) { display: none; }
+      .buy-btn { padding: 5px 8px; }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1>🧱 레고 할인 목록</h1>
+  <p>
+    기준일: 2026-06-06 &nbsp;|&nbsp;
+    레고 공식 정가 대비 최종 할인가 기준 &nbsp;|&nbsp;
+    총 2개 상품
+  </p>
+</header>
+
+<div class="stats">
+  <div class="stat">
+    <div class="stat-num" style="color:#e63946">0</div>
+    <div class="stat-label">40% 이상</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num" style="color:#457b9d">2</div>
+    <div class="stat-label">30%대</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num" style="color:#2a9d8f">0</div>
+    <div class="stat-label">20%대</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num" style="color:#868e96">0</div>
+    <div class="stat-label">정가 미등록</div>
+  </div>
+</div>
+
+
+
+<div class="cat">
+  <div class="cat-header cat-40">
+    🔥 40% 이상 할인
+    <span class="badge">0개</span>
+  </div>
+  
+  
+  <div class="empty">해당 구간 상품이 없습니다.</div>
+  
+
+</div>
+
+<div class="cat">
+  <div class="cat-header cat-30">
+    ✨ 30%대 할인
+    <span class="badge">2개</span>
+  </div>
+  
+  
+  <table>
+    <thead>
+      <tr>
+        <th>품번</th>
+        <th>상품명</th>
+        <th>최종가</th>
+        <th>공식 정가</th>
+        <th>할인율</th>
+        <th>출처</th>
+        <th>구매</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        <td class="item-no">75192</td>
+        <td>레고 밀레니엄 팔콘 75192</td>
+        <td class="price-final">
+          575,936원
+          
+          <br><span style="font-size:.72rem;color:#868e96">
+            (표시가 719,920원 × 80%)
+          </span>
+          
+        </td>
+        <td>
+          <span class="price-original">
+            899,900원
+          </span>
+        </td>
+        <td>
+          <span class="pct pct-30">
+            36.0%
+          </span>
+        </td>
+        <td style="font-size:.78rem;color:#868e96">테스트소스</td>
+        <td><a class="buy-btn" href="https://example.com/1" target="_blank">구매 →</a></td>
+      </tr>
+      
+      <tr>
+        <td class="item-no">10311</td>
+        <td>레고 오키드 10311</td>
+        <td class="price-final">
+          31,936원
+          
+          <br><span style="font-size:.72rem;color:#868e96">
+            (표시가 39,920원 × 80%)
+          </span>
+          
+        </td>
+        <td>
+          <span class="price-original">
+            49,900원
+          </span>
+        </td>
+        <td>
+          <span class="pct pct-30">
+            36.0%
+          </span>
+        </td>
+        <td style="font-size:.78rem;color:#868e96">테스트소스</td>
+        <td><a class="buy-btn" href="https://example.com/2" target="_blank">구매 →</a></td>
+      </tr>
+      
+    </tbody>
+  </table>
+  
+
+</div>
+
+<div class="cat">
+  <div class="cat-header cat-20">
+    💡 20%대 할인
+    <span class="badge">0개</span>
+  </div>
+  
+  
+  <div class="empty">해당 구간 상품이 없습니다.</div>
+  
+
+</div>
+
+
+
+<footer>
+  자동 생성 — LEGO 할인 봇 &nbsp;|&nbsp; 정가는 레고 공식 홈페이지 기준 &nbsp;|&nbsp;
+  실제 결제 금액은 사이트에서 확인하세요.
+</footer>
+</body>
+</html>

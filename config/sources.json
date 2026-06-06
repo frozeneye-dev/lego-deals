@@ -1,0 +1,10 @@
+[
+  {
+    "id": "test-lego-promotions",
+    "name": "롯데마트 제타 레고 프로모션",
+    "url": "https://lottemartzetta.com/promotions?brands=%EB%A0%88%EA%B3%A0",
+    "additional_discount": null,
+    "enabled": true,
+    "added_at": "2026-06-07"
+  }
+]

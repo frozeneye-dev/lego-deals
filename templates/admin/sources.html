@@ -1,0 +1,81 @@
+{% extends "layout.html" %}
+{% block title %}소스 관리 — 레고 할인 봇{% endblock %}
+{% block content %}
+<h1>소스 관리</h1>
+
+<div class="section">
+  <h2>새 소스 추가</h2>
+  <form method="post" action="/sources/add" class="form-row">
+    <div class="form-group">
+      <label>이름</label>
+      <input type="text" name="name" placeholder="롯데마트 제타 레고 할인" required>
+    </div>
+    <div class="form-group">
+      <label>URL</label>
+      <input type="url" name="url" placeholder="https://www.lottemartzetta.com/..." required style="width:360px">
+    </div>
+    <div class="form-group">
+      <label>추가 할인율 <span class="hint">(선택, 예: 0.2 = 20%)</span></label>
+      <input type="number" name="additional_discount" step="0.01" min="0" max="0.99" placeholder="전역값 사용">
+    </div>
+    <button class="btn btn-primary" type="submit">추가</button>
+  </form>
+</div>
+
+<div class="section">
+  <h2>등록된 소스 ({{ sources | length }}개)</h2>
+  {% if sources %}
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th>이름</th>
+        <th>URL</th>
+        <th>추가할인</th>
+        <th>등록일</th>
+        <th>상태</th>
+        <th>작업</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for s in sources %}
+      <tr class="{{ '' if s.enabled else 'row-disabled' }}">
+        <td>{{ s.name }}</td>
+        <td><a href="{{ s.url }}" target="_blank">{{ s.url[:60] }}{% if s.url|length > 60 %}…{% endif %}</a></td>
+        <td>
+          {% if s.additional_discount is not none %}
+            {{ "%.0f%%"|format(s.additional_discount * 100) }}
+          {% else %}
+            <span class="hint">전역값</span>
+          {% endif %}
+        </td>
+        <td>{{ s.added_at }}</td>
+        <td>
+          <form method="post" action="/sources/{{ s.id }}/toggle" style="display:inline">
+            <button class="btn btn-sm {{ 'btn-success' if s.enabled else 'btn-secondary' }}" type="submit">
+              {{ '활성' if s.enabled else '비활성' }}
+            </button>
+          </form>
+        </td>
+        <td>
+          <form method="post" action="/sources/{{ s.id }}/delete"
+                onsubmit="return confirm('소스를 삭제할까요?')">
+            <button class="btn btn-sm btn-danger" type="submit">삭제</button>
+          </form>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% else %}
+  <p class="hint">등록된 소스가 없습니다.</p>
+  {% endif %}
+</div>
+
+<div class="section">
+  <h2>지원 파서</h2>
+  <ul>
+    <li><strong>lottemartzetta.com</strong> — 롯데마트 제타 (HTML 파싱)</li>
+  </ul>
+  <p class="hint">다른 사이트는 <code>app/scraper/parsers/</code>에 파서 파일을 추가하면 됩니다.</p>
+</div>
+{% endblock %}

@@ -1,0 +1,31 @@
+{
+  "40_plus": [],
+  "30_plus": [
+    {
+      "item_number": "75192",
+      "name": "레고 밀레니엄 팔콘 75192",
+      "official_price": 899900,
+      "listed_price": 719920,
+      "additional_discount": 0.2,
+      "final_price": 575936,
+      "discount_rate": 0.36,
+      "product_url": "https://example.com/1",
+      "source_name": "테스트소스",
+      "source_url": "https://example.com"
+    },
+    {
+      "item_number": "10311",
+      "name": "레고 오키드 10311",
+      "official_price": 49900,
+      "listed_price": 39920,
+      "additional_discount": 0.2,
+      "final_price": 31936,
+      "discount_rate": 0.36,
+      "product_url": "https://example.com/2",
+      "source_name": "테스트소스",
+      "source_url": "https://example.com"
+    }
+  ],
+  "20_plus": [],
+  "no_price": []
+}

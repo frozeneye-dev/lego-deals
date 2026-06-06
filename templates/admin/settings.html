@@ -1,0 +1,105 @@
+{% extends "layout.html" %}
+{% block title %}설정 — 레고 할인 봇{% endblock %}
+{% block content %}
+<h1>설정</h1>
+
+<form method="post" action="/settings/save" class="settings-form">
+  <fieldset>
+    <legend>GitHub Pages</legend>
+    <div class="form-group">
+      <label>GitHub 사용자명</label>
+      <input type="text" name="github_username" value="{{ settings.github_username }}" placeholder="your-github-username">
+    </div>
+    <div class="form-group">
+      <label>레포지터리 이름</label>
+      <input type="text" name="github_repo" value="{{ settings.github_repo }}" placeholder="lego-deals">
+    </div>
+    <div class="form-group">
+      <label>GitHub Pages URL</label>
+      <input type="url" name="github_pages_url" value="{{ settings.github_pages_url }}"
+             placeholder="https://your-github-username.github.io/lego-deals">
+      <p class="hint">
+        사용자명/레포 입력 후 자동으로 채워집니다.
+        형식: <code>https://&lt;username&gt;.github.io/&lt;repo&gt;</code>
+      </p>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Discord 알림</legend>
+    <div class="form-group">
+      <label>Discord 웹훅 URL</label>
+      <input type="url" name="discord_webhook_url" value="{{ settings.discord_webhook_url }}"
+             placeholder="https://discord.com/api/webhooks/...">
+      <p class="hint">
+        Discord 채널 설정 → 연동 → 웹훅 → 웹훅 URL 복사.<br>
+        GitHub Actions에서는 <code>DISCORD_WEBHOOK_URL</code> Secret으로 별도 설정하세요.
+      </p>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>자동 실행 (로컬 스케줄러)</legend>
+    <div class="form-row">
+      <div class="form-group">
+        <label>시 (0–23, 한국 시간)</label>
+        <input type="number" name="schedule_hour" value="{{ settings.schedule_hour }}" min="0" max="23" style="width:70px">
+      </div>
+      <div class="form-group">
+        <label>분 (0–59)</label>
+        <input type="number" name="schedule_minute" value="{{ settings.schedule_minute }}" min="0" max="59" style="width:70px">
+      </div>
+    </div>
+    <p class="hint">GitHub Actions에서는 <code>.github/workflows/daily_scrape.yml</code>의 cron 표현식으로 시각을 조정하세요.</p>
+  </fieldset>
+
+  <fieldset>
+    <legend>자동 정가 조회</legend>
+    <div class="form-group">
+      <label>Brickset API 키 <span class="hint">(선택)</span></label>
+      <input type="text" name="brickset_api_key" value="{{ settings.brickset_api_key }}"
+             placeholder="비워두면 brickset 조회 건너뜀">
+      <p class="hint">
+        <strong>조회 순서:</strong><br>
+        1순위 — 소스 페이지 취소선 가격 (KRW, 레고 공식 정가와 동일한 것으로 확인)<br>
+        2순위 — brickset 공식 API (USD 가격, API 키 필요)<br>
+        <br>
+        brickset API 키 무료 발급:
+        <a href="https://brickset.com/tools/webservices/v3" target="_blank">brickset.com → Web services → Request API key</a><br>
+        (하루 100회 무료 / 공식 API만 사용, HTML 스크래핑 없음)
+      </p>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>할인 계산</legend>
+    <div class="form-group">
+      <label>전역 추가 할인율</label>
+      <input type="number" name="global_additional_discount"
+             value="{{ settings.global_additional_discount }}"
+             step="0.01" min="0" max="0.99" style="width:90px">
+      <p class="hint">
+        소스별 추가 할인율이 없을 때 적용됩니다.<br>
+        예: 0.2 → 표시가에서 20% 추가 할인 (최종가 = 표시가 × 0.8).<br>
+        0이면 표시가 = 최종가.
+      </p>
+    </div>
+  </fieldset>
+
+  <button class="btn btn-primary" type="submit">저장</button>
+</form>
+
+<script>
+  const u = document.querySelector('[name=github_username]');
+  const r = document.querySelector('[name=github_repo]');
+  const url = document.querySelector('[name=github_pages_url]');
+  function updateUrl() {
+    const un = u.value.trim(), rn = r.value.trim();
+    if (un && rn && !url.value) {
+      url.placeholder = `https://${un}.github.io/${rn}`;
+    }
+  }
+  u.addEventListener('input', updateUrl);
+  r.addEventListener('input', updateUrl);
+</script>
+{% endblock %}

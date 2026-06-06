@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+{% block title %}대시보드 — 레고 할인 봇{% endblock %}
+{% block content %}
+<h1>대시보드</h1>
+
+<div class="cards">
+  <div class="card">
+    <div class="card-label">등록된 소스</div>
+    <div class="card-value">{{ sources | length }}</div>
+    <a href="/sources">관리 →</a>
+  </div>
+  <div class="card">
+    <div class="card-label">정가 등록 상품</div>
+    <div class="card-value">{{ prices | length }}</div>
+    <a href="/prices">관리 →</a>
+  </div>
+  <div class="card">
+    <div class="card-label">일별 페이지</div>
+    <div class="card-value">{{ daily_pages | length }}</div>
+  </div>
+  <div class="card">
+    <div class="card-label">매일 실행 시각 (KST)</div>
+    <div class="card-value">
+      {{ "%02d"|format(settings.schedule_hour) }}:{{ "%02d"|format(settings.schedule_minute) }}
+    </div>
+  </div>
+</div>
+
+{% if settings.github_pages_url %}
+<div class="section">
+  <h2>GitHub Pages</h2>
+  <p>
+    <a href="{{ settings.github_pages_url }}/today.html" target="_blank">
+      {{ settings.github_pages_url }}/today.html
+    </a>
+  </p>
+</div>
+{% endif %}
+
+{% if daily_pages %}
+<div class="section">
+  <h2>최근 페이지</h2>
+  <ul class="page-list">
+    {% for d in daily_pages %}
+    <li>
+      <a href="/output/{{ d }}" target="_blank">{{ d }}</a>
+      {% if settings.github_pages_url %}
+      &nbsp;<a href="{{ settings.github_pages_url }}/{{ d }}.html" target="_blank" style="font-size:.8rem;color:#6c757d">[GitHub Pages]</a>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}
+
+<div class="section">
+  <form method="post" action="/run/start">
+    <button class="btn btn-primary" type="submit">지금 실행</button>
+    <span class="hint">스크래핑 → HTML 생성 → Discord 알림</span>
+  </form>
+</div>
+{% endblock %}

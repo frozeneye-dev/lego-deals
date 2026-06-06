@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.lottemartzetta.com)",
+      "WebFetch(domain:lottemartzetta.com)",
+      "WebFetch(domain:brickset.com)",
+      "WebSearch",
+      "WebFetch(domain:www.brickinside.com)",
+      "WebFetch(domain:www.lego.com)",
+      "WebFetch(domain:kream.co.kr)"
+    ]
+  }
+}

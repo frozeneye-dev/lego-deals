@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block title %}수동 실행 — 레고 할인 봇{% endblock %}
+{% block content %}
+<h1>수동 실행</h1>
+
+<div class="section">
+  <form method="post" action="/run/start">
+    <button class="btn btn-primary" type="submit">지금 실행</button>
+    <span class="hint">스크래핑 → HTML 생성 → Discord 알림 순서로 진행됩니다.</span>
+  </form>
+</div>
+
+<div class="section">
+  <h2>실행 로그</h2>
+  {% if logs %}
+  <div class="log-box">
+    {% for line in logs %}
+    <div>{{ line }}</div>
+    {% endfor %}
+  </div>
+  {% else %}
+  <p class="hint">로그가 없습니다.</p>
+  {% endif %}
+  <a href="/run" class="btn btn-secondary" style="margin-top:8px">새로고침</a>
+</div>
+{% endblock %}

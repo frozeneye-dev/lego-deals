@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+{% block title %}파싱 테스트 — 레고 할인 봇{% endblock %}
+{% block content %}
+<h1>파싱 테스트</h1>
+
+<div class="section">
+  <form method="post" action="/test-parse" class="form-row">
+    <div class="form-group">
+      <label>테스트할 URL</label>
+      <input type="url" name="url" value="{{ url }}" placeholder="https://www.lottemartzetta.com/..."
+             required style="width:420px">
+    </div>
+    <button class="btn btn-primary" type="submit">파싱 실행</button>
+  </form>
+</div>
+
+{% if error %}
+<div class="alert alert-error">오류: {{ error }}</div>
+{% endif %}
+
+{% if result is not none %}
+<div class="section">
+  <h2>
+    결과 — {{ parser_name }}
+    ({{ result | length }}개 상품 발견)
+  </h2>
+  {% if result %}
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th>품번</th>
+        <th>상품명</th>
+        <th>표시가 (원)</th>
+        <th>링크</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for item in result %}
+      <tr>
+        <td><strong>{{ item.item_number }}</strong></td>
+        <td>{{ item.name }}</td>
+        <td>{{ "{:,}".format(item.listed_price) }}</td>
+        <td><a href="{{ item.product_url }}" target="_blank">상품 →</a></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% else %}
+  <p class="hint">상품을 찾지 못했습니다. URL과 파서 셀렉터를 확인하세요.</p>
+  {% endif %}
+</div>
+{% endif %}
+
+<div class="section hint-box">
+  <strong>파싱이 안 될 때:</strong>
+  <ol>
+    <li>브라우저에서 해당 페이지를 열고 상품 카드 요소를 검사(F12)합니다.</li>
+    <li><code>app/scraper/parsers/lottemartzetta.py</code>의 <code>card_selectors</code>에 맞는 CSS 셀렉터를 추가합니다.</li>
+    <li>다시 테스트합니다.</li>
+  </ol>
+</div>
+{% endblock %}

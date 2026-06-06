@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>레고 할인 목록 아카이브</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+           background: #f8f9fa; padding: 32px 16px; color: #212529; }
+    h1 { font-size: 1.5rem; margin-bottom: 8px; }
+    p { color: #6c757d; margin-bottom: 24px; font-size: .9rem; }
+    .today-btn { display: inline-block; padding: 12px 24px; background: #FFD700;
+                 color: #212529; font-weight: 700; border-radius: 8px;
+                 text-decoration: none; font-size: 1rem; margin-bottom: 24px; }
+    .today-btn:hover { background: #e6c200; }
+    ul { list-style: none; padding: 0; }
+    li { border-bottom: 1px solid #dee2e6; }
+    li a { display: block; padding: 12px 4px; color: #457b9d; text-decoration: none;
+           font-size: .95rem; }
+    li a:hover { color: #1d4e6b; }
+    li:first-child a { font-weight: 700; }
+  </style>
+</head>
+<body>
+  <h1>🧱 레고 할인 목록</h1>
+  <p>매일 업데이트 — 레고 공식 정가 대비 최종 할인가 기준</p>
+
+  {% if pages_url %}
+  <a class="today-btn" href="{{ pages_url }}/today.html">오늘 목록 보기 →</a>
+  {% endif %}
+
+  <h2 style="margin-bottom:12px;font-size:1rem">전체 날짜</h2>
+  <ul>
+    {% for d in dates %}
+    <li>
+      <a href="{{ pages_url }}/{{ d }}.html">{{ d }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</body>
+</html>
