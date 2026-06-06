@@ -22,15 +22,8 @@ log = logging.getLogger(__name__)
 
 _API_ENDPOINT = "https://openapi.naver.com/v1/search/shop"
 
-# LEGO set numbers: 4~6자리 숫자
-# 우선순위: 괄호 안 > 끝자리 > "레고"/"LEGO" 바로 뒤
-_SET_RE = re.compile(
-    r'[(\[]\s*(\d{4,6})\s*[)\]]'   # (75192) 또는 [75192]
-    r'|\s(\d{4,6})\s*$'             # 맨 끝 숫자
-    r'|레고\s*(\d{4,6})'            # 레고75192
-    r'|LEGO\s*(\d{4,6})',           # LEGO75192
-    re.IGNORECASE,
-)
+# LEGO 품번은 5~6자리 숫자 (4자리는 연도·모델번호와 혼동 위험)
+_SET_RE = re.compile(r'\b(\d{5,6})\b')
 
 _HTML_TAG_RE = re.compile(r'<[^>]+>')
 
@@ -41,9 +34,7 @@ def _clean(html: str) -> str:
 
 def _extract_set_number(title: str) -> str | None:
     m = _SET_RE.search(title)
-    if m:
-        return next(g for g in m.groups() if g is not None)
-    return None
+    return m.group(1) if m else None
 
 
 class NaverShoppingParser(BaseParser):
