@@ -6886,5 +6886,12 @@
     "auto": true,
     "source": "네이버 레고 표시가",
     "currency": "KRW"
+  },
+  "10355": {
+    "name": "레고 아이콘 블랙트론 레니게이드 10355 1개",
+    "official_price": 117300,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
   }
 }

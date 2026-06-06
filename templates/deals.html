@@ -58,6 +58,15 @@
     .buy-btn:hover { background: #e6c200; }
     .empty { padding: 20px; text-align: center; color: var(--muted); font-size: .9rem;
              background: var(--card-bg); border: 1px solid var(--border); border-top: none; }
+    .badge-new { display: inline-block; background: #e63946; color: #fff;
+                 font-size: .62rem; font-weight: 700; padding: 1px 6px;
+                 border-radius: 10px; margin-right: 5px; vertical-align: middle;
+                 letter-spacing: .04em; }
+    .row-new td { background: #fff5f5; }
+    .row-new td:first-child { border-left: 3px solid #e63946; padding-left: 9px; }
+    .new-summary { display: inline-block; background: #e63946; color: #fff;
+                   font-size: .78rem; font-weight: 600; padding: 3px 10px;
+                   border-radius: 20px; margin-left: 8px; vertical-align: middle; }
     footer { text-align: center; color: var(--muted); font-size: .78rem;
              margin-top: 32px; padding-top: 16px; border-top: 1px solid var(--border); }
     @media (max-width: 640px) {
@@ -76,6 +85,9 @@
     기준일: {{ date }} &nbsp;|&nbsp;
     레고 공식 정가 대비 최종 할인가 기준 &nbsp;|&nbsp;
     총 {{ total_count }}개 상품
+    {% if yesterday_nums is not none and new_count > 0 %}
+    <span class="new-summary">🆕 신규 {{ new_count }}개</span>
+    {% endif %}
   </p>
 </header>
 
@@ -114,8 +126,9 @@
     </thead>
     <tbody>
       {% for d in items %}
-      <tr>
-        <td>{{ d.name }}</td>
+      {% set is_new = yesterday_nums is not none and d.item_number not in yesterday_nums %}
+      <tr{% if is_new %} class="row-new"{% endif %}>
+        <td>{% if is_new %}<span class="badge-new">NEW</span>{% endif %}{{ d.name }}</td>
         <td class="price-final">
           {{ "{:,}".format(d.final_price) if d.final_price else '—' }}원
           {% if d.additional_discount %}

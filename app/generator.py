@@ -8,7 +8,7 @@ Output layout (written to docs/):
 
 import json
 import logging
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 
 import pytz
@@ -22,6 +22,32 @@ RESULTS_DIR = BASE_DIR / "results"
 TEMPLATES_DIR = BASE_DIR / "templates"
 
 KST = pytz.timezone("Asia/Seoul")
+
+
+def _load_yesterday_item_numbers(run_date: str) -> set[str] | None:
+    """어제 할인 카테고리(20%+)에 있던 품번 집합. 파일 없으면 None."""
+    yesterday = (datetime.strptime(run_date, "%Y-%m-%d") - timedelta(days=1)).strftime("%Y-%m-%d")
+    path = RESULTS_DIR / f"{yesterday}.json"
+    if not path.exists():
+        return None
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+        nums: set[str] = set()
+        for key in ("40_plus", "30_plus", "20_plus"):
+            for item in data.get(key, []):
+                n = item.get("item_number", "")
+                if n:
+                    nums.add(n)
+        return nums
+    except Exception:
+        log.warning("어제 결과 파일 읽기 실패: %s", path)
+        return None
+
+
+def _sort_new_first(items: list[dict], prev: set[str] | None) -> list[dict]:
+    if prev is None:
+        return items
+    return sorted(items, key=lambda x: (0 if x.get("item_number", "") not in prev else 1))
 
 
 def _jinja_env() -> Environment:
@@ -48,6 +74,16 @@ def generate(result: dict, settings: dict, run_date: str | None = None) -> str:
     result_path = RESULTS_DIR / f"{run_date}.json"
     result_path.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
 
+    yesterday_nums = _load_yesterday_item_numbers(run_date)
+
+    # 신규 진입 상품을 각 카테고리 상단으로 정렬
+    sorted_result = {
+        "40_plus": _sort_new_first(result.get("40_plus", []), yesterday_nums),
+        "30_plus": _sort_new_first(result.get("30_plus", []), yesterday_nums),
+        "20_plus": _sort_new_first(result.get("20_plus", []), yesterday_nums),
+        "no_price": result.get("no_price", []),
+    }
+
     pages_url = settings.get("github_pages_url", "").rstrip("/")
 
     env = _jinja_env()
@@ -58,10 +94,19 @@ def generate(result: dict, settings: dict, run_date: str | None = None) -> str:
         for k in ("40_plus", "30_plus", "20_plus", "no_price")
     )
 
+    new_count = 0
+    if yesterday_nums is not None:
+        for key in ("40_plus", "30_plus", "20_plus"):
+            for item in result.get(key, []):
+                if item.get("item_number", "") not in yesterday_nums:
+                    new_count += 1
+
     html = tmpl.render(
         date=run_date,
-        result=result,
+        result=sorted_result,
         total_count=total_count,
+        new_count=new_count,
+        yesterday_nums=yesterday_nums,
         pages_url=pages_url,
         settings=settings,
     )
