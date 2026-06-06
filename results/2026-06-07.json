@@ -353,18 +353,6 @@
       "source_url": "https://lottemartzetta.com/promotions?brands=%EB%A0%88%EA%B3%A0"
     },
     {
-      "item_number": "31384",
-      "name": "크리에이터 레고 세계의 동물 탐험  벌새 (31384) (8세 이상)",
-      "official_price": 44900,
-      "listed_price": 40410,
-      "additional_discount": 0.2,
-      "final_price": 32328,
-      "discount_rate": 0.28,
-      "product_url": "https://lottemartzetta.com/products/OS5702018054789/details",
-      "source_name": "롯데마트 제타 레고 프로모션",
-      "source_url": "https://lottemartzetta.com/promotions?brands=%EB%A0%88%EA%B3%A0"
-    },
-    {
       "item_number": "77249",
       "name": "스피드챔피언 레고 Williams Racing FW46 F1 레이스 카 (77249) (10세 이상)",
       "official_price": 43900,
@@ -373,6 +361,18 @@
       "final_price": 31608,
       "discount_rate": 0.28,
       "product_url": "https://lottemartzetta.com/products/OS5702017816166/details",
+      "source_name": "롯데마트 제타 레고 프로모션",
+      "source_url": "https://lottemartzetta.com/promotions?brands=%EB%A0%88%EA%B3%A0"
+    },
+    {
+      "item_number": "31384",
+      "name": "크리에이터 레고 세계의 동물 탐험  벌새 (31384) (8세 이상)",
+      "official_price": 44900,
+      "listed_price": 40410,
+      "additional_discount": 0.2,
+      "final_price": 32328,
+      "discount_rate": 0.28,
+      "product_url": "https://lottemartzetta.com/products/OS5702018054789/details",
       "source_name": "롯데마트 제타 레고 프로모션",
       "source_url": "https://lottemartzetta.com/promotions?brands=%EB%A0%88%EA%B3%A0"
     },
