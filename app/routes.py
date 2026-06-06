@@ -249,6 +249,8 @@ def settings_save():
     settings["github_username"] = f.get("github_username", "").strip()
     settings["github_repo"] = f.get("github_repo", "lego-deals").strip()
     settings["brickset_api_key"] = f.get("brickset_api_key", "").strip()
+    settings["naver_client_id"] = f.get("naver_client_id", "").strip()
+    settings["naver_client_secret"] = f.get("naver_client_secret", "").strip()
 
     try:
         settings["schedule_hour"] = int(f.get("schedule_hour", 9))

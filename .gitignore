@@ -8,3 +8,5 @@ build/
 .venv/
 venv/
 env/
+config/settings.json
+debug_index.html

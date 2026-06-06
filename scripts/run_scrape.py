@@ -34,10 +34,17 @@ def main():
     sources = cfg.load_sources()
     prices = cfg.load_prices()
 
-    # GitHub Secret overrides the stored webhook URL
+    # GitHub Secrets override stored values
     env_webhook = os.environ.get("DISCORD_WEBHOOK", "").strip()
     if env_webhook:
         settings["discord_webhook_url"] = env_webhook
+
+    env_naver_id = os.environ.get("NAVER_CLIENT_ID", "").strip()
+    env_naver_secret = os.environ.get("NAVER_CLIENT_SECRET", "").strip()
+    if env_naver_id:
+        settings["naver_client_id"] = env_naver_id
+    if env_naver_secret:
+        settings["naver_client_secret"] = env_naver_secret
 
     if not sources:
         log.warning("No sources registered. Add sources via the web UI and commit config/sources.json.")

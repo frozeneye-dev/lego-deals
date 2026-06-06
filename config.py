@@ -46,6 +46,8 @@ _SETTINGS_DEFAULTS = {
     "github_username": "frozeneye-dev",
     "github_repo": "lego-deals",
     "brickset_api_key": "",   # https://brickset.com/api/v3.asmx — 무료 발급
+    "naver_client_id": "",    # https://developers.naver.com — 쇼핑 검색 API
+    "naver_client_secret": "",
 }
 
 

@@ -72,6 +72,26 @@
   </fieldset>
 
   <fieldset>
+    <legend>네이버 쇼핑 검색 API</legend>
+    <div class="form-group">
+      <label>Client ID</label>
+      <input type="text" name="naver_client_id" value="{{ settings.naver_client_id }}"
+             placeholder="네이버 개발자 센터에서 발급">
+    </div>
+    <div class="form-group">
+      <label>Client Secret</label>
+      <input type="password" name="naver_client_secret" value="{{ settings.naver_client_secret }}"
+             placeholder="네이버 개발자 센터에서 발급">
+      <p class="hint">
+        발급: <a href="https://developers.naver.com/apps/#/register" target="_blank">네이버 개발자 센터 → 애플리케이션 등록</a>
+        → 사용 API: <strong>검색</strong> 선택 → Client ID/Secret 복사<br>
+        무료 25,000건/일 | 공식 API만 사용<br>
+        소스 URL 형식: <code>https://openapi.naver.com/v1/search/shop?query=레고&amp;display=100</code>
+      </p>
+    </div>
+  </fieldset>
+
+  <fieldset>
     <legend>할인 계산</legend>
     <div class="form-group">
       <label>전역 추가 할인율</label>
