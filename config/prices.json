@@ -439,5 +439,516 @@
     "auto": true,
     "source": "네이버 쇼핑 레고 표시가",
     "currency": "KRW"
+  },
+  "11377": {
+    "name": "[6/9 순차 출고] 레고 아이콘 11377 반지의 제왕: 미나스 티리스™ + 40893 그론드",
+    "official_price": 989900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "75639": {
+    "name": "레고 원피스 고잉 메리호 해적선 75639 1개",
+    "official_price": 148000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "42171": {
+    "name": "레고 테크닉 Mercedes AMG F1 W14 E Performance 42171 1개",
+    "official_price": 238800,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "43011": {
+    "name": "레고 에디션 리오넬 메시 축구 하이라이트 43011 1개",
+    "official_price": 43620,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "72046": {
+    "name": "레고 슈퍼마리오 Game Boy 72046 1개",
+    "official_price": 69990,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "71052": {
+    "name": "레고 미니피겨 시즌 29 71052 1개",
+    "official_price": 6400,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "71834": {
+    "name": "레고 닌자고 쟌의 울트라 합체 로봇 71834 1개",
+    "official_price": 97930,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "77256": {
+    "name": "레고 스피드챔피언 백 투 더 퓨처 타임머신 77256 1개",
+    "official_price": 35000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "60316": {
+    "name": "레고 시티 경찰서 60316 1개",
+    "official_price": 64900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "21333": {
+    "name": "레고 아이디어 빈센트 반 고흐 별이 빛나는 밤 21333 1개",
+    "official_price": 176200,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10316": {
+    "name": "레고 아이콘 반지의 제왕 리븐델 10316 1개",
+    "official_price": 538390,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10280": {
+    "name": "레고 크리에이터 꽃다발 10280 1개",
+    "official_price": 59000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "71866": {
+    "name": "레고 닌자고 캐릭터 15주년 기념 71866 1개",
+    "official_price": 49960,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "43012": {
+    "name": "레고 에디션 크리스티아누 호날두 축구 하이라이트 43012 1개",
+    "official_price": 43620,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "43217": {
+    "name": "레고 디즈니 업 하우스 43217 1개",
+    "official_price": 72500,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "11036": {
+    "name": "레고 클래식 창의력 자동차 11036 1개",
+    "official_price": 59000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "60367": {
+    "name": "레고 시티 여객기 60367 1개",
+    "official_price": 108430,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "60368": {
+    "name": "레고 시티 북극 탐사선 60368 1개",
+    "official_price": 139900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10696": {
+    "name": "레고 클래식 미디엄 조립 박스 10696 1개",
+    "official_price": 32400,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "77238": {
+    "name": "레고 스피드 챔피언 람보르기니 레부엘토 앤 우라칸 STO 77238 1개",
+    "official_price": 55890,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "43279": {
+    "name": "레고 디즈니 월-E와 이브 43279 1개",
+    "official_price": 79000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76419": {
+    "name": "레고 해리포터 호그와트 캐슬과 정원 76419 1개",
+    "official_price": 194900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "42177": {
+    "name": "레고 테크닉 Mercedes-Benz G 500 PROFESSIONAL Line 42177 1개",
+    "official_price": 249000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "42221": {
+    "name": "레고 테크닉 나사 알테미스 우주 발사 시스템 로켓 42221 1개",
+    "official_price": 76000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "60337": {
+    "name": "레고 시티 고속 기차 60337 1개",
+    "official_price": 138500,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "42151": {
+    "name": "레고 테크닉 부가티 볼리드 42151 1개",
+    "official_price": 51000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "77252": {
+    "name": "레고 스피드챔피언 F1 더 무비의 APXGP 팀 레이스카 77252 1개",
+    "official_price": 35120,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10349": {
+    "name": "레고 보태니컬 봄날의 햇살 10349 1개",
+    "official_price": 25430,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "72151": {
+    "name": "레고 포켓몬 이브이 72151 1개",
+    "official_price": 71800,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10342": {
+    "name": "레고 보태니컬 핑크 꽃다발 10342 1개",
+    "official_price": 62000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "71821": {
+    "name": "레고 닌자고 콜의 타이탄 드래곤 로봇 71821 1개",
+    "official_price": 129900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "11506": {
+    "name": "레고 보태니컬 여름의 산들바람 11506 1개",
+    "official_price": 26480,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "77254": {
+    "name": "레고 스피드 챔피언 페라리 SF90 XX 스트라데일 스포츠카 77254 1개",
+    "official_price": 33900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "21276": {
+    "name": "레고 마인크래프트 크리퍼 21276 1개",
+    "official_price": 47940,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "21330": {
+    "name": "레고 아이디어 나홀로 집에 21330 1개",
+    "official_price": 299930,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "42206": {
+    "name": "레고 테크닉 Oracle Red Bull Racing RB20 F1 레이스 카 42206 1개",
+    "official_price": 252730,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "21368": {
+    "name": "레고 아이디어 피너츠 스누피 하우스 21368 1개",
+    "official_price": 124900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "42143": {
+    "name": "레고 테크닉 페라리 Daytona SP3 42143 1개",
+    "official_price": 520000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "77240": {
+    "name": "레고 스피드 챔피언 Bugatti Centodieci 하이퍼 스포츠카 77240 1개",
+    "official_price": 33570,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10365": {
+    "name": "레고 아이콘 캡틴 잭 스패로우의 해적선 10365 1개",
+    "official_price": 484900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "42179": {
+    "name": "레고 테크닉 공전하는 지구와 달 42179 1개",
+    "official_price": 96120,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "75375": {
+    "name": "레고 스타워즈 밀레니엄 팔콘 75375 1개",
+    "official_price": 94400,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10295": {
+    "name": "레고 크리에이터 엑스퍼트 포르쉐 911 10295 1개",
+    "official_price": 189000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "71859": {
+    "name": "레고 닌자고 생명의 드래곤 71859 1개",
+    "official_price": 107010,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "71868": {
+    "name": "레고 닌자고 와일드파이어의 변신 드래곤 로봇 71868 1개",
+    "official_price": 134900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "21064": {
+    "name": "레고 아키텍처 사랑의 도시 파리 21064 1개",
+    "official_price": 87920,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "42212": {
+    "name": "레고 테크닉 Ferrari FXX K 42212 1개",
+    "official_price": 65000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "21264": {
+    "name": "레고 마인크래프트 엔더 드래곤과 엔드 함선 21264 1개",
+    "official_price": 101500,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "75389": {
+    "name": "레고 스타워즈 다크 팔콘 75389 1개",
+    "official_price": 182800,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "71832": {
+    "name": "레고 닌자고 혼돈의 썬더 팽 드래곤 71832 1개",
+    "official_price": 99500,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "43016": {
+    "name": "레고 에디션 크리스티아누 호날두 레전드 플레이어 43016 1개",
+    "official_price": 116150,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "42161": {
+    "name": "레고 테크닉 람보르기니 우라칸 테크니카 42161 1개",
+    "official_price": 64900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "72153": {
+    "name": "레고 포켓몬 이상해꽃 리자몽 거북왕 72153 1개",
+    "official_price": 869900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76934": {
+    "name": "레고 스피드 챔피언 Ferrari F40 슈퍼카 76934 1개",
+    "official_price": 32000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "21590": {
+    "name": "레고 마인크래프트 위더 전투 21590 1개",
+    "official_price": 68760,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "31215": {
+    "name": "레고 아트 Vincent van Gogh - 해바라기 31215 1개",
+    "official_price": 249390,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "71822": {
+    "name": "레고 닌자고 근원의 모션 드래곤 71822 1개",
+    "official_price": 217000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "72152": {
+    "name": "레고 포켓몬 피카츄와 몬스터볼 72152 1개",
+    "official_price": 259900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "42130": {
+    "name": "레고 테크닉 BMW M 1000 RR 42130 1개",
+    "official_price": 295300,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "11380": {
+    "name": "레고 아이콘 로드바이크 11380 1개",
+    "official_price": 189900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "71836": {
+    "name": "레고 닌자고 포커스 드래곤 71836 1개",
+    "official_price": 109900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "71439": {
+    "name": "레고 슈퍼마리오 마리오와 모험 71439 1개",
+    "official_price": 65900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10329": {
+    "name": "레고 아이콘 미니어처 식물들 10329 1개",
+    "official_price": 55920,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "77251": {
+    "name": "레고 스피드 챔피언 McLaren F1 Team MCL38 레이스 카 77251 1개",
+    "official_price": 32100,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "45678": {
+    "name": "레고 에듀케이션 스파이크 프라임 코어세트 45678 1개",
+    "official_price": 600000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "71808": {
+    "name": "레고 닌자고 카이의 엘리멘탈 파이어 로봇 71808 1개",
+    "official_price": 32500,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10297": {
+    "name": "레고 크리에이터 부티크 호텔 10297 1개",
+    "official_price": 299900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "42223": {
+    "name": "레고 테크닉 1966 포드 GT40 MKII 레이스카 42223 1개",
+    "official_price": 85000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "42154": {
+    "name": "레고 테크닉 2022 포드 GT 42154 1개",
+    "official_price": 109900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "60414": {
+    "name": "레고 시티 소방서와 소방트럭 60414 1개",
+    "official_price": 85888,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "40921": {
+    "name": "레고 미니피겨 시리즈 대형 파란색 우주비행사 미니피겨 40921 1개",
+    "official_price": 77900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "11038": {
+    "name": "레고 클래식 창의력 쑥쑥 브릭 박스 11038 1개",
+    "official_price": 53000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "42213": {
+    "name": "레고 테크닉 Ford Bronco SUV 42213 1개",
+    "official_price": 79000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
   }
 }
