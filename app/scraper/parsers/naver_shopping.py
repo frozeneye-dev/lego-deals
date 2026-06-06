@@ -10,6 +10,7 @@ API 키는 settings의 naver_client_id / naver_client_secret 에서 읽음.
 """
 
 import logging
+import os
 import re
 from urllib.parse import parse_qs, urlparse
 
@@ -54,8 +55,8 @@ class NaverShoppingParser(BaseParser):
     def parse(self, url: str, source_name: str) -> list[ScrapedItem]:
         import config as cfg
         settings = cfg.load_settings()
-        client_id = settings.get("naver_client_id", "").strip()
-        client_secret = settings.get("naver_client_secret", "").strip()
+        client_id = (settings.get("naver_client_id", "") or os.environ.get("NAVER_CLIENT_ID", "")).strip()
+        client_secret = (settings.get("naver_client_secret", "") or os.environ.get("NAVER_CLIENT_SECRET", "")).strip()
 
         if not client_id or not client_secret:
             log.warning("[Naver] Client ID/Secret 미설정 — 건너뜀. 설정 페이지에서 입력해 주세요.")
