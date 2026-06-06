@@ -61,7 +61,10 @@
     footer { text-align: center; color: var(--muted); font-size: .78rem;
              margin-top: 32px; padding-top: 16px; border-top: 1px solid var(--border); }
     @media (max-width: 640px) {
-      th:nth-child(3), td:nth-child(3) { display: none; }
+      /* 모바일: 상품명·최종가·할인율·구매만 표시 */
+      th:nth-child(4), td:nth-child(4),
+      th:nth-child(5), td:nth-child(5),
+      th:nth-child(6), td:nth-child(6) { display: none; }
       .buy-btn { padding: 5px 8px; }
     }
   </style>
@@ -100,11 +103,11 @@
   <table>
     <thead>
       <tr>
-        <th>품번</th>
         <th>상품명</th>
         <th>최종가</th>
-        <th>공식 정가</th>
         <th>할인율</th>
+        <th>공식 정가</th>
+        <th>품번</th>
         <th>출처</th>
         <th>구매</th>
       </tr>
@@ -112,26 +115,26 @@
     <tbody>
       {% for d in items %}
       <tr>
-        <td class="item-no">{{ d.item_number }}</td>
         <td>{{ d.name }}</td>
         <td class="price-final">
           {{ "{:,}".format(d.final_price) if d.final_price else '—' }}원
           {% if d.additional_discount %}
           <br><span style="font-size:.72rem;color:#868e96">
-            (표시가 {{ "{:,}".format(d.listed_price) }}원 × {{ "%.0f%%"|format((1-d.additional_discount)*100) }})
+            표시가 {{ "{:,}".format(d.listed_price) }}원 × {{ "%.0f%%"|format((1-d.additional_discount)*100) }}
           </span>
           {% endif %}
-        </td>
-        <td>
-          <span class="price-original">
-            {{ "{:,}".format(d.official_price) if d.official_price else '미등록' }}원
-          </span>
         </td>
         <td>
           <span class="pct {{ pct_class }}">
             {{ "%.1f%%"|format(d.discount_rate * 100) if d.discount_rate is not none else '—' }}
           </span>
         </td>
+        <td>
+          <span class="price-original">
+            {{ "{:,}".format(d.official_price) if d.official_price else '미등록' }}원
+          </span>
+        </td>
+        <td class="item-no">{{ d.item_number }}</td>
         <td style="font-size:.78rem;color:#868e96">{{ d.source_name }}</td>
         <td><a class="buy-btn" href="{{ d.product_url }}" target="_blank">구매 →</a></td>
       </tr>
