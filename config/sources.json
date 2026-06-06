@@ -8,9 +8,9 @@
     "added_at": "2026-06-07"
   },
   {
-    "id": "72a98f77-2f2b-46c3-bf76-c952291e38ba",
-    "name": "네이버 쇼핑 레고",
-    "url": "https://openapi.naver.com/v1/search/shop?query=레고&display=100",
+    "id": "52807560-075e-4256-9486-e746ea46b66e",
+    "name": "네이버 레고",
+    "url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100",
     "additional_discount": null,
     "enabled": true,
     "added_at": "2026-06-07"
