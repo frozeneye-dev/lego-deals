@@ -348,5 +348,19 @@
     "auto": true,
     "source": "롯데마트 제타 레고 프로모션 취소선 정가",
     "currency": "KRW"
+  },
+  "31214": {
+    "name": "아트 레고 LOVE (31214) (18세 이상)",
+    "official_price": 104900,
+    "auto": true,
+    "source": "롯데마트 제타 레고 프로모션 취소선 정가",
+    "currency": "KRW"
+  },
+  "21267": {
+    "name": "마인크래프트 레고 우민 사막 순찰대 (21267) (7세 이상)",
+    "official_price": 21900,
+    "auto": true,
+    "source": "롯데마트 제타 레고 프로모션 취소선 정가",
+    "currency": "KRW"
   }
 }
