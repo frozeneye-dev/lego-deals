@@ -75,6 +75,8 @@
           {% set src = info.source or '수동 입력' %}
           {% if '취소선 정가' in src %}
             <span style="color:#155724">✓ {{ src }}</span>
+          {% elif '표시가' in src %}
+            <span style="color:#0d6efd">N {{ src }}</span>
           {% elif 'brickset' in src %}
             <span style="color:#0c5460">🌐 {{ src }}</span>
           {% else %}

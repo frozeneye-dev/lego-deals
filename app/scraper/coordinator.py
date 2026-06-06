@@ -164,16 +164,20 @@ def enrich_prices(raw: list[ScrapedItem], prices: dict, settings: dict | None = 
 
     added = 0
     for item_number, item in new_items.items():
-        # 1순위: 소스 페이지 취소선 가격 (KRW) — 레고 공식 정가와 동일한 것으로 확인됨
+        # 1순위: 소스 페이지 원가 (KRW) — 취소선 또는 표시가
         if item.original_price:
+            if "openapi.naver.com" in item.source_url:
+                source_label = f"{item.source_name} 표시가"
+            else:
+                source_label = f"{item.source_name} 취소선 정가"
             prices[item_number] = {
                 "name": item.name,
                 "official_price": item.original_price,
                 "auto": True,
-                "source": f"{item.source_name} 취소선 정가",
+                "source": source_label,
                 "currency": "KRW",
             }
-            log.info("[enrich] [%s] 취소선 정가 %d원 등록", item_number, item.original_price)
+            log.info("[enrich] [%s] %d원 등록 (%s)", item_number, item.original_price, source_label)
             added += 1
             continue
 

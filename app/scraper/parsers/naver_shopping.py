@@ -106,6 +106,7 @@ class NaverShoppingParser(BaseParser):
                 product_url=raw.get("link", ""),
                 source_name=source_name,
                 source_url=url,
+                original_price=listed_price,  # 할인 표시 없으면 표시가 = 공식 정가
             ))
 
         log.info("[Naver] 파싱 완료: %d개 (품번 없어 제외: %d개)", len(items), skipped)

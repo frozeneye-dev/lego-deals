@@ -362,5 +362,82 @@
     "auto": true,
     "source": "롯데마트 제타 레고 프로모션 취소선 정가",
     "currency": "KRW"
+  },
+  "71860": {
+    "name": "레고 닌자고 로이드의 타이탄 로봇 15주년 기념 71860",
+    "official_price": 145800,
+    "auto": true,
+    "source": "네이버 쇼핑 레고 표시가",
+    "currency": "KRW"
+  },
+  "21246": {
+    "name": "레고 마인크래프트 깊고 어두운 전장 21246",
+    "official_price": 162000,
+    "auto": true,
+    "source": "네이버 쇼핑 레고 표시가",
+    "currency": "KRW"
+  },
+  "11389": {
+    "name": "레고 아이콘 프로젝트 헤일메리 11389",
+    "official_price": 159900,
+    "auto": true,
+    "source": "네이버 쇼핑 레고 표시가",
+    "currency": "KRW"
+  },
+  "75345": {
+    "name": "레고 스타워즈 501 클론 트루퍼 배틀 팩 75345",
+    "official_price": 22400,
+    "auto": true,
+    "source": "네이버 쇼핑 레고 표시가",
+    "currency": "KRW"
+  },
+  "43019": {
+    "name": "레고 축구공 43019",
+    "official_price": 156300,
+    "auto": true,
+    "source": "네이버 쇼핑 레고 표시가",
+    "currency": "KRW"
+  },
+  "40649": {
+    "name": "미니피겨 대형 레고 40649 1개",
+    "official_price": 75900,
+    "auto": true,
+    "source": "네이버 쇼핑 레고 표시가",
+    "currency": "KRW"
+  },
+  "76424": {
+    "name": "레고 해리포터 하늘을 나는 포드 앵글리아 76424",
+    "official_price": 15900,
+    "auto": true,
+    "source": "네이버 쇼핑 레고 표시가",
+    "currency": "KRW"
+  },
+  "75192": {
+    "name": "레고 스타워즈 밀레니엄 팔콘 75192",
+    "official_price": 948800,
+    "auto": true,
+    "source": "네이버 쇼핑 레고 표시가",
+    "currency": "KRW"
+  },
+  "10313": {
+    "name": "레고 아이콘 야생화 꽃다발 10313",
+    "official_price": 56900,
+    "auto": true,
+    "source": "네이버 쇼핑 레고 표시가",
+    "currency": "KRW"
+  },
+  "75337": {
+    "name": "레고 스타워즈 AT TE 워커 75337",
+    "official_price": 146500,
+    "auto": true,
+    "source": "네이버 쇼핑 레고 표시가",
+    "currency": "KRW"
+  },
+  "75356": {
+    "name": "레고 스타워즈 이그제큐터 수퍼스타 디스트로이어 75356",
+    "official_price": 85600,
+    "auto": true,
+    "source": "네이버 쇼핑 레고 표시가",
+    "currency": "KRW"
   }
 }
