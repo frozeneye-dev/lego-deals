@@ -497,18 +497,6 @@
       "source_url": "https://lottemartzetta.com/promotions?brands=%EB%A0%88%EA%B3%A0"
     },
     {
-      "item_number": "42207",
-      "name": "레고 테크닉 Ferrari SF 24 F1 자동차 42207 1개",
-      "official_price": 319900,
-      "listed_price": 230450,
-      "additional_discount": 0.0,
-      "final_price": 230450,
-      "discount_rate": 0.2796,
-      "product_url": "https://search.shopping.naver.com/catalog/59603510616",
-      "source_name": "네이버 레고",
-      "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
-    },
-    {
       "item_number": "10428",
       "name": "레고 듀플로 인터랙티브 기차 세트 10428 1개",
       "official_price": 189900,
@@ -524,10 +512,10 @@
       "item_number": "77242",
       "name": "레고 스피드 챔피언 Ferrari SF 24 F1 레이스 카 77242 1개",
       "official_price": 43900,
-      "listed_price": 32460,
+      "listed_price": 32100,
       "additional_discount": 0.0,
-      "final_price": 32460,
-      "discount_rate": 0.2606,
+      "final_price": 32100,
+      "discount_rate": 0.2688,
       "product_url": "https://search.shopping.naver.com/catalog/59458533444",
       "source_name": "네이버 레고",
       "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
@@ -536,10 +524,10 @@
       "item_number": "77243",
       "name": "레고 스피드 챔피언 Oracle Red Bull Racing RB20 F1 레이스 카 77243 1개",
       "official_price": 43900,
-      "listed_price": 32460,
+      "listed_price": 32100,
       "additional_discount": 0.0,
-      "final_price": 32460,
-      "discount_rate": 0.2606,
+      "final_price": 32100,
+      "discount_rate": 0.2688,
       "product_url": "https://search.shopping.naver.com/catalog/59458418733",
       "source_name": "네이버 레고",
       "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
@@ -553,6 +541,18 @@
       "final_price": 78680,
       "discount_rate": 0.25,
       "product_url": "https://search.shopping.naver.com/catalog/59506076610",
+      "source_name": "네이버 레고",
+      "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
+    },
+    {
+      "item_number": "42207",
+      "name": "레고 테크닉 Ferrari SF 24 F1 자동차 42207 1개",
+      "official_price": 319900,
+      "listed_price": 240450,
+      "additional_discount": 0.0,
+      "final_price": 240450,
+      "discount_rate": 0.2484,
+      "product_url": "https://search.shopping.naver.com/catalog/59603510616",
       "source_name": "네이버 레고",
       "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
     },
@@ -618,13 +618,13 @@
     },
     {
       "item_number": "76125",
-      "name": "레고 어벤져스 엔드게임 아이언맨 연구소 76125",
+      "name": "레고 어벤져스 엔드게임 아이언맨 연구소 76125 1개",
       "official_price": 189900,
       "listed_price": 146000,
       "additional_discount": 0.0,
       "final_price": 146000,
       "discount_rate": 0.2312,
-      "product_url": "https://search.shopping.naver.com/catalog/18463415912",
+      "product_url": "https://search.shopping.naver.com/catalog/59734625198",
       "source_name": "네이버 레고",
       "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
     }

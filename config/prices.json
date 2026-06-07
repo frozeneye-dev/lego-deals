@@ -6893,5 +6893,446 @@
     "auto": true,
     "source": "네이버 레고 표시가",
     "currency": "KRW"
+  },
+  "21596": {
+    "name": "레고 마인크래프트 소환사 마을 공격 21596 1개",
+    "official_price": 130000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10361": {
+    "name": "레고 아이콘 크리스마스 특급열차 10361",
+    "official_price": 166280,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "41717": {
+    "name": "레고 프렌즈 야생동물 구조 41717",
+    "official_price": 46900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "71762": {
+    "name": "레고 닌자고 카이의 파이어 드래곤 EVO 71762",
+    "official_price": 79000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "41707": {
+    "name": "레고 프렌즈 나무 심기 차량 41707",
+    "official_price": 27000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76941": {
+    "name": "쥬라기월드 레고 공룡 76941 카르노타우루스 추격전",
+    "official_price": 230000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "60489": {
+    "name": "레고 시티 제트기 대 자동차 60489",
+    "official_price": 35030,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10289": {
+    "name": "레고 크리에이터 극락조화 10289",
+    "official_price": 149900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "60497": {
+    "name": "레고 시티 드라이브스루 세차장 60497 1개",
+    "official_price": 86900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "40954": {
+    "name": "레고 독일 엽서 40954 1개",
+    "official_price": 23800,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10477": {
+    "name": "레고 듀플로 3in1 나의 첫 반려동물 10477",
+    "official_price": 12300,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "21366": {
+    "name": "레고 아이디어 물에 뜬 해달 21366",
+    "official_price": 150310,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10796": {
+    "name": "레고 개비의 매직하우스 개비의 냥이 돌봄 귀 10796",
+    "official_price": 44900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "43032": {
+    "name": "레고 에디션 FIFA 월드컵 2026 공식 엠블럼 43032 1개",
+    "official_price": 38900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "72045": {
+    "name": "레고 슈퍼마리오 마리오 카트 헤이호와 Ｐ윙 72045",
+    "official_price": 22860,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "70501": {
+    "name": "레고 닌자고 워리어 바이크 70501",
+    "official_price": 128000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10929": {
+    "name": "레고 듀플로 즐거운 우리집 10929  혼합 색상  1개",
+    "official_price": 397900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10990": {
+    "name": "레고 듀플로 건설 현장 10990",
+    "official_price": 83840,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "71403": {
+    "name": "레고 슈퍼마리오 피치 공주 스타터팩 71403",
+    "official_price": 110000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "72041": {
+    "name": "레고 슈퍼마리오 키노피오하우스에서 홈 파티 72041",
+    "official_price": 35920,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "11384": {
+    "name": "레고 아이콘 골든 리트리버 강아지 11384 1개",
+    "official_price": 187910,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10294": {
+    "name": "레고 크리에이터 타이타닉 10294 1개",
+    "official_price": 885000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76241": {
+    "name": "레고 마블 헐크 맥 로봇 76241",
+    "official_price": 46900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76243": {
+    "name": "레고 마블 로켓 맥 로봇 76243",
+    "official_price": 27900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10255": {
+    "name": "레고 크리에이터 레어토이 어셈블리 스퀘어 10255 1개",
+    "official_price": 455000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "43300": {
+    "name": "레고 디즈니 클래식 곰돌이 푸 43300",
+    "official_price": 198400,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "40611": {
+    "name": "레고 올해의 용 40611",
+    "official_price": 14600,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76274": {
+    "name": "레고 DC 배트맨 대 할리 퀸과 미스터 프리즈 76274",
+    "official_price": 62000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "71782": {
+    "name": "레고 닌자고 콜의 어스 드래곤 EVO 71782",
+    "official_price": 76000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "30650": {
+    "name": "레고 카이와 랩턴의 사원 전투 30650",
+    "official_price": 5490,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "60395": {
+    "name": "레고 시티 콤보 레이스 팩 60395",
+    "official_price": 40900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "43287": {
+    "name": "레고 디즈니 프린세스 올라프와 브루니의 재미있는 피크닉 43287",
+    "official_price": 53110,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76259": {
+    "name": "레고 DC 배트맨 액션 피겨 76259",
+    "official_price": 34900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76338": {
+    "name": "레고 마블 로봇 전투 스파이더맨 대 닥터 옥토퍼스 76338",
+    "official_price": 41890,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76999": {
+    "name": "레고 소닉 슈퍼 소닉 vs 에그 드릴스터 76999",
+    "official_price": 89900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "43280": {
+    "name": "레고 디즈니 릴로와 스티치의 해변 놀이 43280 1개",
+    "official_price": 30300,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10243": {
+    "name": "레고 파리의 레스토랑 10243",
+    "official_price": 400000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "43277": {
+    "name": "레고 디즈니 크루엘라의 자동차 43277",
+    "official_price": 59500,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "60383": {
+    "name": "레고 시티 전기 스포츠카 60383",
+    "official_price": 11390,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76912": {
+    "name": "레고 스피드챔피언 Fast Furious 1970 닷지 Charger R/T 76912",
+    "official_price": 129900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76248": {
+    "name": "레고 마블 어벤져스 퀸젯 76248",
+    "official_price": 166000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "75432": {
+    "name": "레고 스타워즈 V-19 토렌트 스타파이터 75432",
+    "official_price": 75590,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "43285": {
+    "name": "레고 디즈니 프린세스 에리얼의 매혹적인 미니 궁전 43285",
+    "official_price": 29200,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "71760": {
+    "name": "레고 닌자고 제이의 썬더 드래곤 EVO 71760",
+    "official_price": 56900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76319": {
+    "name": "레고 마블 캡틴 아메리카 대 타노스 76319",
+    "official_price": 42320,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "21242": {
+    "name": "레고 마인크래프트 엔드 아레나 21242",
+    "official_price": 69900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "21351": {
+    "name": "레고 아이디어 디즈니 팀 버튼의 크리스마스 악몽 21351",
+    "official_price": 215000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76298": {
+    "name": "레고 슈퍼히어로 마블 아이언 스파이더맨 액션 피겨 76298",
+    "official_price": 79290,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76995": {
+    "name": "레고 소닉 쉐도우 더 헤지혹의 탈출 76995",
+    "official_price": 27290,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "60493": {
+    "name": "레고 시티 F1 전시용 트럭과 아우디 F1 레이스카 60493",
+    "official_price": 56400,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76203": {
+    "name": "레고 어벤져스 아이언맨 맥 로봇 76203",
+    "official_price": 39800,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "40713": {
+    "name": "레고 크리에이터 일본 엽서 40713",
+    "official_price": 21000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10331": {
+    "name": "레고 아이콘 물총새 10331",
+    "official_price": 59000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76972": {
+    "name": "레고 쥬라기 월드 랩터 오프로드 탈출 76972",
+    "official_price": 49900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "71861": {
+    "name": "레고 닌자고 71861 올드 타운 15주년 기념 새제품",
+    "official_price": 399900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "40719": {
+    "name": "레고 전통 체스 세트 40719",
+    "official_price": 103400,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "60428": {
+    "name": "레고 시티 우주 건설 로봇 60428",
+    "official_price": 11990,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "43214": {
+    "name": "레고 디즈니 프린세스 춤추는 라푼젤 43214",
+    "official_price": 39900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "42649": {
+    "name": "레고 프렌즈 사탕 가게 42649",
+    "official_price": 42040,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "42703": {
+    "name": "레고 프렌즈 인어 롤러코스터 놀이기구 42703 1개",
+    "official_price": 159900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76398": {
+    "name": "레고 해리포터 호그와트 마법학교 병동 76398",
+    "official_price": 73410,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "40603": {
+    "name": "레고 겨울 마차 여행 40603",
+    "official_price": 43800,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "77006": {
+    "name": "레고 소닉 팀 소닉 커맨드 트럭 77006",
+    "official_price": 82900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
   }
 }
