@@ -2,8 +2,8 @@ name: Daily LEGO Deals
 
 on:
   schedule:
-    # 09:00 KST = 00:00 UTC
-    - cron: "0 0 * * *"
+    # 10:17 KST = 01:17 UTC
+    - cron: "17 1 * * *"
   workflow_dispatch:   # GitHub Actions UI에서 수동 실행 가능
 
 permissions:
