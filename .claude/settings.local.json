@@ -7,7 +7,9 @@
       "WebSearch",
       "WebFetch(domain:www.brickinside.com)",
       "WebFetch(domain:www.lego.com)",
-      "WebFetch(domain:kream.co.kr)"
+      "WebFetch(domain:kream.co.kr)",
+      "Bash(gh run *)",
+      "PowerShell(git *)"
     ]
   }
 }
