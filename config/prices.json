@@ -7334,5 +7334,369 @@
     "auto": true,
     "source": "네이버 레고 표시가",
     "currency": "KRW"
+  },
+  "43017": {
+    "name": "레고 에디션 맥라렌 마스터카드 F1 팀 오스카 피아스트리 헬멧 43017 1개",
+    "official_price": 130090,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76960": {
+    "name": "레고 쥬라기월드 브라키오사우루스 발견 76960",
+    "official_price": 149000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "11205": {
+    "name": "레고 개비의 매직 하우스 달콤 선물 산과 요정냥의 가든 11205",
+    "official_price": 66690,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10434": {
+    "name": "레고 듀플로 페파피그 슈퍼마켓 10434",
+    "official_price": 143000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "40602": {
+    "name": "레고 크리에이터 겨울의 시장 가판대 40602",
+    "official_price": 19000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "21324": {
+    "name": "레고 아이디어 세서미 스트리트 21324",
+    "official_price": 169000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10445": {
+    "name": "레고 듀플로 F1 팀 경주용 자동차와 드라이버 10445",
+    "official_price": 50650,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "31174": {
+    "name": "레고 크리에이터 3-in-1 레트로 전화기 31174",
+    "official_price": 36520,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "60506": {
+    "name": "레고 시티 클래식 비치 스트리트카 60506 1개",
+    "official_price": 109900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "43189": {
+    "name": "레고 디즈니 겨울왕국2 엘사와 노크 스토리북 43189",
+    "official_price": 69900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "30726": {
+    "name": "레고 페이퍼백 / 폴리백 30726 슈퍼히어로 배트맨 브루스 웨인과 배트슈트 장난감",
+    "official_price": 12800,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76297": {
+    "name": "레고 마블 슈퍼히어로 댄싱 그루트 76297",
+    "official_price": 62000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "71039": {
+    "name": "레고 71039 마블 미니피규어 시즌2 풀세트 박스재밀봉",
+    "official_price": 74800,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "21359": {
+    "name": "레고 아이디어 이탈리아 리비에라 21359 1개",
+    "official_price": 322900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "40367": {
+    "name": "레고 브릭헤즈 자유의 여신상 40367",
+    "official_price": 18000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "40806": {
+    "name": "레고 스타워즈 진저브레드 AT-AT 워커 40806",
+    "official_price": 86500,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "31162": {
+    "name": "레고 크리에이터 3in1 귀여운 토끼 31162",
+    "official_price": 29310,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "60509": {
+    "name": "레고 시티 크레인과 트럭이 있는 항구의 화물열차 60509 1개",
+    "official_price": 155900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "40757": {
+    "name": "레고 아이콘 코너 키오스크 40757",
+    "official_price": 39800,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "60347": {
+    "name": "레고 시티 수퍼마켓 60347",
+    "official_price": 127900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "60426": {
+    "name": "레고 시티 정글 탐험가 오프로드 트럭 60426",
+    "official_price": 35430,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "60450": {
+    "name": "레고 시티 노란색 건설용 휠 로더 60450",
+    "official_price": 17900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "30385": {
+    "name": "레고 슈퍼마리오 슈퍼버섯 서프라이즈 30385",
+    "official_price": 4800,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "30705": {
+    "name": "레고 마인크래프트 수풀 동굴 전투 30705",
+    "official_price": 4300,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10444": {
+    "name": "레고 듀플로 창의적인 정원과 꽃들 10444",
+    "official_price": 20920,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "77258": {
+    "name": "레고 스피드 챔피언 F1 ACADEMY LEGO 레이스카 77258 1개",
+    "official_price": 37310,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10454": {
+    "name": "레고 듀플로 미키 마우스 클럽하우스와 자동차 10454",
+    "official_price": 23800,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "30569": {
+    "name": "레고 시티 배달원 30569",
+    "official_price": 6000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "43301": {
+    "name": "레고 디즈니 픽사 토이 스토리 슬링키 북엔드 43301 1개",
+    "official_price": 229900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "41314": {
+    "name": "레고프렌즈 41314 스테파니의 집  혼합 색상  1",
+    "official_price": 286920,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "60246": {
+    "name": "레고 시티 경찰서 60246",
+    "official_price": 168500,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "60482": {
+    "name": "레고 시티 라이드 소방 트럭 60482 1개",
+    "official_price": 14900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "42679": {
+    "name": "레고 프렌즈 토끼 호텔 42679",
+    "official_price": 35550,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "71850": {
+    "name": "레고 닌자고 로이드 VS 흙의 몬스터 스피너 71850",
+    "official_price": 10400,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "21332": {
+    "name": "레고 아이디어 지구본 21332",
+    "official_price": 306000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "40567": {
+    "name": "레고 숲속의 은신처 40567",
+    "official_price": 53820,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "75948": {
+    "name": "레고 해리포터 호그와트 시계 타워 75948",
+    "official_price": 138000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10323": {
+    "name": "레고 아이콘 팩맨 아케이드 10323",
+    "official_price": 354900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "42117": {
+    "name": "레고 테크닉 경주용 비행기 42117",
+    "official_price": 45700,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10443": {
+    "name": "레고 듀플로 나의 첫 공항 10443",
+    "official_price": 36800,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "40805": {
+    "name": "레고 아케이드 오락기 40805 1개",
+    "official_price": 59900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76963": {
+    "name": "레고 쥬라기월드 아기 공룡 구조 센터 76963",
+    "official_price": 71300,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "40864": {
+    "name": "레고 재물신 40864 1개",
+    "official_price": 44900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "40669": {
+    "name": "레고 브릭헤즈 아이언맨 MK5 피규어 40669",
+    "official_price": 19800,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "42691": {
+    "name": "레고 프렌즈 가든 레스토랑 42691 1개",
+    "official_price": 169900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76389": {
+    "name": "레고 해리포터 호그와트 비밀의 방 76389",
+    "official_price": 286000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "30682": {
+    "name": "레고 테크닉 나사 화성 탐사선 페르세언스 폴리백 30682",
+    "official_price": 5390,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10284": {
+    "name": "레고 크리에이터 엑스퍼트 캄 노우 FC 바르셀로나 10284",
+    "official_price": 565990,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "43258": {
+    "name": "레고 디즈니 카카모라 바지선 43258",
+    "official_price": 119920,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "60483": {
+    "name": "레고 시티 라이드 건설용 로더 60483 1개",
+    "official_price": 14900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76434": {
+    "name": "레고 해리포터 금단의 숲의 아라고그 76434",
+    "official_price": 41730,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "75437": {
+    "name": "레고 스타워즈 코브 밴스의 스피더 75437",
+    "official_price": 44900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
   }
 }
