@@ -7943,5 +7943,215 @@
     "auto": true,
     "source": "네이버 레고 표시가",
     "currency": "KRW"
+  },
+  "60495": {
+    "name": "레고 시티 재활용 트럭 60495 1개",
+    "official_price": 43900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76992": {
+    "name": "레고 소닉 에이미의 동물 구조 섬 76992",
+    "official_price": 59000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "42150": {
+    "name": "레고 테크닉 몬스터잼 몬스터 머트 달마시안 42150",
+    "official_price": 27740,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "60421": {
+    "name": "레고 시티 로봇 월드 롤러코스터 공원 60421",
+    "official_price": 269800,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "40700": {
+    "name": "레고 크리에이터 윈터 홀리데이 트레인 40700",
+    "official_price": 32000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "40815": {
+    "name": "레고 생일 파티 케이크 40815 1개",
+    "official_price": 20850,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "30443": {
+    "name": "레고 스파이더맨의 다리 위 전투 30443",
+    "official_price": 14500,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10791": {
+    "name": "레고 마블 팀 스파이디의 이동 본부 10791",
+    "official_price": 129900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "40747": {
+    "name": "레고 플라워 수선화 40747",
+    "official_price": 12900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10345": {
+    "name": "레고 식물 꽃꽂이 10345 1개",
+    "official_price": 125900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "60361": {
+    "name": "레고 시티 얼티밋 스턴트 챌린지 60361",
+    "official_price": 84900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "40595": {
+    "name": "레고 40595 갈릴레오 갈릴레이에 대한 헌사",
+    "official_price": 56100,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10775": {
+    "name": "레고 디즈니 미키와 도널드의 동물농장 10775",
+    "official_price": 43400,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "41699": {
+    "name": "레고 프렌즈 반려동물 입양 카페 41699",
+    "official_price": 68990,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "42624": {
+    "name": "레고 프렌즈 아늑한 오두막 캠핑 42624",
+    "official_price": 55900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "77058": {
+    "name": "레고 동물의 숲 카라멜의 작은 집 77058 1개",
+    "official_price": 25000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "21028": {
+    "name": "레고 아키텍쳐 뉴욕시티 21028 1개",
+    "official_price": 79500,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76459": {
+    "name": "레고 해리포터 해그리드와 해리의 프리벳가 탈출 76459",
+    "official_price": 25400,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "80033": {
+    "name": "레고 몽키키드 사악한 마카크의 로봇 80033",
+    "official_price": 116900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76042": {
+    "name": "레고 슈퍼히어로 어벤져스 쉴드 헬리케리어 76042 1개",
+    "official_price": 529900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "40814": {
+    "name": "레고 스페셜 하늘의 아기 코끼리 40814 1개",
+    "official_price": 44010,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "40702": {
+    "name": "레고 크리스마스 사진 액자 40702",
+    "official_price": 7400,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "11043": {
+    "name": "레고 클래식 창의력 상자 11043 1개",
+    "official_price": 35100,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "31383": {
+    "name": "레고 크리에이터 3 in 1 꽃 장식 향수병 31383 1개",
+    "official_price": 46900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "60291": {
+    "name": "레고 시티 우리집 60291",
+    "official_price": 115000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "71418": {
+    "name": "레고 슈퍼마리오 창의력 툴박스 71418",
+    "official_price": 62000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "60391": {
+    "name": "레고 시티 건설 트럭과 크레인 60391",
+    "official_price": 86900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "71754": {
+    "name": "레고 닌자고 워터 드래곤 71754",
+    "official_price": 159000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76104": {
+    "name": "레고 마블슈퍼히어로 어벤져스 헐크버스터 스매쉬업 76104",
+    "official_price": 125000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "43205": {
+    "name": "레고 디즈니 멀티 프린세스 모험의 궁전 43205",
+    "official_price": 205000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
   }
 }
