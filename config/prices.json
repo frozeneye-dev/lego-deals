@@ -8153,5 +8153,222 @@
     "auto": true,
     "source": "네이버 레고 표시가",
     "currency": "KRW"
+  },
+  "21170": {
+    "name": "레고 마인크래프트 피그하우스 21170",
+    "official_price": 128000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "60494": {
+    "name": "레고 시티 덤프트럭과 프론트 엔드 로더 60494 1개",
+    "official_price": 189900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "11504": {
+    "name": "레고 보태니컬 스파티필럼 11504",
+    "official_price": 64710,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "31389": {
+    "name": "레고 크리에이터 3 in 1 대관람차 31389 1개",
+    "official_price": 131510,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "70676": {
+    "name": "레고 닌자고 로이드의 타이탄 로봇 70676 1개",
+    "official_price": 356000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "75378": {
+    "name": "레고 BARC 스피더 탈출 75378",
+    "official_price": 35500,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10214": {
+    "name": "레고 크리에이터 타워브릿지 10214 1개",
+    "official_price": 274000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76460": {
+    "name": "레고 해리포터 호그와트 성 마법 모자 의식 76460",
+    "official_price": 18900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76959": {
+    "name": "레고 쥬라기월드 트리케라톱스 연구 76959",
+    "official_price": 72420,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "31116": {
+    "name": "레고 크리에이터 사파리 트리하우스 31116",
+    "official_price": 37600,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "71038": {
+    "name": "레고 미니피겨 디즈니 100 71038",
+    "official_price": 168000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76023": {
+    "name": "레고 슈퍼히어로즈 배트맨 텀블러 76023 1개",
+    "official_price": 235000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "11198": {
+    "name": "레고 마블 스핀과 일렉트로 공룡 차량 추격전 11198",
+    "official_price": 22900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "43289": {
+    "name": "레고 디즈니 벨과 야수의 마법 성 43289 1개",
+    "official_price": 59290,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76437": {
+    "name": "레고 해리포터 버로우 콜렉터 에디션 76437",
+    "official_price": 325990,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "41739": {
+    "name": "레고 프렌즈 리안의 방 41739",
+    "official_price": 26800,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "43226": {
+    "name": "레고 디즈니 클래식 디즈니 듀오 43226",
+    "official_price": 55100,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76255": {
+    "name": "레고 마블 뉴 가디언 쉽 76255 1개",
+    "official_price": 107900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "75320": {
+    "name": "레고 스타워즈 스노우트루퍼 배틀 팩 75320",
+    "official_price": 48000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "70230": {
+    "name": "레고 키마 아이스 베어 부족 팩 70230",
+    "official_price": 13590,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76144": {
+    "name": "레고 어벤져스 헐크 헬리콥터 낙하 76144",
+    "official_price": 108390,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10244": {
+    "name": "레고 크리에이터 페어그라운드 믹서 10244",
+    "official_price": 224000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "40638": {
+    "name": "레고 하트 장식품 40638",
+    "official_price": 16400,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "71771": {
+    "name": "레고 닌자고 크리스털 킹의 사원 71771",
+    "official_price": 191000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "42699": {
+    "name": "레고 프렌즈 비치 하우스 42699",
+    "official_price": 67700,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "11378": {
+    "name": "레고 Douglas DC-3 PAN AM 팬암 여객기 11378 1개",
+    "official_price": 309900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "75969": {
+    "name": "레고 해리포터 호그와트 아스토로노미 타워 75969",
+    "official_price": 131000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "40568": {
+    "name": "레고 크리에이터 파리 엽서 40568 1개",
+    "official_price": 106000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "31111": {
+    "name": "레고 크리에이터 사이버 드론 31111",
+    "official_price": 46000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "40525": {
+    "name": "레고 마블 인피니티사가 엔드게임 전투 40525",
+    "official_price": 25000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "30453": {
+    "name": "레고 캡틴마블과 닉퓨리 30453",
+    "official_price": 12000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
   }
 }
