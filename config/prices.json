@@ -8503,5 +8503,159 @@
     "auto": true,
     "source": "네이버 레고 표시가",
     "currency": "KRW"
+  },
+  "21256": {
+    "name": "레고 마인크래프트 개구리 집 21256",
+    "official_price": 109900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "60448": {
+    "name": "레고 시티 빨간색 스포츠카 60448",
+    "official_price": 19900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10769": {
+    "name": "레고 토이 스토리 캠핑카 10769  혼합 색상  1",
+    "official_price": 179000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "71862": {
+    "name": "레고 닌자고 로이드의 드래곤 로봇 배틀 팩 71862 1개",
+    "official_price": 15900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "31382": {
+    "name": "레고 크리에이터 3in1 귀여운 동물들 강아지 31382",
+    "official_price": 38000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "71844": {
+    "name": "레고 닌자고 닌자 전투차량 71844 1개",
+    "official_price": 117400,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "60459": {
+    "name": "레고 시티 비행기 대 병원 침대 레이스 카 팩 60459",
+    "official_price": 10400,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "75937": {
+    "name": "레고 쥬라기월드 트리케라톱스 소동 75937 1개",
+    "official_price": 119900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "80044": {
+    "name": "레고 몽키키드 몽키 키드 팀의 은신처 80044",
+    "official_price": 101900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "21160": {
+    "name": "레고 마인크래프트 일리저 습격 21160",
+    "official_price": 126000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76310": {
+    "name": "레고 마블 아이언맨 자동차와 블랙 팬서 대 레드 헐크 76310",
+    "official_price": 42000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "71477": {
+    "name": "레고 드림즈 샌드맨 타워 71477",
+    "official_price": 79110,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "60287": {
+    "name": "레고 시티 트랙터 60287 1개",
+    "official_price": 55290,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "70413": {
+    "name": "레고 해적선 70413",
+    "official_price": 369000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10273": {
+    "name": "레고 크리에이터 유령의 집 10273",
+    "official_price": 359000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "41391": {
+    "name": "레고 프렌즈 하트레이크 시티 헤어샵 41391",
+    "official_price": 96240,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "80058": {
+    "name": "레고 몽키키드 천상의 탑 80058",
+    "official_price": 135900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "11370": {
+    "name": "레고 아이콘 11370 기묘한 이야기: 크릴 이야기",
+    "official_price": 399900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "40613": {
+    "name": "레고 미니 디즈니 아그라바 궁전 40613",
+    "official_price": 46570,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "40765": {
+    "name": "레고 스타워즈 카미노 훈련 시설 40765",
+    "official_price": 32190,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "42225": {
+    "name": "레고 테크닉 노란색 모터바이크 42225",
+    "official_price": 13630,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "75409": {
+    "name": "레고 스타워즈 장고 펫의 파이어스프레이급 우주선 75409",
+    "official_price": 352940,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
   }
 }
