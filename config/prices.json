@@ -8951,5 +8951,117 @@
     "auto": true,
     "source": "네이버 레고 표시가",
     "currency": "KRW"
+  },
+  "72537": {
+    "name": "[사전예약]레고 케이팝 데몬 헌터스 72537 호랑이 더피와 까치 서씨 [공식][신제품]",
+    "official_price": 109900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "31216": {
+    "name": "레고 아트 키스 해링 댄싱 피겨 31216",
+    "official_price": 134500,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "21050": {
+    "name": "레고 아키텍쳐 스튜디오 21050",
+    "official_price": 750000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "77013": {
+    "name": "레고 인디아나존스 잃어버린 무덤에서의 탈출 77013",
+    "official_price": 53500,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "72034": {
+    "name": "레고 슈퍼마리오 마리오 카트 베이비마리오 대 베이비루이지 72034",
+    "official_price": 39190,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76169": {
+    "name": "레고 어벤져스 토르 맥 아머 76169",
+    "official_price": 74500,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "40574": {
+    "name": "레고 브랜드 스토어 40574 1개",
+    "official_price": 51900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "80055": {
+    "name": "레고 몽키키드 몽키 키드의 팀 파워 트럭 80055",
+    "official_price": 56500,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76251": {
+    "name": "레고 마블 스타 로드 헬멧 76251",
+    "official_price": 71700,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "77075": {
+    "name": "레고 포트나이트 필리와 스파크플러그의 캠프 77075",
+    "official_price": 22390,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76272": {
+    "name": "레고 DC 배트케이브 76272",
+    "official_price": 31000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "41711": {
+    "name": "레고 프렌즈 아트 스쿨  41711",
+    "official_price": 129900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "42137": {
+    "name": "레고 테크닉 Formula E Porsche 99X Electric 42137",
+    "official_price": 80000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "71391": {
+    "name": "레고 TM 쿠파의 비행선 확장팩 71391",
+    "official_price": 166000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "43260": {
+    "name": "레고 디즈니 프린세스 모아나의 즐거운 섬 43260",
+    "official_price": 22900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "60348": {
+    "name": "레고 시티 달 탐사 차량 60348",
+    "official_price": 70000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
   }
 }
