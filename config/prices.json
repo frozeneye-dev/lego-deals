@@ -9217,5 +9217,110 @@
     "auto": true,
     "source": "네이버 레고 표시가",
     "currency": "KRW"
+  },
+  "60262": {
+    "name": "레고 시티 여객기 60262",
+    "official_price": 292000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "11037": {
+    "name": "레고 클래식 창의력 우주 행성 11037",
+    "official_price": 69900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10497": {
+    "name": "레고 아이콘 은하계 탐험가 10497",
+    "official_price": 155000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "42676": {
+    "name": "레고 프렌즈 재미있는 워터파크 42676 1개",
+    "official_price": 44090,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10840": {
+    "name": "레고 듀플로 놀이공원 10840 1개",
+    "official_price": 219900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76195": {
+    "name": "레고 스파이더맨의 드론 대결 76195",
+    "official_price": 54000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "60417": {
+    "name": "레고 시티 경찰 스피드보트와 은신처 60417",
+    "official_price": 48450,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "40953": {
+    "name": "레고 런던 버스 40953 1개",
+    "official_price": 29700,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76166": {
+    "name": "레고 어벤져스 타워 전투 76166",
+    "official_price": 247000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "40860": {
+    "name": "레고 브릭헤즈 토이 스토리 40860 1개",
+    "official_price": 62900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76278": {
+    "name": "레고 마블 로켓의 워버드 대 로난 76278",
+    "official_price": 51000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "43288": {
+    "name": "레고 디즈니 샐리의 화분 43288",
+    "official_price": 55920,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "30678": {
+    "name": "레고 미니언즈 제트보드 폴리백 30678",
+    "official_price": 6500,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10452": {
+    "name": "레고 듀플로 캠핑 여행 10452",
+    "official_price": 24360,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "71497": {
+    "name": "레고 드림즈 쿠퍼의 타이거 로봇과 제로의 핫로드 자동차 71497",
+    "official_price": 85000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
   }
 }
