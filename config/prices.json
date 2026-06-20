@@ -9322,5 +9322,75 @@
     "auto": true,
     "source": "네이버 레고 표시가",
     "currency": "KRW"
+  },
+  "76420": {
+    "name": "레고 해리포터 트라이위저드 트너먼트 검은 호수 76420",
+    "official_price": 61655,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "41735": {
+    "name": "레고 프렌즈 바퀴 달린 집 41735",
+    "official_price": 140320,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10252": {
+    "name": "레고 크리에이터 폭스바겐 비틀 10252",
+    "official_price": 176800,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "21353": {
+    "name": "레고 아이디어 식물원 21353 1개",
+    "official_price": 419900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "40744": {
+    "name": "레고 크리스마스 장식품 모음 40744",
+    "official_price": 16500,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "21037": {
+    "name": "레고 아키텍쳐 레고하우스 21037",
+    "official_price": 137000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10414": {
+    "name": "레고 듀플로 나의 첫 하루 일과 - 밥먹기와 잠자기 10414",
+    "official_price": 32000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "30649": {
+    "name": "레고 닌자고 아이스 드래곤 30649",
+    "official_price": 9000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "80045": {
+    "name": "레고 몽키키드 몽키 킹 울트라 로봇 80045",
+    "official_price": 175000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "21240": {
+    "name": "레고 마인크래프트 늪지 모험 21240",
+    "official_price": 29900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
   }
 }
