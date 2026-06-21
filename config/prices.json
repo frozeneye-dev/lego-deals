@@ -9392,5 +9392,110 @@
     "auto": true,
     "source": "네이버 레고 표시가",
     "currency": "KRW"
+  },
+  "40902": {
+    "name": "레고 40902 레오나르도 다빈치에 대한 찬사 2026 한정판 새제품",
+    "official_price": 59900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "21065": {
+    "name": "레고 아키텍쳐 21065 사그라다 파밀리아",
+    "official_price": 1169000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "42656": {
+    "name": "레고 프렌즈 하트레이크 시티 공항 42656",
+    "official_price": 137400,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10299": {
+    "name": "레고 레알 마드리드 산티아고 베르나베우 스타디움 10299",
+    "official_price": 849990,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "40528": {
+    "name": "레고 브랜드 스토어 40528",
+    "official_price": 36000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "75581": {
+    "name": "레고 미니언즈의 음악 파티 버스 75581",
+    "official_price": 52900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "71746": {
+    "name": "레고 닌자고 정글 드래곤 71746",
+    "official_price": 116800,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "40586": {
+    "name": "레고 아이콘 이사짐 트럭 40586",
+    "official_price": 39900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "41730": {
+    "name": "레고 프렌즈 오텀 하우스 41730",
+    "official_price": 89120,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "42659": {
+    "name": "레고 프렌즈 우정 자동차 여행 42659",
+    "official_price": 29800,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "41950": {
+    "name": "레고 도트 브릭 글자 만들기 41950",
+    "official_price": 29900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "75572": {
+    "name": "레고 아바타 제이크와 네이티리의 최초 밴시 비행 75572",
+    "official_price": 129000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "75301": {
+    "name": "레고 스타워즈 루크 스카이워커의 X-윙 파이터 75301",
+    "official_price": 185000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76896": {
+    "name": "레고 스피드챔피언 닛산 GT-R 니즈모 76896",
+    "official_price": 89900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "77012": {
+    "name": "레고 인디아나존스 전투기 추격전 77012",
+    "official_price": 73700,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
   }
 }
