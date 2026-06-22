@@ -9497,5 +9497,89 @@
     "auto": true,
     "source": "네이버 레고 표시가",
     "currency": "KRW"
+  },
+  "43263": {
+    "name": "레고 디즈니 프린세스 미녀와 야수의 성 43263 1개",
+    "official_price": 348040,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "70627": {
+    "name": "레고 70627 드래곤의 대장간  혼합색상  1",
+    "official_price": 799000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "60141": {
+    "name": "레고시티 60141 경찰서  혼합 색상",
+    "official_price": 559000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "60432": {
+    "name": "레고 시티 커맨드 로버와 크레인 로더 60432",
+    "official_price": 109000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10339": {
+    "name": "레고 아이콘 산타의 우체국 10339",
+    "official_price": 199900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76383": {
+    "name": "레고 해리포터 호그와트 마법책 물약 수업 76383",
+    "official_price": 46900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "60385": {
+    "name": "레고 시티 건설현장 굴착기 60385",
+    "official_price": 64000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "40701": {
+    "name": "레고 발레리나 크리스마스 40701",
+    "official_price": 23900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "71770": {
+    "name": "레고 닌자고 쟌의 골든 드래곤 제트 71770",
+    "official_price": 108000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "42118": {
+    "name": "레고 테크닉 몬스터 잼 그레이브 디거 42118",
+    "official_price": 69900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10411": {
+    "name": "레고 듀플로 아시아 문화 배우기 10411",
+    "official_price": 59900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10453": {
+    "name": "레고 듀플로 재미있는 박람회 10453",
+    "official_price": 60210,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
   }
 }
