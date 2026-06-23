@@ -9581,5 +9581,124 @@
     "auto": true,
     "source": "네이버 레고 표시가",
     "currency": "KRW"
+  },
+  "10785": {
+    "name": "레고 개비의 매직 하우스 케이키와 함께하는 재미난 케이크 굽기 10785",
+    "official_price": 55500,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "31129": {
+    "name": "레고 크리에이터 위풍당당한 호랑이 31129",
+    "official_price": 76900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76317": {
+    "name": "레고 마블 피터 파커의 아파트 76317",
+    "official_price": 56800,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76258": {
+    "name": "레고 마블 캡틴 아메리카 액션 피겨 76258",
+    "official_price": 39900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "60264": {
+    "name": "레고 시티 해양 탐사 잠수함 60264",
+    "official_price": 80000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76271": {
+    "name": "레고 애니메이션 시리즈 고담 시티 76271",
+    "official_price": 589000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "21177": {
+    "name": "레고 마인크래프트 크리퍼 매복 21177",
+    "official_price": 49900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "40924": {
+    "name": "레고 40924 메가트론 로봇과 자동차",
+    "official_price": 38900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76171": {
+    "name": "레고 스파이더맨 모랄렉스 맥 아머 76171",
+    "official_price": 54000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76157": {
+    "name": "레고 원더우먼 원더우먼 VS 치타 76157",
+    "official_price": 34500,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "60326": {
+    "name": "레고 시티 공원에서의 소풍 60326",
+    "official_price": 29700,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10479": {
+    "name": "레고 듀플로 색색의 창의력 상자 10479 1개",
+    "official_price": 31900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "30642": {
+    "name": "레고 크리에이터 생일 기차 30642",
+    "official_price": 5600,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10270": {
+    "name": "레고 크리에이터 서점 10270 1개",
+    "official_price": 285000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "75333": {
+    "name": "레고 스타워즈 오비완 케노비의 제다이 스타파이터 75333",
+    "official_price": 58900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "60492": {
+    "name": "레고 시티 제트여객기 60492 1개",
+    "official_price": 42210,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10977": {
+    "name": "레고 듀플로 소리나는 동물 : 나의 첫 강아지와 고양이 10977",
+    "official_price": 40000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
   }
 }
