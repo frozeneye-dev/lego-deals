@@ -9700,5 +9700,75 @@
     "auto": true,
     "source": "네이버 레고 표시가",
     "currency": "KRW"
+  },
+  "42155": {
+    "name": "레고 테크닉 배트맨 배트사이클 42155",
+    "official_price": 78000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76785": {
+    "name": "레고 웬즈데이 씽의 아파트 76785",
+    "official_price": 114190,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "71422": {
+    "name": "레고 슈퍼마리오 마리오의 집 확장팩 71422",
+    "official_price": 36400,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "42043": {
+    "name": "레고 테크닉 메르세데스 벤츠 아로쿠스 42043",
+    "official_price": 419000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10247": {
+    "name": "레고 크리에이터 대관람차 페리스휠 10247",
+    "official_price": 300000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "42681": {
+    "name": "레고 프렌즈 아홀로틀 보트 42681",
+    "official_price": 13490,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "71775": {
+    "name": "레고 닌자고 니야의 사무라이 X 로봇 71775",
+    "official_price": 229000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "71819": {
+    "name": "레고 닌자고 드래곤 스톤 사원 71819",
+    "official_price": 142000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "21253": {
+    "name": "레고 마인크래프트 동물 보호구역 21253",
+    "official_price": 59000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76184": {
+    "name": "레고 스파이더맨 대 미스테리오 드론 공격 76184",
+    "official_price": 34000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
   }
 }
