@@ -9770,5 +9770,117 @@
     "auto": true,
     "source": "네이버 레고 표시가",
     "currency": "KRW"
+  },
+  "10440": {
+    "name": "레고 듀플로 균형있게 나무 쌓기 10440",
+    "official_price": 21000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10246": {
+    "name": "레고 크리에이터 탐정사무소 10246",
+    "official_price": 470000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76214": {
+    "name": "레고 마블 블랙 팬서 수상 전투 76214",
+    "official_price": 78000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "42631": {
+    "name": "레고 프렌즈 모험 캠프 트리하우스 42631",
+    "official_price": 188900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "21260": {
+    "name": "레고 마인크래프트 벚꽃 정원 21260",
+    "official_price": 50000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "21306": {
+    "name": "레고 아이디어 비틀즈 옐로우서브마린 21306 1개",
+    "official_price": 291000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "21309": {
+    "name": "레고 아이디어 NASA 아폴로 새턴 V 21309",
+    "official_price": 270000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "42704": {
+    "name": "레고 프렌즈 하트레이크 시티 그랜드 호텔 42704 1개",
+    "official_price": 214400,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "71460": {
+    "name": "레고 드림즈 오즈의 스페이스 버스 71460",
+    "official_price": 109900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "71408": {
+    "name": "레고 슈퍼마리오 피치 공주 성 확장팩 71408",
+    "official_price": 189900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "60496": {
+    "name": "레고 시티 온갖 운송수단의 피자 배달 60496 1개",
+    "official_price": 74900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76945": {
+    "name": "레고 쥬라기월드 트로시랩터 바이크 추격전 76945",
+    "official_price": 62360,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "43211": {
+    "name": "레고 디즈니 프린세스 오로라의 궁전 43211",
+    "official_price": 64900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10234": {
+    "name": "레고 크리에이터 시드니 오페라 하우스 10234",
+    "official_price": 440000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "40165": {
+    "name": "레고 웨딩 세트 40165",
+    "official_price": 69000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76109": {
+    "name": "레고 슈퍼히어로즈 앤트맨 퀀텀 렐름 탐험가 76109",
+    "official_price": 59000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
   }
 }
