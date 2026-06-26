@@ -9882,5 +9882,40 @@
     "auto": true,
     "source": "네이버 레고 표시가",
     "currency": "KRW"
+  },
+  "10956": {
+    "name": "레고 듀플로 놀이공원 10956",
+    "official_price": 189900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "40775": {
+    "name": "레고 미니 기사의 성 비룡성 40775 1개",
+    "official_price": 20990,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "71748": {
+    "name": "레고 닌자고 쌍동선 해전 71748",
+    "official_price": 107900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "11221": {
+    "name": "레고 블루이 러스티와 블루이의 학교 11221 1개",
+    "official_price": 38900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "71369": {
+    "name": "레고 슈퍼마리오 쿠파의 성 보스전 확장팩 71369",
+    "official_price": 176000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
   }
 }
