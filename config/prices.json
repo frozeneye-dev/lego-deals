@@ -9917,5 +9917,33 @@
     "auto": true,
     "source": "네이버 레고 표시가",
     "currency": "KRW"
+  },
+  "71849": {
+    "name": "레고 닌자고 니야 VS 돌연변이 몬스터 스피너 71849",
+    "official_price": 11120,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "30593": {
+    "name": "레고 닌자고 로이드 수트 로봇 30593",
+    "official_price": 9900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "60393": {
+    "name": "레고 시티 4x4 소방트럭 구조 작전 60393",
+    "official_price": 33900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "75579": {
+    "name": "레고 아바타2 파야칸 툴쿤과 크랩 수트 75579",
+    "official_price": 205000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
   }
 }
