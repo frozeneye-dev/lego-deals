@@ -9945,5 +9945,75 @@
     "auto": true,
     "source": "네이버 레고 표시가",
     "currency": "KRW"
+  },
+  "76940": {
+    "name": "레고 쥬라기월드 T-렉스 공룡 화석 전시 76940",
+    "official_price": 101000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "60339": {
+    "name": "레고 시티 더블 루프 스턴트 경기장 60339 1개",
+    "official_price": 161390,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "42099": {
+    "name": "레고 테크닉 RC X트림 오프로더 42099 1개",
+    "official_price": 420000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "71457": {
+    "name": "레고 드림즈 하늘을 나는 페가수스 71457",
+    "official_price": 65890,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "40382": {
+    "name": "레고 생일 세트 40382",
+    "official_price": 43000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "71407": {
+    "name": "레고 슈퍼마리오 고양이피치 복장과 얼음탑 확장팩 71407",
+    "official_price": 88800,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "42658": {
+    "name": "레고 프렌즈 유니콘과 플라밍고 수영장 파티 42658",
+    "official_price": 12100,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "60317": {
+    "name": "레고 시티 은행강도 경찰 추격전 60317 1개",
+    "official_price": 273470,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "30537": {
+    "name": "레고 닌자고 상인 아바타 제이 30537",
+    "official_price": 7500,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "30710": {
+    "name": "레고 테크닉 스키드 스티어 로더 30710",
+    "official_price": 5800,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
   }
 }
