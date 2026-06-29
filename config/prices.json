@@ -10015,5 +10015,166 @@
     "auto": true,
     "source": "네이버 레고 표시가",
     "currency": "KRW"
+  },
+  "60384": {
+    "name": "레고 시티 펭귄 슬러시 밴 60384",
+    "official_price": 51900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "71736": {
+    "name": "레고 닌자고 레거시 볼더 블래스터 71736",
+    "official_price": 104500,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "43248": {
+    "name": "레고 인사이드 아웃 2 무드 큐브 43248",
+    "official_price": 37500,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10776": {
+    "name": "레고 디즈니 미키와 친구들의 소방서 10776",
+    "official_price": 54500,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "40346": {
+    "name": "레고 레고랜드 파크 놀이공원 40346",
+    "official_price": 129900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "43033": {
+    "name": "레고 에디션 2026 미국 축구 국가대표팀 유니폼 43033 1개",
+    "official_price": 28900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "31148": {
+    "name": "레고 크리에이터 3-in-1 레트로 롤러스케이트 31148",
+    "official_price": 34700,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "43199": {
+    "name": "레고 디즈니 프린세스 엘사의 궁전 뜰 43199",
+    "official_price": 41450,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "42621": {
+    "name": "레고 프렌즈 하트레이크 시티 병원 42621",
+    "official_price": 141000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "75827": {
+    "name": "레고 고스트 버스터즈 소방본부 75827 1개",
+    "official_price": 1090000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "43306": {
+    "name": "레고 디즈니 픽사 랏소 43306 1개",
+    "official_price": 58200,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10321": {
+    "name": "레고 아이콘 콜벳 10321",
+    "official_price": 199000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "71044": {
+    "name": "레고 디즈니 기차와 역 71044",
+    "official_price": 606000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "75978": {
+    "name": "레고 해리포터 다이애건 엘리 75978",
+    "official_price": 620000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "70751": {
+    "name": "레고 닌자고 에어짓주 신전 70751 1개",
+    "official_price": 815000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "40641": {
+    "name": "레고 생일 케이크 40641",
+    "official_price": 49900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "45544": {
+    "name": "레고 마인드스톰 EV3 코어세트 45544",
+    "official_price": 1212230,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "31217": {
+    "name": "레고 아트 동물 컬렉션 호랑이 31217 1개",
+    "official_price": 77000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "71394": {
+    "name": "레고 슈퍼 마리오 71394 슈퍼마리오 시즌3 캐릭터팩 10종 중 택1 새제품",
+    "official_price": 16000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "60397": {
+    "name": "레고 시티 몬스터 트럭 레이스팩 60397",
+    "official_price": 33300,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10264": {
+    "name": "레고 크리에이터 코너 정비소 10264",
+    "official_price": 347000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10970": {
+    "name": "레고 듀플로 소방서와 헬리콥터 10970 1개",
+    "official_price": 219900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "40651": {
+    "name": "레고 호주 엽서 40651",
+    "official_price": 47900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
   }
 }
