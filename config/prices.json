@@ -10176,5 +10176,110 @@
     "auto": true,
     "source": "네이버 레고 표시가",
     "currency": "KRW"
+  },
+  "76336": {
+    "name": "슈퍼히어로 레고 스파이더맨 자동차 대 (76336) (7세 이상)",
+    "official_price": 29900,
+    "auto": true,
+    "source": "롯데마트 제타 레고 프로모션 취소선 정가",
+    "currency": "KRW"
+  },
+  "42678": {
+    "name": "프렌즈 레고 반려동물 액세서리 밴 (42678) (6세 이상)",
+    "official_price": 29900,
+    "auto": true,
+    "source": "롯데마트 제타 레고 프로모션 취소선 정가",
+    "currency": "KRW"
+  },
+  "42644": {
+    "name": "프렌즈 레고 아이스크림 트럭 (42644) (4세 이상)",
+    "official_price": 29900,
+    "auto": true,
+    "source": "롯데마트 제타 레고 프로모션 취소선 정가",
+    "currency": "KRW"
+  },
+  "42695": {
+    "name": "프렌즈 레고 캠핑카 (42695) (7세 이상)",
+    "official_price": 44900,
+    "auto": true,
+    "source": "롯데마트 제타 레고 프로모션 취소선 정가",
+    "currency": "KRW"
+  },
+  "76470": {
+    "name": "해리포터 레고 마법의 포드 앵글리아  (76470) (14세 이상)",
+    "official_price": 109900,
+    "auto": true,
+    "source": "롯데마트 제타 레고 프로모션 취소선 정가",
+    "currency": "KRW"
+  },
+  "43293": {
+    "name": "레고 디즈니 카카모라 43293 1개",
+    "official_price": 58500,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "40804": {
+    "name": "레고 브릭헤즈 Bumblebee 로봇과 자동차 40804",
+    "official_price": 33500,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "75381": {
+    "name": "레고 드로이데카 75381",
+    "official_price": 79900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "60357": {
+    "name": "레고 시티 스턴트 트럭 60357",
+    "official_price": 49900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "60429": {
+    "name": "레고 시티 우주선과 소행성 발견 60429",
+    "official_price": 28400,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "71435": {
+    "name": "레고 슈퍼마리오 피치 성에서 로이와 대결 71435",
+    "official_price": 169900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76249": {
+    "name": "레고 마블 베놈 그루트 76249",
+    "official_price": 132000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "60422": {
+    "name": "레고 시티 항구와 화물선 60422",
+    "official_price": 159900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10292": {
+    "name": "레고 프렌즈 아파트 10292 1개",
+    "official_price": 436000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "77051": {
+    "name": "레고 동물의 숲 도도 항공으로 하늘 여행 77051 1개",
+    "official_price": 90900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
   }
 }
