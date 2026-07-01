@@ -10281,5 +10281,54 @@
     "auto": true,
     "source": "네이버 레고 표시가",
     "currency": "KRW"
+  },
+  "71424": {
+    "name": "레고 슈퍼마리오 동키콩의 트리하우스 확장팩 71424",
+    "official_price": 66000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "71421": {
+    "name": "레고 슈퍼마리오 딕시콩의 정글 잼 확장팩 71421",
+    "official_price": 15800,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76301": {
+    "name": "레고 베트맨 배트맨과 배트모빌 대 미스터 프리즈 76301",
+    "official_price": 24500,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76211": {
+    "name": "레고 슈퍼히어로 블랙 팬서 슈리의 썬버드 76211",
+    "official_price": 57900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "60346": {
+    "name": "레고 시티 농장 동물들 60346",
+    "official_price": 79000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "40521": {
+    "name": "레고 디즈니 미니 디즈니 유령 맨션 40521",
+    "official_price": 30900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "21304": {
+    "name": "레고 아이디어 닥터 후 21304 1개",
+    "official_price": 299900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
   }
 }
