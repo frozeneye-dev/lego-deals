@@ -10330,5 +10330,82 @@
     "auto": true,
     "source": "네이버 레고 표시가",
     "currency": "KRW"
+  },
+  "10261": {
+    "name": "레고 롤러코스터 10261  혼합 색상",
+    "official_price": 654900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "71508": {
+    "name": "레고 드림즈 폭스 가디언 로봇 71508",
+    "official_price": 97600,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "40417": {
+    "name": "레고 올해의 소 40417",
+    "official_price": 7990,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76202": {
+    "name": "레고 울버린 맥 로봇 76202",
+    "official_price": 35500,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "30655": {
+    "name": "레고 테크닉 지게차와 팔레트 30655",
+    "official_price": 18600,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "60319": {
+    "name": "레고 시티 소방 구조반과 경찰 추격대 60319",
+    "official_price": 90360,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76469": {
+    "name": "레고 해리포터 자유로운 엘프 도비 76469 1개",
+    "official_price": 52900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "11203": {
+    "name": "레고 블루이 블루이의 패밀리 하우스 11203",
+    "official_price": 114640,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "30588": {
+    "name": "레고 시티 어린이 놀이터 30588",
+    "official_price": 7000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "71006": {
+    "name": "레고 심슨 하우스 71006",
+    "official_price": 640000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "43307": {
+    "name": "레고 디즈니 피자 행성 로켓과 외계인 43307 1개",
+    "official_price": 89600,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
   }
 }
