@@ -10407,5 +10407,110 @@
     "auto": true,
     "source": "네이버 레고 표시가",
     "currency": "KRW"
+  },
+  "75459": {
+    "name": "레고 스타워즈 임페리얼 람다급 셔틀 75459 1개",
+    "official_price": 211500,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76152": {
+    "name": "레고 어벤져스 어벤져스 로키의 격노 76152",
+    "official_price": 95500,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10459": {
+    "name": "레고 듀플로 블루이의 패밀리 하우스와 메모리 게임 10459",
+    "official_price": 69900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10439": {
+    "name": "레고 듀플로 자동차와 트럭 브릭 박스 10439",
+    "official_price": 169900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "71795": {
+    "name": "레고 닌자고 드래곤 에너지 코어 사원 71795",
+    "official_price": 129900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "75253": {
+    "name": "레고 스타워즈 부스트 드로이드 사령관 75253",
+    "official_price": 249000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "75377": {
+    "name": "레고 스타워즈 75377 인비저블 핸드",
+    "official_price": 89500,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "75312": {
+    "name": "레고 스타워즈 보바 펫의 우주선 75312",
+    "official_price": 123610,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "79111": {
+    "name": "레고 열차 추격 대작전 79111",
+    "official_price": 246000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "43220": {
+    "name": "레고 디즈니 피터 팬과 웬디의 스토리북 43220",
+    "official_price": 29900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76003": {
+    "name": "레고 스몰빌의 결투 76003",
+    "official_price": 98400,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "30641": {
+    "name": "레고 크리에이터 팬더곰 30641",
+    "official_price": 4000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "40646": {
+    "name": "레고 수선화 40646",
+    "official_price": 13400,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "71432": {
+    "name": "레고 슈퍼마리오 돗시와 침몰선 탐험 확장팩 71432",
+    "official_price": 186000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76126": {
+    "name": "레고 슈퍼히어로 어벤져스 엔드게임 얼티밋 퀸젯 76126",
+    "official_price": 155000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
   }
 }
