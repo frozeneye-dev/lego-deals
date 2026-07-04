@@ -10512,5 +10512,75 @@
     "auto": true,
     "source": "네이버 레고 표시가",
     "currency": "KRW"
+  },
+  "40564": {
+    "name": "레고 크리스마스 겨울 엘프들 40564",
+    "official_price": 21720,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "75578": {
+    "name": "레고 아바타2 메트카이나 산호초의 집 75578",
+    "official_price": 96000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "31136": {
+    "name": "레고 크리에이터 3in1 이국적인 앵무새 31136",
+    "official_price": 36300,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76944": {
+    "name": "레고 쥬라기월드 티라노사우르스의 탈출 76944",
+    "official_price": 92900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "75892": {
+    "name": "레고 스피드챔피언 맥라렌 세나 75892",
+    "official_price": 49390,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "21168": {
+    "name": "레고 마인크래프트 뒤틀린 숲 21168",
+    "official_price": 80500,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10962": {
+    "name": "레고 듀플로 버즈 라이트이어의 행성 미션 10962",
+    "official_price": 39900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "41736": {
+    "name": "레고 프렌즈 해양 구조 센터 41736",
+    "official_price": 65700,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10293": {
+    "name": "레고 크리에이터 산타의 방문 10293",
+    "official_price": 157000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "42618": {
+    "name": "레고 프렌즈 하트레이크 시티 카페 42618",
+    "official_price": 42700,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
   }
 }
