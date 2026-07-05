@@ -10582,5 +10582,75 @@
     "auto": true,
     "source": "네이버 레고 표시가",
     "currency": "KRW"
+  },
+  "42240": {
+    "name": "레고 테크닉 애스턴 마틴 아람코 AMR25 F1 레이스카 42240 1개",
+    "official_price": 316110,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76411": {
+    "name": "레고 해리포터 레번클로 기숙사 배너 76411",
+    "official_price": 49900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "60380": {
+    "name": "레고 시티 다운타운 60380",
+    "official_price": 409900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "41394": {
+    "name": "레고 프렌즈 하트레이크 시티 병원 41394 1개",
+    "official_price": 141500,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "31139": {
+    "name": "레고 크리에이터 3in1 아늑한 집 31139",
+    "official_price": 81700,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "42093": {
+    "name": "레고 테크닉 쉐보레 콜벳 ZR1 42093",
+    "official_price": 66390,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10770": {
+    "name": "레고 토이스토리 버즈와 우디의 카니발 10770",
+    "official_price": 79900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76439": {
+    "name": "레고 해리포터 올리밴더와 말킨 부인의 망토 76439",
+    "official_price": 178800,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "11206": {
+    "name": "레고 마블 모터사이클 스파이디 대 라이노 11206",
+    "official_price": 13900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "21174": {
+    "name": "레고 마인크래프트 모던 트리하우스 21174",
+    "official_price": 257130,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
   }
 }
