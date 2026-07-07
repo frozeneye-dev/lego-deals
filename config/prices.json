@@ -10694,5 +10694,61 @@
     "auto": true,
     "source": "네이버 레고 표시가",
     "currency": "KRW"
+  },
+  "42220": {
+    "name": "테크닉 레고 Monster Jam  Sp (42220) (7세 이상)",
+    "official_price": 44900,
+    "auto": true,
+    "source": "롯데마트 제타 레고 프로모션 취소선 정가",
+    "currency": "KRW"
+  },
+  "40894": {
+    "name": "레고 코닉세그 사데어스 스피어 스티어링 휠 40894 1개",
+    "official_price": 99000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76356": {
+    "name": "레고 베놈 흉상 76356 1개",
+    "official_price": 38900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "31153": {
+    "name": "레고 크리에이터 3in1 현대식 집 31153",
+    "official_price": 124400,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "71034": {
+    "name": "레고 71034 미니피규어 시리즈 시즌23, 12종 풀세트 오렌지",
+    "official_price": 128900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "42680": {
+    "name": "레고 프렌즈 편의점 42680",
+    "official_price": 23920,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76031": {
+    "name": "레고 슈퍼히어로 헐크 버스터 스매시 76031",
+    "official_price": 120000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "11374": {
+    "name": "레고 아이콘 아케이드 핀볼 머신 11374",
+    "official_price": 319900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
   }
 }
