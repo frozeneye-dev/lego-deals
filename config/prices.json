@@ -10750,5 +10750,47 @@
     "auto": true,
     "source": "네이버 레고 표시가",
     "currency": "KRW"
+  },
+  "40912": {
+    "name": "레고 40912 바다뱀 비룡 순찰선",
+    "official_price": 149900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "31119": {
+    "name": "레고 크리에이터 대관람차 31119",
+    "official_price": 140000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "71417": {
+    "name": "레고 슈퍼마리오 물멍이가 있는 호수 확장팩 71417",
+    "official_price": 70900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "40596": {
+    "name": "레고 매직 메이즈 (마법의 미로) 40596 1개",
+    "official_price": 93000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "30643": {
+    "name": "레고 크리에이터 부활절 병아리 30643",
+    "official_price": 3500,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "71476": {
+    "name": "레고 드림즈 조이와 고양이 부엉이 자이언 71476",
+    "official_price": 43000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
   }
 }
