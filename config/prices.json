@@ -10792,5 +10792,54 @@
     "auto": true,
     "source": "네이버 레고 표시가",
     "currency": "KRW"
+  },
+  "71409": {
+    "name": "레고 슈퍼마리오 점보가봉의 구름 위 도전 확장팩 71409",
+    "official_price": 75190,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "71373": {
+    "name": "레고 슈퍼마리오 빌더마리오 파워업팩 71373",
+    "official_price": 62000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "43207": {
+    "name": "레고 디즈니 에리얼의 바닷속 궁전 43207",
+    "official_price": 145900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10325": {
+    "name": "레고 아이콘 눈 덮인 산장 10325",
+    "official_price": 153000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76475": {
+    "name": "레고 해리포터 금단의 숲 익스펙토 패트로눔 76475 1개",
+    "official_price": 43620,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "42639": {
+    "name": "레고 프렌즈 모던 하우스 42639",
+    "official_price": 387900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "31149": {
+    "name": "레고 크리에이터 3-in-1 물조리개와 꽃 31149",
+    "official_price": 31000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
   }
 }
