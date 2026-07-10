@@ -10841,5 +10841,68 @@
     "auto": true,
     "source": "네이버 레고 표시가",
     "currency": "KRW"
+  },
+  "42232": {
+    "name": "레고 테크닉 코닉세그 사데어스 스피어 메가카 42232",
+    "official_price": 629900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "72150": {
+    "name": "[사전예약]레고 포켓몬 72150 먹고자 [공식][신제품]",
+    "official_price": 109900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "77070": {
+    "name": "레고 포트나이트 Durrr Burger 77070",
+    "official_price": 16200,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "11505": {
+    "name": "레고 보태니컬 숲속 버섯 정원 11505 1개",
+    "official_price": 116160,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10478": {
+    "name": "레고 듀플로 3 인 1 창의력 경사로와 자동차 10478 1개",
+    "official_price": 102210,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10909": {
+    "name": "레고 듀플로 하트 박스 10909",
+    "official_price": 99900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "11514": {
+    "name": "레고 보태니컬 코스모스 꽃 11514 1개",
+    "official_price": 21030,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "11215": {
+    "name": "레고 개비의 매직 하우스 브릭 냥이 친구들 11215",
+    "official_price": 59890,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "72160": {
+    "name": "[사전예약]레고 포켓몬 72160 윈디 [공식][신제품]",
+    "official_price": 159900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
   }
 }
