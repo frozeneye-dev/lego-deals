@@ -10904,5 +10904,47 @@
     "auto": true,
     "source": "네이버 레고 표시가",
     "currency": "KRW"
+  },
+  "21321": {
+    "name": "레고 아이디어 국제 우주 정거장 21321",
+    "official_price": 169000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "40563": {
+    "name": "레고 하우스의 추억 40563",
+    "official_price": 16900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76415": {
+    "name": "레고 해리포터 호그와트의 전투 76415",
+    "official_price": 216030,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "77072": {
+    "name": "레고 포트나이트 해골 필리 77072",
+    "official_price": 146890,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "60197": {
+    "name": "레고 시티 여객열차 60197",
+    "official_price": 254000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "40487": {
+    "name": "레고 아이디어 돛단배 모험 40487",
+    "official_price": 51700,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
   }
 }
