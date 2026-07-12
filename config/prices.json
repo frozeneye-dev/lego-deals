@@ -10946,5 +10946,82 @@
     "auto": true,
     "source": "네이버 레고 표시가",
     "currency": "KRW"
+  },
+  "75054": {
+    "name": "레고 스타워즈 75054",
+    "official_price": 300000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76204": {
+    "name": "레고 어벤져스 블랙 팬서 맥 로봇 76204",
+    "official_price": 34900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76131": {
+    "name": "레고 마블 슈퍼히어로 어벤져스 연합전투 76131",
+    "official_price": 191800,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "71811": {
+    "name": "레고 닌자고 아린의 닌자 오프로드 버기카 71811",
+    "official_price": 54100,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76431": {
+    "name": "레고 해리포터 호그와트 성 물약 수업 76431",
+    "official_price": 92000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "60327": {
+    "name": "레고 시티 말 운반트럭 60327",
+    "official_price": 59900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10932": {
+    "name": "레고 듀플로 불도저와 크레인 10932",
+    "official_price": 169900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10412": {
+    "name": "레고 듀플로 나의 첫 동물 기차 10412",
+    "official_price": 25340,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "40485": {
+    "name": "레고 FC 바르셀로나 축하 40485",
+    "official_price": 98900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "75580": {
+    "name": "레고 미니언즈와 바나나 카 75580",
+    "official_price": 34900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "21140": {
+    "name": "레고 마인크래프트 닭장 21140",
+    "official_price": 129900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
   }
 }
