@@ -11023,5 +11023,75 @@
     "auto": true,
     "source": "네이버 레고 표시가",
     "currency": "KRW"
+  },
+  "10991": {
+    "name": "레고 듀플로 꿈의 놀이터 10991",
+    "official_price": 194000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "75973": {
+    "name": "레고 오버워치 D.Va vs 라인하르트 75973",
+    "official_price": 149000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76412": {
+    "name": "레고 해리포터 후플푸프 기숙사 배너 76412",
+    "official_price": 45900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "71427": {
+    "name": "레고 슈퍼마리오 래리와 모톤의 비행선 확장팩 71427",
+    "official_price": 159000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "72154": {
+    "name": "레고 레고 포켓몬 72154 포켓몬 트레이너 저니 : 몬스터볼 레고공식 10월 1일 발송",
+    "official_price": 399900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "77082": {
+    "name": "레고 포트나이트 레이브 케이브 77082 1개",
+    "official_price": 263912,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "21360": {
+    "name": "레고 아이디어 윌리 웡카와 초콜릿 공장 21360",
+    "official_price": 225900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10356": {
+    "name": "레고 Star Trek U.S.S. Enterprise NCC-1701-D 10356 1개",
+    "official_price": 429900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76440": {
+    "name": "레고 해리포터 트라이위저드 토너먼트 76440",
+    "official_price": 209820,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10959": {
+    "name": "레고 듀플로 경찰서와 헬리콥터 10959",
+    "official_price": 151500,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
   }
 }
