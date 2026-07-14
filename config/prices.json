@@ -11093,5 +11093,26 @@
     "auto": true,
     "source": "네이버 레고 표시가",
     "currency": "KRW"
+  },
+  "71365": {
+    "name": "레고 슈퍼마리오 뻐끔플라워 파워 슬라이드 확장팩 71365",
+    "official_price": 84900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "42074": {
+    "name": "레고 레이싱 요트 42074",
+    "official_price": 97900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "41726": {
+    "name": "레고 프렌즈 캠핑 카라반 41726",
+    "official_price": 18900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
   }
 }
