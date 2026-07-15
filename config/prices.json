@@ -11114,5 +11114,26 @@
     "auto": true,
     "source": "네이버 레고 표시가",
     "currency": "KRW"
+  },
+  "77015": {
+    "name": "레고 인디아나존스 황금 우상의 사원 77015",
+    "official_price": 189000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "42685": {
+    "name": "레고 프렌즈 패션쇼 42685",
+    "official_price": 55920,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "30539": {
+    "name": "레고 닌자고 로이드의 4륜 오토바이 30539",
+    "official_price": 7900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
   }
 }
