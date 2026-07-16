@@ -11135,5 +11135,110 @@
     "auto": true,
     "source": "네이버 레고 표시가",
     "currency": "KRW"
+  },
+  "10197": {
+    "name": "레고 소방대 10197 1개",
+    "official_price": 859000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "41710": {
+    "name": "레고 프렌즈 서퍼 비치 41710",
+    "official_price": 40000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "77005": {
+    "name": "레고 소닉 너클즈 vs 닥터 에그맨의 에그크러셔 로봇 77005",
+    "official_price": 41900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10260": {
+    "name": "레고 크리에이터 다운타운 레스토랑 10260",
+    "official_price": 467000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "71783": {
+    "name": "레고 닌자고 카이의 로봇 라이더 EVO 71783",
+    "official_price": 59000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10416": {
+    "name": "레고 듀플로 농장에서 동물들 돌봐주기 10416",
+    "official_price": 89970,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76958": {
+    "name": "레고 쥬라기월드 딜로포사우루스 매복 76958",
+    "official_price": 35280,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "42140": {
+    "name": "레고 테크닉 앱 조종식 양면 주행 RC카 42140",
+    "official_price": 379900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "71388": {
+    "name": "레고 슈퍼마리오 케이케이왕 토플타워 확장팩 71388",
+    "official_price": 38900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "60333": {
+    "name": "레고 시티 욕조 스턴트 바이크 60333",
+    "official_price": 15400,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "42168": {
+    "name": "레고 테크닉 John Deere 9700 Forage Harvester 42168",
+    "official_price": 44000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "40461": {
+    "name": "레고 튤립 40461",
+    "official_price": 9800,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "21341": {
+    "name": "레고 아이디어 디즈니 호커스 포커스 샌더슨 자매의 오두막 21341",
+    "official_price": 292800,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76402": {
+    "name": "레고 해리포터 호그와트 덤블도어의 집무실 76402",
+    "official_price": 129800,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "30465": {
+    "name": "레고 테크닉 헬리콥터 30465",
+    "official_price": 8900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
   }
 }
