@@ -11240,5 +11240,26 @@
     "auto": true,
     "source": "네이버 레고 표시가",
     "currency": "KRW"
+  },
+  "42182": {
+    "name": "레고 테크닉 NASA Apollo 달 탐사 차량 - LRV 42182",
+    "official_price": 229100,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "80066": {
+    "name": "레고 몽키키드 신화 속 동물 키린 80066",
+    "official_price": 63900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "60350": {
+    "name": "레고 시티 달 연구기지 60350",
+    "official_price": 161000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
   }
 }
