@@ -11261,5 +11261,82 @@
     "auto": true,
     "source": "네이버 레고 표시가",
     "currency": "KRW"
+  },
+  "42603": {
+    "name": "레고 프렌즈 별 관찰 캠핑카 42603",
+    "official_price": 43500,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "75159": {
+    "name": "레고 스타워즈 데스스타 75159 1개",
+    "official_price": 1665000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "41703": {
+    "name": "레고 프렌즈 우정 트리하우스 41703",
+    "official_price": 164400,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "60216": {
+    "name": "레고 시티 도시 소방대 60216",
+    "official_price": 282620,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "75452": {
+    "name": "레고 스타워즈 BB 8 아스트로메크 드로이드 75452",
+    "official_price": 108000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "71380": {
+    "name": "레고 슈퍼마리오 어드벤쳐 메이커 확장팩 71380",
+    "official_price": 157000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "30585": {
+    "name": "레고 시티 소방 순찰차 30585",
+    "official_price": 5620,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "80041": {
+    "name": "레고 몽키키드 메이의 드래곤 제트 80041",
+    "official_price": 66500,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "60110": {
+    "name": "레고 시티 소방서 60110",
+    "official_price": 359000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76905": {
+    "name": "레고 스피드챔피언 포드GT 헤리티지 에디션과 브롱코R 76905",
+    "official_price": 177000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "30510": {
+    "name": "레고 클래식 90주년 기념 자동차들 30510",
+    "official_price": 5490,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
   }
 }
