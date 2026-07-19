@@ -11338,5 +11338,40 @@
     "auto": true,
     "source": "네이버 레고 표시가",
     "currency": "KRW"
+  },
+  "71455": {
+    "name": "레고 드림즈 케이지 몬스터 그림키퍼 71455",
+    "official_price": 36900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "71721": {
+    "name": "레고 닌자고 스컬 마법사의 드래곤 71721",
+    "official_price": 229000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76464": {
+    "name": "레고 해리포터 가마솥 비밀 물약 수업 76464",
+    "official_price": 64700,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "75646": {
+    "name": "[사전예약]레고 원피스 75646 가프의 해군군함 [공식][신제품]",
+    "official_price": 259900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "71763": {
+    "name": "레고 닌자고 로이드의 레이스카 EVO 71763",
+    "official_price": 73000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
   }
 }
