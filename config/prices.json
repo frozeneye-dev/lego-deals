@@ -11373,5 +11373,103 @@
     "auto": true,
     "source": "네이버 레고 표시가",
     "currency": "KRW"
+  },
+  "10455": {
+    "name": "레고 듀플로 안나와 엘사의 겨울왕국 파티 10455",
+    "official_price": 66900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "40589": {
+    "name": "레고 프로모션 해적선 놀이터 40589",
+    "official_price": 19800,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "75893": {
+    "name": "레고 스피드챔피언 닷지 챌린저 SRT 디몬과 닷지 차저 RT 75893",
+    "official_price": 66000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "70639": {
+    "name": "레고 닌자고 스네이크 재규어의 길거리 질주 70639",
+    "official_price": 298000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "40690": {
+    "name": "레고 쥘 베른의 책에 대한 찬사 40690",
+    "official_price": 43900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "40410": {
+    "name": "레고 창의적 개성 크리스마스 캐롤 40410",
+    "official_price": 56900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "21108": {
+    "name": "레고 고스트 버스터즈 21108",
+    "official_price": 189000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10233": {
+    "name": "레고 크리에이터 호라이즌 익스프레스 기차 10233 1개",
+    "official_price": 390000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "75325": {
+    "name": "레고 스타워즈 만달로리안 N 1 스타파이터 75325",
+    "official_price": 105000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76902": {
+    "name": "레고 스피드챔피언 맥라렌 엘바 76902",
+    "official_price": 49400,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "40450": {
+    "name": "레고 아멜리아 에어하트에 대한 헌사 40450",
+    "official_price": 44900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "43251": {
+    "name": "레고 디즈니 클래식 안토니오의 동물 보호구역 43251",
+    "official_price": 34900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "40522": {
+    "name": "레고 발렌타인 모란앵무 40522",
+    "official_price": 40800,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "371026": {
+    "name": "레고부품 플레이트 - Black Plate 1 x 4 (3710/371026) 브릭마켓",
+    "official_price": 90,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
   }
 }
