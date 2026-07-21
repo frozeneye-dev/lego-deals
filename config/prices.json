@@ -11471,5 +11471,19 @@
     "auto": true,
     "source": "네이버 레고 표시가",
     "currency": "KRW"
+  },
+  "42673": {
+    "name": "레고 프렌즈 가족 해변 여행 42673 1개",
+    "official_price": 121900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10463": {
+    "name": "레고 듀플로 공룡 스파이디렉스와 그린 고블린의 대결 10463",
+    "official_price": 22860,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
   }
 }
