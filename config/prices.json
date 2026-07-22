@@ -11485,5 +11485,40 @@
     "auto": true,
     "source": "네이버 레고 표시가",
     "currency": "KRW"
+  },
+  "71042": {
+    "name": "레고 캐리비안의 해적 사일런트 메리 71042 1개",
+    "official_price": 744000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10449": {
+    "name": "레고 듀플로 나의 첫 병원 방문 10449",
+    "official_price": 85500,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "45681": {
+    "name": "레고 에듀케이션 스파이크 프라임 확장세트 45681",
+    "official_price": 224990,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "21280": {
+    "name": "레고 마인크래프트 크리스마스 캘린더 2025 21280",
+    "official_price": 88500,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "41450": {
+    "name": "레고 프렌즈 하트레이크 시티 쇼핑몰 41450",
+    "official_price": 190000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
   }
 }
