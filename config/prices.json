@@ -7134,9 +7134,9 @@
   },
   "71051": {
     "name": "레고 71051 미니피규어 시리즈 동물알바 시즌28 세트",
-    "official_price": 75900,
-    "auto": true,
-    "source": "네이버 레고 표시가",
+    "official_price": 5900,
+    "auto": false,
+    "source": "수동 수정 (모바일)",
     "currency": "KRW"
   },
   "71052": {
