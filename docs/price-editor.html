@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>정가 등록 — 레고 할인 봇</title>
+<style>
+  :root {
+    --yellow: #FFD700;
+    --bg: #f4f6fb;
+    --card: #fff;
+    --border: #dee2e6;
+    --text: #212529;
+    --muted: #6c757d;
+    --primary: #2c3e50;
+    --danger: #dc3545;
+    --success: #28a745;
+    --info: #17a2b8;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg); color: var(--text); font-size: 14px;
+    padding-bottom: 60px;
+  }
+  header {
+    background: var(--primary); color: #fff; padding: 16px 20px;
+  }
+  header h1 { font-size: 1.25rem; display: flex; align-items: center; gap: 8px; }
+  header p { font-size: .8rem; color: #adb5bd; margin-top: 4px; }
+  header a { color: var(--yellow); }
+  .container { max-width: 720px; margin: 0 auto; padding: 16px; }
+
+  .section { margin-bottom: 20px; }
+  .card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 8px; padding: 16px;
+  }
+  h2 { font-size: .95rem; margin-bottom: 10px; }
+  .hint { font-size: .78rem; color: var(--muted); margin-top: 4px; line-height: 1.5; }
+
+  details.card summary { cursor: pointer; font-weight: 600; font-size: .9rem; }
+  details.card[open] summary { margin-bottom: 12px; }
+  ol.steps { padding-left: 18px; font-size: .82rem; line-height: 1.7; color: var(--text); }
+  ol.steps a { color: #457b9d; }
+
+  .form-group { display: flex; flex-direction: column; gap: 4px; margin-bottom: 12px; }
+  .form-group label { font-size: .76rem; font-weight: 600; color: var(--muted);
+                       text-transform: uppercase; letter-spacing: .03em; }
+  input[type=text], input[type=password], input[type=number] {
+    padding: 9px 10px; border: 1px solid var(--border); border-radius: 6px;
+    font-size: .95rem; background: var(--card); width: 100%;
+  }
+  input:focus { outline: none; border-color: #457b9d; }
+
+  .row { display: flex; gap: 10px; flex-wrap: wrap; }
+  .row > .form-group { flex: 1; min-width: 110px; }
+
+  .btn {
+    display: inline-block; padding: 10px 16px; border-radius: 6px; border: none;
+    cursor: pointer; font-size: .9rem; font-weight: 600; text-decoration: none;
+  }
+  .btn:disabled { opacity: .6; cursor: default; }
+  .btn-primary { background: var(--primary); color: #fff; width: 100%; }
+  .btn-secondary { background: #6c757d; color: #fff; }
+  .btn-danger { background: var(--danger); color: #fff; }
+  .btn-sm { padding: 6px 10px; font-size: .78rem; }
+  .btn-link { background: none; color: #457b9d; padding: 6px 0; font-size: .8rem;
+              text-decoration: underline; }
+
+  .status {
+    padding: 10px 14px; border-radius: 6px; margin-bottom: 14px; font-size: .85rem;
+    display: none;
+  }
+  .status.show { display: block; }
+  .status-info    { background: #d1ecf1; color: #0c5460; }
+  .status-success { background: #d4edda; color: #155724; }
+  .status-error   { background: #f8d7da; color: #721c24; }
+
+  .item {
+    background: var(--card); border: 1px solid var(--border); border-radius: 8px;
+    padding: 12px 14px; margin-bottom: 8px;
+  }
+  .item-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
+  .item-num { font-family: monospace; color: var(--muted); font-size: .78rem; }
+  .item-name { font-weight: 600; margin-top: 2px; }
+  .item-price { font-size: 1rem; font-weight: 700; margin-top: 4px; }
+  .badge-auto { display: inline-block; background: var(--info); color: #fff; font-size: .68rem;
+                padding: 1px 6px; border-radius: 10px; margin-right: 4px; vertical-align: middle; }
+  .badge-currency { color: var(--danger); font-weight: 700; }
+  .item-source { font-size: .72rem; color: var(--muted); margin-top: 2px; }
+  .item-actions { display: flex; gap: 6px; flex-shrink: 0; }
+
+  .item-edit { display: none; margin-top: 10px; border-top: 1px solid var(--border); padding-top: 10px; }
+  .item-edit.show { display: block; }
+  .item-edit .row { margin-bottom: 8px; }
+
+  #list-empty { color: var(--muted); font-size: .85rem; text-align: center; padding: 24px 0; }
+  #list-count { font-size: .8rem; color: var(--muted); margin-bottom: 10px; }
+
+  .locked-notice { text-align: center; padding: 40px 16px; color: var(--muted); }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🧱 정가 등록</h1>
+  <p><a href="index.html">← 할인 목록으로</a> &nbsp;|&nbsp; GitHub 저장소의 config/prices.json을 직접 읽고 씁니다 (서버 없음)</p>
+</header>
+
+<div class="container">
+
+  <div id="status" class="status"></div>
+
+  <!-- 연결 설정 -->
+  <div class="section">
+    <details class="card" id="setup-panel">
+      <summary>🔑 GitHub 연결 설정</summary>
+
+      <div class="form-group">
+        <label>Personal Access Token</label>
+        <input type="password" id="gh-token" placeholder="github_pat_...">
+      </div>
+      <div class="row">
+        <div class="form-group">
+          <label>owner</label>
+          <input type="text" id="gh-owner" placeholder="frozeneye-dev">
+        </div>
+        <div class="form-group">
+          <label>repo</label>
+          <input type="text" id="gh-repo" placeholder="lego-deals">
+        </div>
+        <div class="form-group">
+          <label>branch</label>
+          <input type="text" id="gh-branch" placeholder="main">
+        </div>
+      </div>
+      <button class="btn btn-primary" id="btn-connect">저장하고 연결</button>
+      <button class="btn btn-link" id="btn-disconnect" type="button">토큰 삭제(연결 해제)</button>
+
+      <p class="hint" style="margin-top:14px"><strong>토큰 만드는 법</strong></p>
+      <ol class="steps">
+        <li><a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">github.com/settings/personal-access-tokens/new</a> 접속 후 로그인</li>
+        <li>Repository access → "Only select repositories" → 이 저장소 선택</li>
+        <li>Permissions → Repository permissions → <strong>Contents: Read and write</strong> 로 설정</li>
+        <li>Generate token → 생성된 토큰을 복사해서 위 칸에 붙여넣기</li>
+      </ol>
+      <p class="hint">토큰은 이 기기의 브라우저(localStorage)에만 저장되고, GitHub API 외에는 어디로도 전송되지 않습니다.</p>
+    </details>
+  </div>
+
+  <div id="app" style="display:none">
+
+    <!-- 신규 등록 -->
+    <div class="section card">
+      <h2>품번 직접 추가</h2>
+      <div class="row">
+        <div class="form-group" style="max-width:110px">
+          <label>품번</label>
+          <input type="text" id="add-num" placeholder="75192">
+        </div>
+        <div class="form-group">
+          <label>상품명</label>
+          <input type="text" id="add-name" placeholder="밀레니엄 팔콘">
+        </div>
+        <div class="form-group" style="max-width:140px">
+          <label>공식 정가(원)</label>
+          <input type="number" id="add-price" placeholder="899900">
+        </div>
+      </div>
+      <button class="btn btn-primary" id="btn-add">추가</button>
+    </div>
+
+    <!-- 목록 -->
+    <div class="section">
+      <h2>등록된 정가</h2>
+      <div id="list-count"></div>
+      <div id="list"></div>
+      <div id="list-empty" style="display:none">등록된 정가가 없습니다.</div>
+      <button class="btn btn-secondary btn-sm" id="btn-refresh" style="margin-top:10px">새로고침</button>
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+(function () {
+  var API = 'https://api.github.com';
+  var LS_TOKEN = 'lego_gh_token';
+  var LS_OWNER = 'lego_gh_owner';
+  var LS_REPO = 'lego_gh_repo';
+  var LS_BRANCH = 'lego_gh_branch';
+  var PATH = 'config/prices.json';
+
+  var els = {
+    status: document.getElementById('status'),
+    setup: document.getElementById('setup-panel'),
+    app: document.getElementById('app'),
+    token: document.getElementById('gh-token'),
+    owner: document.getElementById('gh-owner'),
+    repo: document.getElementById('gh-repo'),
+    branch: document.getElementById('gh-branch'),
+    list: document.getElementById('list'),
+    listCount: document.getElementById('list-count'),
+    listEmpty: document.getElementById('list-empty'),
+  };
+
+  var sha = null; // 현재 파일의 최신 sha (충돌 방지용)
+
+  function cfg() {
+    return {
+      token: localStorage.getItem(LS_TOKEN) || '',
+      owner: localStorage.getItem(LS_OWNER) || '',
+      repo: localStorage.getItem(LS_REPO) || '',
+      branch: localStorage.getItem(LS_BRANCH) || 'main',
+    };
+  }
+
+  function showStatus(msg, type) {
+    els.status.textContent = msg;
+    els.status.className = 'status show status-' + (type || 'info');
+  }
+  function hideStatus() { els.status.className = 'status'; }
+
+  function b64EncodeUnicode(str) {
+    return btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, function (_, p1) {
+      return String.fromCharCode('0x' + p1);
+    }));
+  }
+  function b64DecodeUnicode(str) {
+    return decodeURIComponent(atob(str.replace(/\n/g, '')).split('').map(function (c) {
+      return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+    }).join(''));
+  }
+
+  function apiHeaders(c) {
+    return {
+      'Authorization': 'Bearer ' + c.token,
+      'Accept': 'application/vnd.github+json',
+    };
+  }
+
+  function contentsUrl(c) {
+    return API + '/repos/' + c.owner + '/' + c.repo + '/contents/' + PATH + '?ref=' + encodeURIComponent(c.branch);
+  }
+
+  function fetchPrices() {
+    var c = cfg();
+    showStatus('불러오는 중...', 'info');
+    return fetch(contentsUrl(c), { headers: apiHeaders(c) })
+      .then(function (r) {
+        if (r.status === 401) throw new Error('토큰이 유효하지 않습니다. 연결 설정을 확인하세요.');
+        if (r.status === 404) throw new Error('저장소 또는 config/prices.json 을 찾을 수 없습니다. owner/repo/branch를 확인하세요.');
+        if (!r.ok) throw new Error('GitHub API 오류 (' + r.status + ')');
+        return r.json();
+      })
+      .then(function (data) {
+        sha = data.sha;
+        var prices = {};
+        try {
+          prices = JSON.parse(b64DecodeUnicode(data.content));
+        } catch (e) {
+          throw new Error('prices.json 파싱 실패');
+        }
+        hideStatus();
+        return prices;
+      });
+  }
+
+  function savePrices(prices, message) {
+    var c = cfg();
+    showStatus('저장 중...', 'info');
+    var body = {
+      message: message,
+      content: b64EncodeUnicode(JSON.stringify(prices, null, 2)),
+      sha: sha,
+      branch: c.branch,
+    };
+    return fetch(contentsUrl(c).split('?')[0], {
+      method: 'PUT',
+      headers: Object.assign({ 'Content-Type': 'application/json' }, apiHeaders(c)),
+      body: JSON.stringify(body),
+    }).then(function (r) {
+      if (r.status === 409) throw new Error('충돌이 발생했습니다(다른 곳에서 방금 수정됨). 새로고침 후 다시 시도하세요.');
+      if (r.status === 401) throw new Error('토큰이 유효하지 않거나 쓰기 권한이 없습니다.');
+      if (!r.ok) return r.json().then(function (j) { throw new Error(j.message || ('GitHub API 오류 (' + r.status + ')')); });
+      return r.json();
+    }).then(function (data) {
+      sha = data.content.sha;
+      showStatus('저장되었습니다.', 'success');
+    });
+  }
+
+  /* 항상 최신본을 다시 받아서 변경분만 병합 후 저장 (동시 수정 충돌 최소화) */
+  function mutateAndSave(mutator, commitMessage) {
+    return fetchPrices().then(function (prices) {
+      mutator(prices);
+      return savePrices(prices, commitMessage).then(function () { return prices; });
+    });
+  }
+
+  function fmtWon(n) {
+    return (n || 0).toLocaleString('ko-KR') + '원';
+  }
+
+  function render(prices) {
+    var nums = Object.keys(prices).sort();
+    els.listCount.textContent = nums.length + '개 등록됨';
+    els.list.innerHTML = '';
+    els.listEmpty.style.display = nums.length ? 'none' : 'block';
+
+    nums.forEach(function (num) {
+      var info = prices[num] || {};
+      var div = document.createElement('div');
+      div.className = 'item';
+
+      var currencyBadge = (info.currency && info.currency !== 'KRW')
+        ? ' <span class="badge-currency">' + info.currency + '</span>' : '';
+      var autoBadge = info.auto ? '<span class="badge-auto">자동</span>' : '';
+
+      div.innerHTML =
+        '<div class="item-top">' +
+          '<div>' +
+            '<div class="item-num">' + num + '</div>' +
+            '<div class="item-name">' + autoBadge + (info.name || '—') + '</div>' +
+            '<div class="item-price">' + fmtWon(info.official_price) + currencyBadge + '</div>' +
+            '<div class="item-source">' + (info.source || '수동 입력') + '</div>' +
+          '</div>' +
+          '<div class="item-actions">' +
+            '<button class="btn btn-secondary btn-sm act-edit">수정</button>' +
+            '<button class="btn btn-danger btn-sm act-del">삭제</button>' +
+          '</div>' +
+        '</div>' +
+        '<div class="item-edit">' +
+          '<div class="row">' +
+            '<div class="form-group"><label>상품명</label><input type="text" class="edit-name" value="' +
+              (info.name || '').replace(/"/g, '&quot;') + '"></div>' +
+            '<div class="form-group" style="max-width:140px"><label>공식 정가(원)</label><input type="number" class="edit-price" value="' +
+              (info.official_price || '') + '"></div>' +
+          '</div>' +
+          '<button class="btn btn-primary btn-sm act-save">저장</button> ' +
+          '<button class="btn btn-secondary btn-sm act-cancel" type="button">취소</button>' +
+        '</div>';
+
+      div.querySelector('.act-edit').addEventListener('click', function () {
+        div.querySelector('.item-edit').classList.add('show');
+      });
+      div.querySelector('.act-cancel').addEventListener('click', function () {
+        div.querySelector('.item-edit').classList.remove('show');
+      });
+      div.querySelector('.act-del').addEventListener('click', function () {
+        if (!confirm(num + ' 정가를 삭제할까요?')) return;
+        mutateAndSave(function (p) { delete p[num]; }, 'chore: remove price ' + num + ' (mobile editor)')
+          .then(load)
+          .catch(function (e) { showStatus(e.message, 'error'); });
+      });
+      div.querySelector('.act-save').addEventListener('click', function (e) {
+        var btn = e.target;
+        var name = div.querySelector('.edit-name').value.trim();
+        var price = parseInt(div.querySelector('.edit-price').value, 10);
+        if (!price || price < 1) { showStatus('올바른 정가를 입력하세요.', 'error'); return; }
+        btn.disabled = true;
+        mutateAndSave(function (p) {
+          p[num] = { name: name, official_price: price, auto: false, source: '수동 수정 (모바일)', currency: 'KRW' };
+        }, 'chore: update price ' + num + ' (mobile editor)')
+          .then(load)
+          .catch(function (e2) { showStatus(e2.message, 'error'); btn.disabled = false; });
+      });
+
+      els.list.appendChild(div);
+    });
+  }
+
+  function load() {
+    return fetchPrices().then(render).catch(function (e) { showStatus(e.message, 'error'); });
+  }
+
+  document.getElementById('btn-connect').addEventListener('click', function () {
+    var token = els.token.value.trim();
+    var owner = els.owner.value.trim();
+    var repo = els.repo.value.trim();
+    var branch = els.branch.value.trim() || 'main';
+    if (!token || !owner || !repo) {
+      showStatus('토큰, owner, repo를 모두 입력하세요.', 'error');
+      return;
+    }
+    localStorage.setItem(LS_TOKEN, token);
+    localStorage.setItem(LS_OWNER, owner);
+    localStorage.setItem(LS_REPO, repo);
+    localStorage.setItem(LS_BRANCH, branch);
+    els.token.value = '';
+    init();
+  });
+
+  document.getElementById('btn-disconnect').addEventListener('click', function () {
+    localStorage.removeItem(LS_TOKEN);
+    localStorage.removeItem(LS_OWNER);
+    localStorage.removeItem(LS_REPO);
+    localStorage.removeItem(LS_BRANCH);
+    els.app.style.display = 'none';
+    els.setup.open = true;
+    hideStatus();
+  });
+
+  document.getElementById('btn-refresh').addEventListener('click', load);
+
+  document.getElementById('btn-add').addEventListener('click', function () {
+    var num = document.getElementById('add-num').value.trim();
+    var name = document.getElementById('add-name').value.trim();
+    var price = parseInt(document.getElementById('add-price').value, 10);
+    if (!num || !price || price < 1) {
+      showStatus('품번과 정가를 올바르게 입력하세요.', 'error');
+      return;
+    }
+    mutateAndSave(function (p) {
+      p[num] = { name: name, official_price: price, auto: false, source: '수동 입력 (모바일)', currency: 'KRW' };
+    }, 'chore: add price ' + num + ' (mobile editor)')
+      .then(function () {
+        document.getElementById('add-num').value = '';
+        document.getElementById('add-name').value = '';
+        document.getElementById('add-price').value = '';
+        return load();
+      })
+      .catch(function (e) { showStatus(e.message, 'error'); });
+  });
+
+  function init() {
+    var c = cfg();
+    if (c.token && c.owner && c.repo) {
+      els.owner.value = c.owner;
+      els.repo.value = c.repo;
+      els.branch.value = c.branch;
+      els.setup.open = false;
+      els.app.style.display = 'block';
+      load();
+    } else {
+      els.owner.value = c.owner || 'frozeneye-dev';
+      els.repo.value = c.repo || 'lego-deals';
+      els.branch.value = c.branch || 'main';
+      els.setup.open = true;
+      els.app.style.display = 'none';
+    }
+  }
+
+  init();
+})();
+</script>
+</body>
+</html>
