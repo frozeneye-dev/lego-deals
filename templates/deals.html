@@ -81,10 +81,8 @@
     .inline-edit .cv { padding: 2px 6px; background: #e9ecef; color: var(--text);
                        border: none; border-radius: 3px; cursor: pointer; font-size: .78rem; }
     @media (max-width: 640px) {
-      /* 모바일: 상품명·최종가·할인율·구매만 표시 */
-      th:nth-child(4), td:nth-child(4),
-      th:nth-child(5), td:nth-child(5),
-      th:nth-child(6), td:nth-child(6) { display: none; }
+      /* 모바일: 품번·출처는 숨기고 공식 정가(수정 버튼 포함)는 계속 표시 */
+      .mobile-hide { display: none; }
       .buy-btn { padding: 5px 8px; }
     }
   </style>
@@ -131,8 +129,8 @@
         <th>최종가</th>
         <th>할인율</th>
         <th>공식 정가</th>
-        <th>품번</th>
-        <th>출처</th>
+        <th class="mobile-hide">품번</th>
+        <th class="mobile-hide">출처</th>
         <th>구매</th>
       </tr>
     </thead>
@@ -169,8 +167,8 @@
             <button class="cv">✕</button>
           </div>
         </td>
-        <td class="item-no">{{ d.item_number }}</td>
-        <td style="font-size:.78rem;color:#868e96">{{ d.source_name }}</td>
+        <td class="item-no mobile-hide">{{ d.item_number }}</td>
+        <td class="mobile-hide" style="font-size:.78rem;color:#868e96">{{ d.source_name }}</td>
         <td><a class="buy-btn" href="{{ d.product_url }}" target="_blank">구매 →</a></td>
       </tr>
       {% endfor %}
@@ -214,10 +212,10 @@
   <table>
     <thead>
       <tr>
-        <th>품번</th>
+        <th class="mobile-hide">품번</th>
         <th>상품명</th>
         <th>표시가</th>
-        <th>출처</th>
+        <th class="mobile-hide">출처</th>
         <th>구매</th>
         <th>정가 등록</th>
       </tr>
@@ -225,10 +223,10 @@
     <tbody>
       {% for d in result['no_price'] %}
       <tr>
-        <td class="item-no">{{ d.item_number }}</td>
+        <td class="item-no mobile-hide">{{ d.item_number }}</td>
         <td>{{ d.name }}</td>
         <td>{{ "{:,}".format(d.listed_price) }}원</td>
-        <td style="font-size:.78rem;color:#868e96">{{ d.source_name }}</td>
+        <td class="mobile-hide" style="font-size:.78rem;color:#868e96">{{ d.source_name }}</td>
         <td><a class="buy-btn" href="{{ d.product_url }}" target="_blank">구매 →</a></td>
         <td class="price-cell">
           <span class="price-original" id="p-{{ d.item_number }}" style="display:none"></span>
