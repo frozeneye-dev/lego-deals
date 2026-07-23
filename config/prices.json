@@ -5853,9 +5853,9 @@
   },
   "43300": {
     "name": "레고 디즈니 클래식 곰돌이 푸 43300",
-    "official_price": 198400,
-    "auto": true,
-    "source": "네이버 레고 표시가",
+    "official_price": 209900,
+    "auto": false,
+    "source": "수동 수정",
     "currency": "KRW"
   },
   "43301": {
