@@ -11520,5 +11520,19 @@
     "auto": true,
     "source": "네이버 레고 표시가",
     "currency": "KRW"
+  },
+  "11208": {
+    "name": "레고 마블 팀 스파이디 해적선 11208",
+    "official_price": 64840,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10969": {
+    "name": "레고 듀플로 소방트럭 10969",
+    "official_price": 94900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
   }
 }
