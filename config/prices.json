@@ -3835,6 +3835,13 @@
     "source": "네이버 레고 표시가",
     "currency": "KRW"
   },
+  "40688": {
+    "name": "레고 트로피 어워드 40688",
+    "official_price": 24900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
   "40690": {
     "name": "레고 쥘 베른의 책에 대한 찬사 40690",
     "official_price": 43900,
@@ -10066,10 +10073,10 @@
     "currency": "KRW"
   },
   "76323": {
-    "name": "레고 마블 어벤져스 엔드게임 최종 결전 76323 1개",
-    "official_price": 197770,
-    "auto": true,
-    "source": "네이버 레고 표시가",
+    "name": "레고 마블 어벤져스 엔드게임 최종 결전 76323",
+    "official_price": 149900,
+    "auto": false,
+    "source": "수동 수정",
     "currency": "KRW"
   },
   "76324": {
@@ -11552,13 +11559,6 @@
   "854290": {
     "name": "레고 854290 스파이더맨 열쇠고리",
     "official_price": 8900,
-    "auto": true,
-    "source": "네이버 레고 표시가",
-    "currency": "KRW"
-  },
-  "40688": {
-    "name": "레고 트로피 어워드 40688",
-    "official_price": 24900,
     "auto": true,
     "source": "네이버 레고 표시가",
     "currency": "KRW"
