@@ -10963,9 +10963,9 @@
   },
   "76970": {
     "name": "레고 쥬라기월드 아기 공룡 돌로레스 아퀼롭스 76970",
-    "official_price": 29860,
-    "auto": true,
-    "source": "네이버 레고 표시가",
+    "official_price": 36900,
+    "auto": false,
+    "source": "수동 수정",
     "currency": "KRW"
   },
   "76972": {
