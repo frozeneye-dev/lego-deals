@@ -11548,5 +11548,19 @@
     "auto": true,
     "source": "네이버 레고 표시가",
     "currency": "KRW"
+  },
+  "854290": {
+    "name": "레고 854290 스파이더맨 열쇠고리",
+    "official_price": 8900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "40688": {
+    "name": "레고 트로피 어워드 40688",
+    "official_price": 24900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
   }
 }
