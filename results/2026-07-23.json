@@ -109,18 +109,6 @@
       "product_url": "https://search.shopping.naver.com/catalog/53370594732",
       "source_name": "네이버 레고",
       "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
-    },
-    {
-      "item_number": "42650",
-      "name": "레고 프렌즈 반려동물 액세서리 샵 42650",
-      "official_price": 59900,
-      "listed_price": 41500,
-      "additional_discount": 0.0,
-      "final_price": 41500,
-      "discount_rate": 0.3072,
-      "product_url": "https://search.shopping.naver.com/catalog/52297887456",
-      "source_name": "네이버 레고",
-      "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
     }
   ],
   "20_plus": [
@@ -257,6 +245,18 @@
       "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
     },
     {
+      "item_number": "31378",
+      "name": "레고 크리에이터 3in1 우주 탐사 망원경 31378",
+      "official_price": 46800,
+      "listed_price": 34640,
+      "additional_discount": 0.0,
+      "final_price": 34640,
+      "discount_rate": 0.2598,
+      "product_url": "https://search.shopping.naver.com/catalog/58526447852",
+      "source_name": "네이버 레고",
+      "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
+    },
+    {
       "item_number": "76304",
       "name": "레고 DC 배트맨 포에버 배트모빌 76304",
       "official_price": 149900,
@@ -265,18 +265,6 @@
       "final_price": 111000,
       "discount_rate": 0.2595,
       "product_url": "https://search.shopping.naver.com/catalog/56091272128",
-      "source_name": "네이버 레고",
-      "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
-    },
-    {
-      "item_number": "31378",
-      "name": "레고 크리에이터 3in1 우주 탐사 망원경 31378",
-      "official_price": 46800,
-      "listed_price": 34690,
-      "additional_discount": 0.0,
-      "final_price": 34690,
-      "discount_rate": 0.2588,
-      "product_url": "https://search.shopping.naver.com/catalog/58526447852",
       "source_name": "네이버 레고",
       "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
     },
@@ -305,18 +293,6 @@
       "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
     },
     {
-      "item_number": "10698",
-      "name": "레고 클래식 라지 조립 박스 10698 1개",
-      "official_price": 69900,
-      "listed_price": 52100,
-      "additional_discount": 0.0,
-      "final_price": 52100,
-      "discount_rate": 0.2546,
-      "product_url": "https://search.shopping.naver.com/catalog/59572845285",
-      "source_name": "네이버 레고",
-      "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
-    },
-    {
       "item_number": "10328",
       "name": "레고 아이콘 장미 꽃다발 10328",
       "official_price": 89900,
@@ -325,6 +301,18 @@
       "final_price": 67140,
       "discount_rate": 0.2532,
       "product_url": "https://search.shopping.naver.com/catalog/45004230618",
+      "source_name": "네이버 레고",
+      "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
+    },
+    {
+      "item_number": "10698",
+      "name": "레고 클래식 라지 조립 박스 10698 1개",
+      "official_price": 69900,
+      "listed_price": 52272,
+      "additional_discount": 0.0,
+      "final_price": 52272,
+      "discount_rate": 0.2522,
+      "product_url": "https://search.shopping.naver.com/catalog/59572845285",
       "source_name": "네이버 레고",
       "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
     },
@@ -341,13 +329,25 @@
       "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
     },
     {
+      "item_number": "42650",
+      "name": "레고 프렌즈 반려동물 액세서리 샵 42650",
+      "official_price": 59900,
+      "listed_price": 44900,
+      "additional_discount": 0.0,
+      "final_price": 44900,
+      "discount_rate": 0.2504,
+      "product_url": "https://search.shopping.naver.com/catalog/52297887456",
+      "source_name": "네이버 레고",
+      "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
+    },
+    {
       "item_number": "10428",
       "name": "레고 듀플로 인터랙티브 기차 세트 10428",
       "official_price": 189900,
-      "listed_price": 142032,
+      "listed_price": 142500,
       "additional_discount": 0.0,
-      "final_price": 142032,
-      "discount_rate": 0.2521,
+      "final_price": 142500,
+      "discount_rate": 0.2496,
       "product_url": "https://search.shopping.naver.com/catalog/52593709355",
       "source_name": "네이버 레고",
       "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
@@ -361,6 +361,18 @@
       "final_price": 79500,
       "discount_rate": 0.2421,
       "product_url": "https://search.shopping.naver.com/catalog/52379014618",
+      "source_name": "네이버 레고",
+      "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
+    },
+    {
+      "item_number": "42670",
+      "name": "레고 프렌즈 하트레이크 시티 아파트와 상점 42670",
+      "official_price": 199900,
+      "listed_price": 152650,
+      "additional_discount": 0.0,
+      "final_price": 152650,
+      "discount_rate": 0.2364,
+      "product_url": "https://search.shopping.naver.com/catalog/52298246340",
       "source_name": "네이버 레고",
       "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
     },
@@ -385,18 +397,6 @@
       "final_price": 40730,
       "discount_rate": 0.2301,
       "product_url": "https://search.shopping.naver.com/catalog/52268687622",
-      "source_name": "네이버 레고",
-      "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
-    },
-    {
-      "item_number": "42670",
-      "name": "레고 프렌즈 하트레이크 시티 아파트와 상점 42670",
-      "official_price": 199900,
-      "listed_price": 154410,
-      "additional_discount": 0.0,
-      "final_price": 154410,
-      "discount_rate": 0.2276,
-      "product_url": "https://search.shopping.naver.com/catalog/52298246340",
       "source_name": "네이버 레고",
       "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
     },

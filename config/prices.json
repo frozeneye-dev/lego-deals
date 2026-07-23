@@ -11534,5 +11534,19 @@
     "auto": true,
     "source": "네이버 레고 표시가",
     "currency": "KRW"
+  },
+  "60446": {
+    "name": "레고 시티 모듈방식 은하계 우주선 60446",
+    "official_price": 135000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "42152": {
+    "name": "레고 테크닉 소방 비행기 42152",
+    "official_price": 209700,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
   }
 }
