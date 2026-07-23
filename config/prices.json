@@ -4158,10 +4158,10 @@
     "currency": "KRW"
   },
   "40912": {
-    "name": "레고 40912 바다뱀 비룡 순찰선",
-    "official_price": 149900,
-    "auto": true,
-    "source": "네이버 레고 표시가",
+    "name": "레고 아이디어 바다뱀 40912 1개",
+    "official_price": 100,
+    "auto": false,
+    "source": "수동 수정",
     "currency": "KRW"
   },
   "40917": {
