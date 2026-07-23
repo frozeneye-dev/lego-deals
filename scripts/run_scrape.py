@@ -62,14 +62,16 @@ def main():
         len(result["no_price"]),
     )
 
-    run_date = generate(result, settings)
+    run_date, new_count = generate(result, settings)
     log.info("Pages written to docs/  (date: %s)", run_date)
 
     pages_url = settings.get("github_pages_url", "")
-    if pages_url:
-        send_discord(settings["discord_webhook_url"], pages_url, run_date)
-    else:
+    if not pages_url:
         log.warning("github_pages_url not set — Discord notification skipped.")
+    elif new_count == 0:
+        log.info("신규 할인 없음 — Discord 알림 생략")
+    else:
+        send_discord(settings["discord_webhook_url"], pages_url, run_date)
 
 
 if __name__ == "__main__":

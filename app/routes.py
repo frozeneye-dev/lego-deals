@@ -24,6 +24,7 @@ from flask import (
     Blueprint,
     abort,
     flash,
+    jsonify,
     redirect,
     render_template,
     request,
@@ -223,6 +224,33 @@ def prices_edit(item_number):
     return redirect(url_for("main.prices_page"))
 
 
+@bp.post("/api/prices/<item_number>/update")
+def api_price_update(item_number):
+    """할인 목록 인라인 수정용 JSON API."""
+    price_raw = request.form.get("official_price", "").strip().replace(",", "")
+    name = request.form.get("name", "").strip()
+
+    try:
+        official_price = int(price_raw)
+        if official_price < 1:
+            raise ValueError
+    except ValueError:
+        return jsonify({"ok": False, "error": "올바른 정가를 입력하세요."}), 400
+
+    prices = cfg.load_prices()
+    existing = prices.get(item_number, {})
+    prices[item_number] = {
+        "name": name or existing.get("name", ""),
+        "official_price": official_price,
+        "auto": False,
+        "source": "수동 수정",
+        "currency": "KRW",
+    }
+    cfg.save_prices(prices)
+    log.info("인라인 정가 수정: %s → %s원", item_number, official_price)
+    return jsonify({"ok": True, "official_price": official_price})
+
+
 @bp.post("/prices/<item_number>/delete")
 def prices_delete(item_number):
     prices = cfg.load_prices()
@@ -299,19 +327,53 @@ def run_start():
             cfg.save_prices(prices)   # 자동 조회 결과 저장
             total = sum(len(v) for v in result.values())
             _log(f"스크래핑 완료: 총 {total}개 상품")
-            run_date = generate(result, settings)
+            run_date, new_count = generate(result, settings)
             _log(f"HTML 생성 완료: output/{run_date}.html")
             pages_url = settings.get("github_pages_url", "")
-            if pages_url:
+            if not pages_url:
+                _log("GitHub Pages URL 미설정 — Discord 알림 생략")
+            elif new_count == 0:
+                _log("신규 할인 없음 — Discord 알림 생략")
+            else:
                 ok = send_discord(settings.get("discord_webhook_url", ""), pages_url, run_date)
                 _log("Discord 알림 전송 완료" if ok else "Discord 알림 실패 (로그 확인)")
-            else:
-                _log("GitHub Pages URL 미설정 — Discord 알림 생략")
         except Exception as e:
             _log(f"오류 발생: {e}")
 
     threading.Thread(target=_task, daemon=True).start()
     flash("실행이 시작되었습니다. 잠시 후 로그를 확인하세요.", "info")
+    return redirect(url_for("main.run_page"))
+
+
+# ── Regenerate HTML from cached results ──────────────────────────────────────
+
+@bp.post("/regenerate-html")
+def regenerate_html():
+    """스크래핑 없이 저장된 결과 JSON으로 HTML만 재생성."""
+    from app.generator import generate
+
+    results_dir = Path(__file__).parent.parent / "results"
+    settings = cfg.load_settings()
+
+    date_param = request.form.get("date", "").strip()
+    if date_param:
+        result_file = results_dir / f"{date_param}.json"
+    else:
+        files = sorted(results_dir.glob("????-??-??.json"), reverse=True)
+        result_file = files[0] if files else None
+
+    if not result_file or not result_file.exists():
+        flash("재생성할 결과 파일이 없습니다. 먼저 스크래핑을 실행하세요.", "error")
+        return redirect(url_for("main.run_page"))
+
+    try:
+        result = json.loads(result_file.read_text(encoding="utf-8"))
+        run_date = result_file.stem
+        generate(result, settings, run_date)  # tuple 반환이지만 여기선 재생성 결과만 필요
+        flash(f"{run_date} HTML 재생성 완료. /output/{run_date} 에서 확인하세요.", "success")
+    except Exception as e:
+        flash(f"HTML 재생성 실패: {e}", "error")
+
     return redirect(url_for("main.run_page"))
 
 

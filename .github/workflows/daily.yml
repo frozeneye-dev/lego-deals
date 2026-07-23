@@ -2,8 +2,8 @@ name: Daily LEGO Deals
 
 on:
   schedule:
-    # 10:17 KST = 01:17 UTC
-    - cron: "17 1 * * *"
+    # KST 00:00/06:00/12:00/18:00 = UTC 15:00/21:00/03:00/09:00 (6시간마다)
+    - cron: "0 3,9,15,21 * * *"
   workflow_dispatch:   # GitHub Actions UI에서 수동 실행 가능
 
 permissions:
@@ -40,6 +40,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
-            git commit -m "chore: daily update $(date -u +%Y-%m-%d)"
+            git commit -m "chore: update $(date -u +%Y-%m-%dT%H:%M)Z"
             git push
           fi
