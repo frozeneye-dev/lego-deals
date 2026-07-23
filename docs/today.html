@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>레고 할인 2026-06-07</title>
+  <title>레고 할인 2026-07-24</title>
   <style>
     :root {
       --yellow: #FFD700;
@@ -58,10 +58,31 @@
     .buy-btn:hover { background: #e6c200; }
     .empty { padding: 20px; text-align: center; color: var(--muted); font-size: .9rem;
              background: var(--card-bg); border: 1px solid var(--border); border-top: none; }
+    .badge-new { display: inline-block; background: #e63946; color: #fff;
+                 font-size: .62rem; font-weight: 700; padding: 1px 6px;
+                 border-radius: 10px; margin-right: 5px; vertical-align: middle;
+                 letter-spacing: .04em; }
+    .row-new td { background: #fff5f5; }
+    .row-new td:first-child { border-left: 3px solid #e63946; padding-left: 9px; }
+    .new-summary { display: inline-block; background: #e63946; color: #fff;
+                   font-size: .78rem; font-weight: 600; padding: 3px 10px;
+                   border-radius: 20px; margin-left: 8px; vertical-align: middle; }
     footer { text-align: center; color: var(--muted); font-size: .78rem;
              margin-top: 32px; padding-top: 16px; border-top: 1px solid var(--border); }
+    .edit-btn { background: none; border: none; cursor: pointer; padding: 0 3px;
+                color: #adb5bd; font-size: .78rem; vertical-align: middle; display: none; }
+    .edit-btn:hover { color: var(--blue); }
+    .price-cell { white-space: nowrap; }
+    .inline-edit { display: none; margin-top: 4px; white-space: nowrap; }
+    .inline-edit input { width: 82px; padding: 2px 5px; border: 1px solid #ced4da;
+                         border-radius: 3px; font-size: .8rem; }
+    .inline-edit .sv { padding: 2px 8px; background: var(--green); color: #fff;
+                       border: none; border-radius: 3px; cursor: pointer; font-size: .78rem; }
+    .inline-edit .cv { padding: 2px 6px; background: #e9ecef; color: var(--text);
+                       border: none; border-radius: 3px; cursor: pointer; font-size: .78rem; }
     @media (max-width: 640px) {
-      th:nth-child(3), td:nth-child(3) { display: none; }
+      /* 모바일: 품번·출처는 숨기고 공식 정가(수정 버튼 포함)는 계속 표시 */
+      .mobile-hide { display: none; }
       .buy-btn { padding: 5px 8px; }
     }
   </style>
@@ -70,34 +91,36 @@
 <header>
   <h1>🧱 레고 할인 목록</h1>
   <p>
-    기준일: 2026-06-07 &nbsp;|&nbsp;
+    기준일: 2026-07-24 &nbsp;|&nbsp;
     레고 공식 정가 대비 최종 할인가 기준 &nbsp;|&nbsp;
-    총 50개 상품
+    총 38개 상품
+    
   </p>
+  <p style="margin-top:6px"><a href="price-editor.html" style="color:#FFD700;font-size:.82rem">📱 정가 등록/수정 →</a></p>
 </header>
 
 <div class="stats">
   <div class="stat">
-    <div class="stat-num" style="color:#e63946">1</div>
+    <div class="stat-num" id="stat-40" style="color:#e63946">1</div>
     <div class="stat-label">40% 이상</div>
   </div>
   <div class="stat">
-    <div class="stat-num" style="color:#457b9d">15</div>
+    <div class="stat-num" id="stat-30" style="color:#457b9d">7</div>
     <div class="stat-label">30%대</div>
   </div>
   <div class="stat">
-    <div class="stat-num" style="color:#2a9d8f">34</div>
+    <div class="stat-num" id="stat-20" style="color:#2a9d8f">30</div>
     <div class="stat-label">20%대</div>
   </div>
   <div class="stat">
-    <div class="stat-num" style="color:#868e96">0</div>
+    <div class="stat-num" id="stat-none" style="color:#868e96">0</div>
     <div class="stat-label">정가 미등록</div>
   </div>
 </div>
 
 
 
-<div class="cat">
+<div class="cat" data-stat="40">
   <div class="cat-header cat-40">
     🔥 40% 이상 할인
     <span class="badge">1개</span>
@@ -107,40 +130,47 @@
   <table>
     <thead>
       <tr>
-        <th>품번</th>
         <th>상품명</th>
         <th>최종가</th>
-        <th>공식 정가</th>
         <th>할인율</th>
-        <th>출처</th>
+        <th>공식 정가</th>
+        <th class="mobile-hide">품번</th>
+        <th class="mobile-hide">출처</th>
         <th>구매</th>
       </tr>
     </thead>
     <tbody>
       
-      <tr>
-        <td class="item-no">30702</td>
-        <td>슈퍼마리오 레고 마리오 카트 키노피오(피트 크루) (30702) (6세 이상)</td>
+      
+      <tr data-threshold="0.4" data-final="22140">
+        <td>레고 쥬라기월드 아기 공룡 돌로레스 아퀼롭스 76970</td>
         <td class="price-final">
-          3,540원
+          22,140원
           
-          <br><span style="font-size:.72rem;color:#868e96">
-            (표시가 4,425원 × 80%)
-          </span>
-          
-        </td>
-        <td>
-          <span class="price-original">
-            5,900원
-          </span>
         </td>
         <td>
           <span class="pct pct-40">
             40.0%
           </span>
         </td>
-        <td style="font-size:.78rem;color:#868e96">롯데마트 제타 레고 프로모션</td>
-        <td><a class="buy-btn" href="https://lottemartzetta.com/products/OS5702017819846/details" target="_blank">구매 →</a></td>
+        <td class="price-cell">
+          <span class="price-original" id="p-76970">
+            36,900원
+          </span>
+          <button class="edit-btn"
+                  data-item="76970"
+                  data-price="36900"
+                  data-name="레고 쥬라기월드 아기 공룡 돌로레스 아퀼롭스 76970"
+                  title="정가 수정">✏</button>
+          <div class="inline-edit" id="edit-76970">
+            <input type="number" min="1" placeholder="정가(원)">
+            <button class="sv">저장</button>
+            <button class="cv">✕</button>
+          </div>
+        </td>
+        <td class="item-no mobile-hide">76970</td>
+        <td class="mobile-hide" style="font-size:.78rem;color:#868e96">네이버 레고</td>
+        <td><a class="buy-btn" href="https://search.shopping.naver.com/catalog/55097318694" target="_blank">구매 →</a></td>
       </tr>
       
     </tbody>
@@ -149,400 +179,249 @@
 
 </div>
 
-<div class="cat">
+<div class="cat" data-stat="30">
   <div class="cat-header cat-30">
     ✨ 30%대 할인
-    <span class="badge">15개</span>
+    <span class="badge">7개</span>
   </div>
   
   
   <table>
     <thead>
       <tr>
-        <th>품번</th>
         <th>상품명</th>
         <th>최종가</th>
-        <th>공식 정가</th>
         <th>할인율</th>
-        <th>출처</th>
+        <th>공식 정가</th>
+        <th class="mobile-hide">품번</th>
+        <th class="mobile-hide">출처</th>
         <th>구매</th>
       </tr>
     </thead>
     <tbody>
       
-      <tr>
-        <td class="item-no">31167</td>
-        <td>크리에이터 레고 유령 맨션 (31167) (9세 이상)</td>
+      
+      <tr data-threshold="0.3" data-final="51000">
+        <td>레고 보태니컬 미니 분재나무 10373</td>
         <td class="price-final">
-          89,536원
+          51,000원
           
-          <br><span style="font-size:.72rem;color:#868e96">
-            (표시가 111,920원 × 80%)
-          </span>
-          
-        </td>
-        <td>
-          <span class="price-original">
-            139,900원
-          </span>
         </td>
         <td>
           <span class="pct pct-30">
-            36.0%
+            36.2%
           </span>
         </td>
-        <td style="font-size:.78rem;color:#868e96">롯데마트 제타 레고 프로모션</td>
-        <td><a class="buy-btn" href="https://lottemartzetta.com/products/OS5702017822426/details" target="_blank">구매 →</a></td>
-      </tr>
-      
-      <tr>
-        <td class="item-no">31166</td>
-        <td>크리에이터 레고 아름다운 말 (31166) (9세 이상)</td>
-        <td class="price-final">
-          47,936원
-          
-          <br><span style="font-size:.72rem;color:#868e96">
-            (표시가 59,920원 × 80%)
-          </span>
-          
-        </td>
-        <td>
-          <span class="price-original">
-            74,900원
-          </span>
-        </td>
-        <td>
-          <span class="pct pct-30">
-            36.0%
-          </span>
-        </td>
-        <td style="font-size:.78rem;color:#868e96">롯데마트 제타 레고 프로모션</td>
-        <td><a class="buy-btn" href="https://lottemartzetta.com/products/OS5702017822419/details" target="_blank">구매 →</a></td>
-      </tr>
-      
-      <tr>
-        <td class="item-no">71499</td>
-        <td>드림즈 레고 마테오의 스프레이 페인트트럭 (71499) (9세 이상)</td>
-        <td class="price-final">
-          95,936원
-          
-          <br><span style="font-size:.72rem;color:#868e96">
-            (표시가 119,920원 × 80%)
-          </span>
-          
-        </td>
-        <td>
-          <span class="price-original">
-            149,900원
-          </span>
-        </td>
-        <td>
-          <span class="pct pct-30">
-            36.0%
-          </span>
-        </td>
-        <td style="font-size:.78rem;color:#868e96">롯데마트 제타 레고 프로모션</td>
-        <td><a class="buy-btn" href="https://lottemartzetta.com/products/OS5702017818900/details" target="_blank">구매 →</a></td>
-      </tr>
-      
-      <tr>
-        <td class="item-no">42650</td>
-        <td>프렌즈 레고 반려동물 액세서리 샵 (42650) (6세 이상)</td>
-        <td class="price-final">
-          38,336원
-          
-          <br><span style="font-size:.72rem;color:#868e96">
-            (표시가 47,920원 × 80%)
-          </span>
-          
-        </td>
-        <td>
-          <span class="price-original">
-            59,900원
-          </span>
-        </td>
-        <td>
-          <span class="pct pct-30">
-            36.0%
-          </span>
-        </td>
-        <td style="font-size:.78rem;color:#868e96">롯데마트 제타 레고 프로모션</td>
-        <td><a class="buy-btn" href="https://lottemartzetta.com/products/OS5702017783741/details" target="_blank">구매 →</a></td>
-      </tr>
-      
-      <tr>
-        <td class="item-no">75428</td>
-        <td>레고 배틀 드로이드 와 STAP (75428) (12세 이상)</td>
-        <td class="price-final">
-          121,536원
-          
-          <br><span style="font-size:.72rem;color:#868e96">
-            (표시가 151,920원 × 80%)
-          </span>
-          
-        </td>
-        <td>
-          <span class="price-original">
-            189,900원
-          </span>
-        </td>
-        <td>
-          <span class="pct pct-30">
-            36.0%
-          </span>
-        </td>
-        <td style="font-size:.78rem;color:#868e96">롯데마트 제타 레고 프로모션</td>
-        <td><a class="buy-btn" href="https://lottemartzetta.com/products/OS5702017824598/details" target="_blank">구매 →</a></td>
-      </tr>
-      
-      <tr>
-        <td class="item-no">76924</td>
-        <td>스피드챔피언 레고 Mercedes AMG G 63 &amp; Mercedes (76924) (10세 이상)</td>
-        <td class="price-final">
-          47,532원
-          
-          <br><span style="font-size:.72rem;color:#868e96">
-            (표시가 59,415원 × 80%)
-          </span>
-          
-        </td>
-        <td>
-          <span class="price-original">
-            69,900원
-          </span>
-        </td>
-        <td>
-          <span class="pct pct-30">
-            32.0%
-          </span>
-        </td>
-        <td style="font-size:.78rem;color:#868e96">롯데마트 제타 레고 프로모션</td>
-        <td><a class="buy-btn" href="https://lottemartzetta.com/products/OS5702017583976/details" target="_blank">구매 →</a></td>
-      </tr>
-      
-      <tr>
-        <td class="item-no">76304</td>
-        <td>수퍼히어로 레고 배트맨 포에버  배트모빌 (76304) (12세 이상)</td>
-        <td class="price-final">
-          101,932원
-          
-          <br><span style="font-size:.72rem;color:#868e96">
-            (표시가 127,415원 × 80%)
-          </span>
-          
-        </td>
-        <td>
-          <span class="price-original">
-            149,900원
-          </span>
-        </td>
-        <td>
-          <span class="pct pct-30">
-            32.0%
-          </span>
-        </td>
-        <td style="font-size:.78rem;color:#868e96">롯데마트 제타 레고 프로모션</td>
-        <td><a class="buy-btn" href="https://lottemartzetta.com/products/OS5702017817781/details" target="_blank">구매 →</a></td>
-      </tr>
-      
-      <tr>
-        <td class="item-no">10328</td>
-        <td>보태니컬 레고 장미 꽃다발 (10328) (18세 이상)</td>
-        <td class="price-final">
-          61,132원
-          
-          <br><span style="font-size:.72rem;color:#868e96">
-            (표시가 76,415원 × 80%)
-          </span>
-          
-        </td>
-        <td>
-          <span class="price-original">
-            89,900원
-          </span>
-        </td>
-        <td>
-          <span class="pct pct-30">
-            32.0%
-          </span>
-        </td>
-        <td style="font-size:.78rem;color:#868e96">롯데마트 제타 레고 프로모션</td>
-        <td><a class="buy-btn" href="https://lottemartzetta.com/products/OS5702017583488/details" target="_blank">구매 →</a></td>
-      </tr>
-      
-      <tr>
-        <td class="item-no">42665</td>
-        <td>프렌즈 레고 강아지 놀이터 (42665) (4세 이상)</td>
-        <td class="price-final">
-          9,452원
-          
-          <br><span style="font-size:.72rem;color:#868e96">
-            (표시가 11,815원 × 80%)
-          </span>
-          
-        </td>
-        <td>
-          <span class="price-original">
-            13,900원
-          </span>
-        </td>
-        <td>
-          <span class="pct pct-30">
-            32.0%
-          </span>
-        </td>
-        <td style="font-size:.78rem;color:#868e96">롯데마트 제타 레고 프로모션</td>
-        <td><a class="buy-btn" href="https://lottemartzetta.com/products/OS5702017815312/details" target="_blank">구매 →</a></td>
-      </tr>
-      
-      <tr>
-        <td class="item-no">11041</td>
-        <td>클래식 레고 창의력 공룡 (11041) (5세 이상)</td>
-        <td class="price-final">
-          35,972원
-          
-          <br><span style="font-size:.72rem;color:#868e96">
-            (표시가 44,965원 × 80%)
-          </span>
-          
-        </td>
-        <td>
-          <span class="price-original">
-            52,900원
-          </span>
-        </td>
-        <td>
-          <span class="pct pct-30">
-            32.0%
-          </span>
-        </td>
-        <td style="font-size:.78rem;color:#868e96">롯데마트 제타 레고 프로모션</td>
-        <td><a class="buy-btn" href="https://lottemartzetta.com/products/OS5702017822228/details" target="_blank">구매 →</a></td>
-      </tr>
-      
-      <tr>
-        <td class="item-no">10359</td>
-        <td>아이콘 레고 파운틴 가든 (10359) (18세 이상)</td>
-        <td class="price-final">
-          101,932원
-          
-          <br><span style="font-size:.72rem;color:#868e96">
-            (표시가 127,415원 × 80%)
-          </span>
-          
-        </td>
-        <td>
-          <span class="price-original">
-            149,900원
-          </span>
-        </td>
-        <td>
-          <span class="pct pct-30">
-            32.0%
-          </span>
-        </td>
-        <td style="font-size:.78rem;color:#868e96">롯데마트 제타 레고 프로모션</td>
-        <td><a class="buy-btn" href="https://lottemartzetta.com/products/OS5702017815879/details" target="_blank">구매 →</a></td>
-      </tr>
-      
-      <tr>
-        <td class="item-no">10788</td>
-        <td>레고 개비의 매직 하우스(10788) (4세 이상)</td>
-        <td class="price-final">
-          78,132원
-          
-          <br><span style="font-size:.72rem;color:#868e96">
-            (표시가 97,665원 × 80%)
-          </span>
-          
-        </td>
-        <td>
-          <span class="price-original">
-            114,900원
-          </span>
-        </td>
-        <td>
-          <span class="pct pct-30">
-            32.0%
-          </span>
-        </td>
-        <td style="font-size:.78rem;color:#868e96">롯데마트 제타 레고 프로모션</td>
-        <td><a class="buy-btn" href="https://lottemartzetta.com/products/OS5702017424125/details" target="_blank">구매 →</a></td>
-      </tr>
-      
-      <tr>
-        <td class="item-no">10344</td>
-        <td>보태니컬 레고 행운의 대나무 (10344) (18세 이상)</td>
-        <td class="price-final">
-          30,532원
-          
-          <br><span style="font-size:.72rem;color:#868e96">
-            (표시가 38,165원 × 80%)
-          </span>
-          
-        </td>
-        <td>
-          <span class="price-original">
-            44,900원
-          </span>
-        </td>
-        <td>
-          <span class="pct pct-30">
-            32.0%
-          </span>
-        </td>
-        <td style="font-size:.78rem;color:#868e96">롯데마트 제타 레고 프로모션</td>
-        <td><a class="buy-btn" href="https://lottemartzetta.com/products/OS5702017814650/details" target="_blank">구매 →</a></td>
-      </tr>
-      
-      <tr>
-        <td class="item-no">76969</td>
-        <td>쥬라기월드 레고 공룡 화석 트리케라톱스 두개골 (76969) (9세 이상)</td>
-        <td class="price-final">
-          44,812원
-          
-          <br><span style="font-size:.72rem;color:#868e96">
-            (표시가 56,015원 × 80%)
-          </span>
-          
-        </td>
-        <td>
-          <span class="price-original">
-            65,900원
-          </span>
-        </td>
-        <td>
-          <span class="pct pct-30">
-            32.0%
-          </span>
-        </td>
-        <td style="font-size:.78rem;color:#868e96">롯데마트 제타 레고 프로모션</td>
-        <td><a class="buy-btn" href="https://lottemartzetta.com/products/OS5702017814193/details" target="_blank">구매 →</a></td>
-      </tr>
-      
-      <tr>
-        <td class="item-no">10373</td>
-        <td>보태니컬 레고 미니 분재나무 (10373) (18세 이상)</td>
-        <td class="price-final">
-          54,332원
-          
-          <br><span style="font-size:.72rem;color:#868e96">
-            (표시가 67,915원 × 80%)
-          </span>
-          
-        </td>
-        <td>
-          <span class="price-original">
+        <td class="price-cell">
+          <span class="price-original" id="p-10373">
             79,900원
           </span>
+          <button class="edit-btn"
+                  data-item="10373"
+                  data-price="79900"
+                  data-name="레고 보태니컬 미니 분재나무 10373"
+                  title="정가 수정">✏</button>
+          <div class="inline-edit" id="edit-10373">
+            <input type="number" min="1" placeholder="정가(원)">
+            <button class="sv">저장</button>
+            <button class="cv">✕</button>
+          </div>
+        </td>
+        <td class="item-no mobile-hide">10373</td>
+        <td class="mobile-hide" style="font-size:.78rem;color:#868e96">네이버 레고</td>
+        <td><a class="buy-btn" href="https://search.shopping.naver.com/catalog/56088988946" target="_blank">구매 →</a></td>
+      </tr>
+      
+      
+      <tr data-threshold="0.3" data-final="42170">
+        <td>레고 쥬라기월드 공룡 화석 트리케라톱스 두개골 76969</td>
+        <td class="price-final">
+          42,170원
+          
         </td>
         <td>
           <span class="pct pct-30">
-            32.0%
+            36.0%
           </span>
         </td>
-        <td style="font-size:.78rem;color:#868e96">롯데마트 제타 레고 프로모션</td>
-        <td><a class="buy-btn" href="https://lottemartzetta.com/products/OS5702017824840/details" target="_blank">구매 →</a></td>
+        <td class="price-cell">
+          <span class="price-original" id="p-76969">
+            65,900원
+          </span>
+          <button class="edit-btn"
+                  data-item="76969"
+                  data-price="65900"
+                  data-name="레고 쥬라기월드 공룡 화석 트리케라톱스 두개골 76969"
+                  title="정가 수정">✏</button>
+          <div class="inline-edit" id="edit-76969">
+            <input type="number" min="1" placeholder="정가(원)">
+            <button class="sv">저장</button>
+            <button class="cv">✕</button>
+          </div>
+        </td>
+        <td class="item-no mobile-hide">76969</td>
+        <td class="mobile-hide" style="font-size:.78rem;color:#868e96">네이버 레고</td>
+        <td><a class="buy-btn" href="https://search.shopping.naver.com/catalog/52268687618" target="_blank">구매 →</a></td>
+      </tr>
+      
+      
+      <tr data-threshold="0.3" data-final="28510">
+        <td>레고 스피드 챔피언 Oracle Red Bull Racing RB20 F1 레이스 카 77243</td>
+        <td class="price-final">
+          28,510원
+          
+        </td>
+        <td>
+          <span class="pct pct-30">
+            35.1%
+          </span>
+        </td>
+        <td class="price-cell">
+          <span class="price-original" id="p-77243">
+            43,900원
+          </span>
+          <button class="edit-btn"
+                  data-item="77243"
+                  data-price="43900"
+                  data-name="레고 스피드 챔피언 Oracle Red Bull Racing RB20 F1 레이스 카 77243"
+                  title="정가 수정">✏</button>
+          <div class="inline-edit" id="edit-77243">
+            <input type="number" min="1" placeholder="정가(원)">
+            <button class="sv">저장</button>
+            <button class="cv">✕</button>
+          </div>
+        </td>
+        <td class="item-no mobile-hide">77243</td>
+        <td class="mobile-hide" style="font-size:.78rem;color:#868e96">네이버 레고</td>
+        <td><a class="buy-btn" href="https://search.shopping.naver.com/catalog/53370595115" target="_blank">구매 →</a></td>
+      </tr>
+      
+      
+      <tr data-threshold="0.3" data-final="99000">
+        <td>레고 마인크래프트 엔더맨 타워 21279</td>
+        <td class="price-final">
+          99,000원
+          
+        </td>
+        <td>
+          <span class="pct pct-30">
+            34.0%
+          </span>
+        </td>
+        <td class="price-cell">
+          <span class="price-original" id="p-21279">
+            149,900원
+          </span>
+          <button class="edit-btn"
+                  data-item="21279"
+                  data-price="149900"
+                  data-name="레고 마인크래프트 엔더맨 타워 21279"
+                  title="정가 수정">✏</button>
+          <div class="inline-edit" id="edit-21279">
+            <input type="number" min="1" placeholder="정가(원)">
+            <button class="sv">저장</button>
+            <button class="cv">✕</button>
+          </div>
+        </td>
+        <td class="item-no mobile-hide">21279</td>
+        <td class="mobile-hide" style="font-size:.78rem;color:#868e96">네이버 레고</td>
+        <td><a class="buy-btn" href="https://search.shopping.naver.com/catalog/55078457846" target="_blank">구매 →</a></td>
+      </tr>
+      
+      
+      <tr data-threshold="0.3" data-final="29650">
+        <td>레고 스피드 챔피언 MoneyGram Haas F1 Team VF-24 레이스 카 77250</td>
+        <td class="price-final">
+          29,650원
+          
+        </td>
+        <td>
+          <span class="pct pct-30">
+            32.5%
+          </span>
+        </td>
+        <td class="price-cell">
+          <span class="price-original" id="p-77250">
+            43,900원
+          </span>
+          <button class="edit-btn"
+                  data-item="77250"
+                  data-price="43900"
+                  data-name="레고 스피드 챔피언 MoneyGram Haas F1 Team VF-24 레이스 카 77250"
+                  title="정가 수정">✏</button>
+          <div class="inline-edit" id="edit-77250">
+            <input type="number" min="1" placeholder="정가(원)">
+            <button class="sv">저장</button>
+            <button class="cv">✕</button>
+          </div>
+        </td>
+        <td class="item-no mobile-hide">77250</td>
+        <td class="mobile-hide" style="font-size:.78rem;color:#868e96">네이버 레고</td>
+        <td><a class="buy-btn" href="https://search.shopping.naver.com/catalog/53370807781" target="_blank">구매 →</a></td>
+      </tr>
+      
+      
+      <tr data-threshold="0.3" data-final="33900">
+        <td>레고 닌자고 캐릭터 15주년 기념 71866</td>
+        <td class="price-final">
+          33,900원
+          
+        </td>
+        <td>
+          <span class="pct pct-30">
+            32.1%
+          </span>
+        </td>
+        <td class="price-cell">
+          <span class="price-original" id="p-71866">
+            49,960원
+          </span>
+          <button class="edit-btn"
+                  data-item="71866"
+                  data-price="49960"
+                  data-name="레고 닌자고 캐릭터 15주년 기념 71866"
+                  title="정가 수정">✏</button>
+          <div class="inline-edit" id="edit-71866">
+            <input type="number" min="1" placeholder="정가(원)">
+            <button class="sv">저장</button>
+            <button class="cv">✕</button>
+          </div>
+        </td>
+        <td class="item-no mobile-hide">71866</td>
+        <td class="mobile-hide" style="font-size:.78rem;color:#868e96">네이버 레고</td>
+        <td><a class="buy-btn" href="https://search.shopping.naver.com/catalog/58599247502" target="_blank">구매 →</a></td>
+      </tr>
+      
+      
+      <tr data-threshold="0.3" data-final="29980">
+        <td>레고 스피드 챔피언 Ferrari SF 24 F1 레이스 카 77242</td>
+        <td class="price-final">
+          29,980원
+          
+        </td>
+        <td>
+          <span class="pct pct-30">
+            31.7%
+          </span>
+        </td>
+        <td class="price-cell">
+          <span class="price-original" id="p-77242">
+            43,900원
+          </span>
+          <button class="edit-btn"
+                  data-item="77242"
+                  data-price="43900"
+                  data-name="레고 스피드 챔피언 Ferrari SF 24 F1 레이스 카 77242"
+                  title="정가 수정">✏</button>
+          <div class="inline-edit" id="edit-77242">
+            <input type="number" min="1" placeholder="정가(원)">
+            <button class="sv">저장</button>
+            <button class="cv">✕</button>
+          </div>
+        </td>
+        <td class="item-no mobile-hide">77242</td>
+        <td class="mobile-hide" style="font-size:.78rem;color:#868e96">네이버 레고</td>
+        <td><a class="buy-btn" href="https://search.shopping.naver.com/catalog/53370594732" target="_blank">구매 →</a></td>
       </tr>
       
     </tbody>
@@ -551,875 +430,985 @@
 
 </div>
 
-<div class="cat">
+<div class="cat" data-stat="20">
   <div class="cat-header cat-20">
     💡 20%대 할인
-    <span class="badge">34개</span>
+    <span class="badge">30개</span>
   </div>
   
   
   <table>
     <thead>
       <tr>
-        <th>품번</th>
         <th>상품명</th>
         <th>최종가</th>
-        <th>공식 정가</th>
         <th>할인율</th>
-        <th>출처</th>
+        <th>공식 정가</th>
+        <th class="mobile-hide">품번</th>
+        <th class="mobile-hide">출처</th>
         <th>구매</th>
       </tr>
     </thead>
     <tbody>
       
-      <tr>
-        <td class="item-no">75401</td>
-        <td>스타워즈 레고 아소카의 제다이 인터셉터 (75401) (8세 이상)</td>
+      
+      <tr data-threshold="0.2" data-final="53000">
+        <td>레고 크리에이터 3-in-1 아름다운 말 31166</td>
         <td class="price-final">
-          47,448원
+          53,000원
           
-          <br><span style="font-size:.72rem;color:#868e96">
-            (표시가 59,310원 × 80%)
-          </span>
-          
-        </td>
-        <td>
-          <span class="price-original">
-            65,900원
-          </span>
         </td>
         <td>
           <span class="pct pct-20">
-            28.0%
+            29.2%
           </span>
         </td>
-        <td style="font-size:.78rem;color:#868e96">롯데마트 제타 레고 프로모션</td>
-        <td><a class="buy-btn" href="https://lottemartzetta.com/products/OS5702017817453/details" target="_blank">구매 →</a></td>
-      </tr>
-      
-      <tr>
-        <td class="item-no">72032</td>
-        <td>슈퍼마리오 레고 마리오 카트 스탠더드카트 (72032) (7세 이상)</td>
-        <td class="price-final">
-          21,528원
-          
-          <br><span style="font-size:.72rem;color:#868e96">
-            (표시가 26,910원 × 80%)
-          </span>
-          
-        </td>
-        <td>
-          <span class="price-original">
-            29,900원
-          </span>
-        </td>
-        <td>
-          <span class="pct pct-20">
-            28.0%
-          </span>
-        </td>
-        <td style="font-size:.78rem;color:#868e96">롯데마트 제타 레고 프로모션</td>
-        <td><a class="buy-btn" href="https://lottemartzetta.com/products/OS5702017816494/details" target="_blank">구매 →</a></td>
-      </tr>
-      
-      <tr>
-        <td class="item-no">77246</td>
-        <td>스피드챔피언 레고 Visa Cash App RB VCARB 01 F1® (77246) (18세 이상)</td>
-        <td class="price-final">
-          31,608원
-          
-          <br><span style="font-size:.72rem;color:#868e96">
-            (표시가 39,510원 × 80%)
-          </span>
-          
-        </td>
-        <td>
-          <span class="price-original">
-            43,900원
-          </span>
-        </td>
-        <td>
-          <span class="pct pct-20">
-            28.0%
-          </span>
-        </td>
-        <td style="font-size:.78rem;color:#868e96">롯데마트 제타 레고 프로모션</td>
-        <td><a class="buy-btn" href="https://lottemartzetta.com/products/OS5702017816135/details" target="_blank">구매 →</a></td>
-      </tr>
-      
-      <tr>
-        <td class="item-no">77244</td>
-        <td>스피드챔피언 레고 Mercedes AMG F1 W15 레이스 카 (77244) (10세 이상)</td>
-        <td class="price-final">
-          31,608원
-          
-          <br><span style="font-size:.72rem;color:#868e96">
-            (표시가 39,510원 × 80%)
-          </span>
-          
-        </td>
-        <td>
-          <span class="price-original">
-            43,900원
-          </span>
-        </td>
-        <td>
-          <span class="pct pct-20">
-            28.0%
-          </span>
-        </td>
-        <td style="font-size:.78rem;color:#868e96">롯데마트 제타 레고 프로모션</td>
-        <td><a class="buy-btn" href="https://lottemartzetta.com/products/OS5702017816111/details" target="_blank">구매 →</a></td>
-      </tr>
-      
-      <tr>
-        <td class="item-no">42670</td>
-        <td>프렌즈 레고 하트레이크 시티 아파트와 상점 (42670) (12세 이상)</td>
-        <td class="price-final">
-          143,928원
-          
-          <br><span style="font-size:.72rem;color:#868e96">
-            (표시가 179,910원 × 80%)
-          </span>
-          
-        </td>
-        <td>
-          <span class="price-original">
-            199,900원
-          </span>
-        </td>
-        <td>
-          <span class="pct pct-20">
-            28.0%
-          </span>
-        </td>
-        <td style="font-size:.78rem;color:#868e96">롯데마트 제타 레고 프로모션</td>
-        <td><a class="buy-btn" href="https://lottemartzetta.com/products/OS5702017815336/details" target="_blank">구매 →</a></td>
-      </tr>
-      
-      <tr>
-        <td class="item-no">21061</td>
-        <td>아키텍쳐 레고 파리 노트르담 (21061) (18세 이상)</td>
-        <td class="price-final">
-          215,928원
-          
-          <br><span style="font-size:.72rem;color:#868e96">
-            (표시가 269,910원 × 80%)
-          </span>
-          
-        </td>
-        <td>
-          <span class="price-original">
-            299,900원
-          </span>
-        </td>
-        <td>
-          <span class="pct pct-20">
-            28.0%
-          </span>
-        </td>
-        <td style="font-size:.78rem;color:#868e96">롯데마트 제타 레고 프로모션</td>
-        <td><a class="buy-btn" href="https://lottemartzetta.com/products/OS5702017582412/details" target="_blank">구매 →</a></td>
-      </tr>
-      
-      <tr>
-        <td class="item-no">76976</td>
-        <td>쥬라기월드 레고 스피노사우루스와 케찰코아툴루스 비행미션 (76976) (8세 이상)</td>
-        <td class="price-final">
-          151,128원
-          
-          <br><span style="font-size:.72rem;color:#868e96">
-            (표시가 188,910원 × 80%)
-          </span>
-          
-        </td>
-        <td>
-          <span class="price-original">
-            209,900원
-          </span>
-        </td>
-        <td>
-          <span class="pct pct-20">
-            28.0%
-          </span>
-        </td>
-        <td style="font-size:.78rem;color:#868e96">롯데마트 제타 레고 프로모션</td>
-        <td><a class="buy-btn" href="https://lottemartzetta.com/products/OS5702017850276/details" target="_blank">구매 →</a></td>
-      </tr>
-      
-      <tr>
-        <td class="item-no">10446</td>
-        <td>듀플로 레고 3 in 1 야생 동물 가족 (10446) (2세 이상)</td>
-        <td class="price-final">
-          86,328원
-          
-          <br><span style="font-size:.72rem;color:#868e96">
-            (표시가 107,910원 × 80%)
-          </span>
-          
-        </td>
-        <td>
-          <span class="price-original">
-            119,900원
-          </span>
-        </td>
-        <td>
-          <span class="pct pct-20">
-            28.0%
-          </span>
-        </td>
-        <td style="font-size:.78rem;color:#868e96">롯데마트 제타 레고 프로모션</td>
-        <td><a class="buy-btn" href="https://lottemartzetta.com/products/OS5702017815558/details" target="_blank">구매 →</a></td>
-      </tr>
-      
-      <tr>
-        <td class="item-no">21272</td>
-        <td>마인크래프트 레고 삼림 대저택 파이팅 링 (21272) (10세 이상)</td>
-        <td class="price-final">
-          53,928원
-          
-          <br><span style="font-size:.72rem;color:#868e96">
-            (표시가 67,410원 × 80%)
-          </span>
-          
-        </td>
-        <td>
-          <span class="price-original">
+        <td class="price-cell">
+          <span class="price-original" id="p-31166">
             74,900원
           </span>
+          <button class="edit-btn"
+                  data-item="31166"
+                  data-price="74900"
+                  data-name="레고 크리에이터 3-in-1 아름다운 말 31166"
+                  title="정가 수정">✏</button>
+          <div class="inline-edit" id="edit-31166">
+            <input type="number" min="1" placeholder="정가(원)">
+            <button class="sv">저장</button>
+            <button class="cv">✕</button>
+          </div>
+        </td>
+        <td class="item-no mobile-hide">31166</td>
+        <td class="mobile-hide" style="font-size:.78rem;color:#868e96">네이버 레고</td>
+        <td><a class="buy-btn" href="https://search.shopping.naver.com/catalog/56113330794" target="_blank">구매 →</a></td>
+      </tr>
+      
+      
+      <tr data-threshold="0.2" data-final="63900">
+        <td>레고 테크닉 Aston Martin Valkyrie 42208</td>
+        <td class="price-final">
+          63,900원
+          
         </td>
         <td>
           <span class="pct pct-20">
-            28.0%
+            28.9%
           </span>
         </td>
-        <td style="font-size:.78rem;color:#868e96">롯데마트 제타 레고 프로모션</td>
-        <td><a class="buy-btn" href="https://lottemartzetta.com/products/OS5702017815466/details" target="_blank">구매 →</a></td>
-      </tr>
-      
-      <tr>
-        <td class="item-no">11372</td>
-        <td>아이콘 레고 가을의 오두막 정원 (11372) (18세 이상)</td>
-        <td class="price-final">
-          115,128원
-          
-          <br><span style="font-size:.72rem;color:#868e96">
-            (표시가 143,910원 × 80%)
-          </span>
-          
-        </td>
-        <td>
-          <span class="price-original">
-            159,900원
-          </span>
-        </td>
-        <td>
-          <span class="pct pct-20">
-            28.0%
-          </span>
-        </td>
-        <td style="font-size:.78rem;color:#868e96">롯데마트 제타 레고 프로모션</td>
-        <td><a class="buy-btn" href="https://lottemartzetta.com/products/OS5702018062760/details" target="_blank">구매 →</a></td>
-      </tr>
-      
-      <tr>
-        <td class="item-no">10698</td>
-        <td>레고 클래식 라지 조립 박스 (10698) (만4세부터)</td>
-        <td class="price-final">
-          50,328원
-          
-          <br><span style="font-size:.72rem;color:#868e96">
-            (표시가 62,910원 × 80%)
-          </span>
-          
-        </td>
-        <td>
-          <span class="price-original">
-            69,900원
-          </span>
-        </td>
-        <td>
-          <span class="pct pct-20">
-            28.0%
-          </span>
-        </td>
-        <td style="font-size:.78rem;color:#868e96">롯데마트 제타 레고 프로모션</td>
-        <td><a class="buy-btn" href="https://lottemartzetta.com/products/OS5702015357197/details" target="_blank">구매 →</a></td>
-      </tr>
-      
-      <tr>
-        <td class="item-no">75431</td>
-        <td>스타워즈 레고 327 스타 코어 클론 트루퍼  배틀 팩 (75431) (7세 이상)</td>
-        <td class="price-final">
-          43,128원
-          
-          <br><span style="font-size:.72rem;color:#868e96">
-            (표시가 53,910원 × 80%)
-          </span>
-          
-        </td>
-        <td>
-          <span class="price-original">
-            59,900원
-          </span>
-        </td>
-        <td>
-          <span class="pct pct-20">
-            28.0%
-          </span>
-        </td>
-        <td style="font-size:.78rem;color:#868e96">롯데마트 제타 레고 프로모션</td>
-        <td><a class="buy-btn" href="https://lottemartzetta.com/products/OS5702017901213/details" target="_blank">구매 →</a></td>
-      </tr>
-      
-      <tr>
-        <td class="item-no">77250</td>
-        <td>스피드챔피언 레고 MoneyGram Haas F1® Team VF-24 (77250) (10세 이상)</td>
-        <td class="price-final">
-          31,608원
-          
-          <br><span style="font-size:.72rem;color:#868e96">
-            (표시가 39,510원 × 80%)
-          </span>
-          
-        </td>
-        <td>
-          <span class="price-original">
-            43,900원
-          </span>
-        </td>
-        <td>
-          <span class="pct pct-20">
-            28.0%
-          </span>
-        </td>
-        <td style="font-size:.78rem;color:#868e96">롯데마트 제타 레고 프로모션</td>
-        <td><a class="buy-btn" href="https://lottemartzetta.com/products/OS5702017816173/details" target="_blank">구매 →</a></td>
-      </tr>
-      
-      <tr>
-        <td class="item-no">31384</td>
-        <td>크리에이터 레고 세계의 동물 탐험  벌새 (31384) (8세 이상)</td>
-        <td class="price-final">
-          32,328원
-          
-          <br><span style="font-size:.72rem;color:#868e96">
-            (표시가 40,410원 × 80%)
-          </span>
-          
-        </td>
-        <td>
-          <span class="price-original">
-            44,900원
-          </span>
-        </td>
-        <td>
-          <span class="pct pct-20">
-            28.0%
-          </span>
-        </td>
-        <td style="font-size:.78rem;color:#868e96">롯데마트 제타 레고 프로모션</td>
-        <td><a class="buy-btn" href="https://lottemartzetta.com/products/OS5702018054789/details" target="_blank">구매 →</a></td>
-      </tr>
-      
-      <tr>
-        <td class="item-no">77249</td>
-        <td>스피드챔피언 레고 Williams Racing FW46 F1 레이스 카 (77249) (10세 이상)</td>
-        <td class="price-final">
-          31,608원
-          
-          <br><span style="font-size:.72rem;color:#868e96">
-            (표시가 39,510원 × 80%)
-          </span>
-          
-        </td>
-        <td>
-          <span class="price-original">
-            43,900원
-          </span>
-        </td>
-        <td>
-          <span class="pct pct-20">
-            28.0%
-          </span>
-        </td>
-        <td style="font-size:.78rem;color:#868e96">롯데마트 제타 레고 프로모션</td>
-        <td><a class="buy-btn" href="https://lottemartzetta.com/products/OS5702017816166/details" target="_blank">구매 →</a></td>
-      </tr>
-      
-      <tr>
-        <td class="item-no">42208</td>
-        <td>테크닉 레고 Aston Martin Valkyrie (42208) (9세 이상)</td>
-        <td class="price-final">
-          64,728원
-          
-          <br><span style="font-size:.72rem;color:#868e96">
-            (표시가 80,910원 × 80%)
-          </span>
-          
-        </td>
-        <td>
-          <span class="price-original">
+        <td class="price-cell">
+          <span class="price-original" id="p-42208">
             89,900원
           </span>
+          <button class="edit-btn"
+                  data-item="42208"
+                  data-price="89900"
+                  data-name="레고 테크닉 Aston Martin Valkyrie 42208"
+                  title="정가 수정">✏</button>
+          <div class="inline-edit" id="edit-42208">
+            <input type="number" min="1" placeholder="정가(원)">
+            <button class="sv">저장</button>
+            <button class="cv">✕</button>
+          </div>
+        </td>
+        <td class="item-no mobile-hide">42208</td>
+        <td class="mobile-hide" style="font-size:.78rem;color:#868e96">네이버 레고</td>
+        <td><a class="buy-btn" href="https://search.shopping.naver.com/catalog/55079179153" target="_blank">구매 →</a></td>
+      </tr>
+      
+      
+      <tr data-threshold="0.2" data-final="32000">
+        <td>레고 보태니컬 행운의 대나무 10344</td>
+        <td class="price-final">
+          32,000원
+          
         </td>
         <td>
           <span class="pct pct-20">
-            28.0%
+            28.7%
           </span>
         </td>
-        <td style="font-size:.78rem;color:#868e96">롯데마트 제타 레고 프로모션</td>
-        <td><a class="buy-btn" href="https://lottemartzetta.com/products/OS5702017816319/details" target="_blank">구매 →</a></td>
-      </tr>
-      
-      <tr>
-        <td class="item-no">76329</td>
-        <td>레고 마일스 모랄레스의 마스크 (76329) (18세 이상)</td>
-        <td class="price-final">
-          71,928원
-          
-          <br><span style="font-size:.72rem;color:#868e96">
-            (표시가 89,910원 × 80%)
-          </span>
-          
-        </td>
-        <td>
-          <span class="price-original">
-            99,900원
-          </span>
-        </td>
-        <td>
-          <span class="pct pct-20">
-            28.0%
-          </span>
-        </td>
-        <td style="font-size:.78rem;color:#868e96">롯데마트 제타 레고 프로모션</td>
-        <td><a class="buy-btn" href="https://lottemartzetta.com/products/OS5702017824628/details" target="_blank">구매 →</a></td>
-      </tr>
-      
-      <tr>
-        <td class="item-no">76444</td>
-        <td>해리포터 레고 다이애건 앨리 마법의 상점 (76444) (18세 이상)</td>
-        <td class="price-final">
-          201,528원
-          
-          <br><span style="font-size:.72rem;color:#868e96">
-            (표시가 251,910원 × 80%)
-          </span>
-          
-        </td>
-        <td>
-          <span class="price-original">
-            279,900원
-          </span>
-        </td>
-        <td>
-          <span class="pct pct-20">
-            28.0%
-          </span>
-        </td>
-        <td style="font-size:.78rem;color:#868e96">롯데마트 제타 레고 프로모션</td>
-        <td><a class="buy-btn" href="https://lottemartzetta.com/products/OS5702017812823/details" target="_blank">구매 →</a></td>
-      </tr>
-      
-      <tr>
-        <td class="item-no">43284</td>
-        <td>디즈니 레고 안나와 엘사 (43284) (5세 이상)</td>
-        <td class="price-final">
-          10,008원
-          
-          <br><span style="font-size:.72rem;color:#868e96">
-            (표시가 12,510원 × 80%)
-          </span>
-          
-        </td>
-        <td>
-          <span class="price-original">
-            13,900원
-          </span>
-        </td>
-        <td>
-          <span class="pct pct-20">
-            28.0%
-          </span>
-        </td>
-        <td style="font-size:.78rem;color:#868e96">롯데마트 제타 레고 프로모션</td>
-        <td><a class="buy-btn" href="https://lottemartzetta.com/products/OS5702018066751/details" target="_blank">구매 →</a></td>
-      </tr>
-      
-      <tr>
-        <td class="item-no">21349</td>
-        <td>아이디어 레고 턱시도 고양이 (21349) (18세 이상)</td>
-        <td class="price-final">
-          107,928원
-          
-          <br><span style="font-size:.72rem;color:#868e96">
-            (표시가 134,910원 × 80%)
-          </span>
-          
-        </td>
-        <td>
-          <span class="price-original">
-            149,900원
-          </span>
-        </td>
-        <td>
-          <span class="pct pct-20">
-            28.0%
-          </span>
-        </td>
-        <td style="font-size:.78rem;color:#868e96">롯데마트 제타 레고 프로모션</td>
-        <td><a class="buy-btn" href="https://lottemartzetta.com/products/OS5702017599670/details" target="_blank">구매 →</a></td>
-      </tr>
-      
-      <tr>
-        <td class="item-no">42692</td>
-        <td>프렌즈 레고 아이스크림과 풍선 매점 (42692) (6세 이상)</td>
-        <td class="price-final">
-          10,008원
-          
-          <br><span style="font-size:.72rem;color:#868e96">
-            (표시가 12,510원 × 80%)
-          </span>
-          
-        </td>
-        <td>
-          <span class="price-original">
-            13,900원
-          </span>
-        </td>
-        <td>
-          <span class="pct pct-20">
-            28.0%
-          </span>
-        </td>
-        <td style="font-size:.78rem;color:#868e96">롯데마트 제타 레고 프로모션</td>
-        <td><a class="buy-btn" href="https://lottemartzetta.com/products/OS5702018033258/details" target="_blank">구매 →</a></td>
-      </tr>
-      
-      <tr>
-        <td class="item-no">10914</td>
-        <td>레고 디럭스 브릭 박스 (10914) (1세이상)</td>
-        <td class="price-final">
-          53,928원
-          
-          <br><span style="font-size:.72rem;color:#868e96">
-            (표시가 67,410원 × 80%)
-          </span>
-          
-        </td>
-        <td>
-          <span class="price-original">
-            74,900원
-          </span>
-        </td>
-        <td>
-          <span class="pct pct-20">
-            28.0%
-          </span>
-        </td>
-        <td style="font-size:.78rem;color:#868e96">롯데마트 제타 레고 프로모션</td>
-        <td><a class="buy-btn" href="https://lottemartzetta.com/products/OS5702016617757/details" target="_blank">구매 →</a></td>
-      </tr>
-      
-      <tr>
-        <td class="item-no">75434</td>
-        <td>스타워즈 레고 K 2SO 보안 드로이드 (75434) (10세 이상)</td>
-        <td class="price-final">
-          100,728원
-          
-          <br><span style="font-size:.72rem;color:#868e96">
-            (표시가 125,910원 × 80%)
-          </span>
-          
-        </td>
-        <td>
-          <span class="price-original">
-            139,900원
-          </span>
-        </td>
-        <td>
-          <span class="pct pct-20">
-            28.0%
-          </span>
-        </td>
-        <td style="font-size:.78rem;color:#868e96">롯데마트 제타 레고 프로모션</td>
-        <td><a class="buy-btn" href="https://lottemartzetta.com/products/OS5702017901244/details" target="_blank">구매 →</a></td>
-      </tr>
-      
-      <tr>
-        <td class="item-no">76461</td>
-        <td>해리포터 레고 코니쉬 픽시 (76461) (8세 이상)</td>
-        <td class="price-final">
-          32,328원
-          
-          <br><span style="font-size:.72rem;color:#868e96">
-            (표시가 40,410원 × 80%)
-          </span>
-          
-        </td>
-        <td>
-          <span class="price-original">
+        <td class="price-cell">
+          <span class="price-original" id="p-10344">
             44,900원
           </span>
+          <button class="edit-btn"
+                  data-item="10344"
+                  data-price="44900"
+                  data-name="레고 보태니컬 행운의 대나무 10344"
+                  title="정가 수정">✏</button>
+          <div class="inline-edit" id="edit-10344">
+            <input type="number" min="1" placeholder="정가(원)">
+            <button class="sv">저장</button>
+            <button class="cv">✕</button>
+          </div>
+        </td>
+        <td class="item-no mobile-hide">10344</td>
+        <td class="mobile-hide" style="font-size:.78rem;color:#868e96">네이버 레고</td>
+        <td><a class="buy-btn" href="https://search.shopping.naver.com/catalog/52268743619" target="_blank">구매 →</a></td>
+      </tr>
+      
+      
+      <tr data-threshold="0.2" data-final="9000">
+        <td>레고 클래식 녹색 조립판 11023</td>
+        <td class="price-final">
+          9,000원
+          
         </td>
         <td>
           <span class="pct pct-20">
-            28.0%
+            28.6%
           </span>
         </td>
-        <td style="font-size:.78rem;color:#868e96">롯데마트 제타 레고 프로모션</td>
-        <td><a class="buy-btn" href="https://lottemartzetta.com/products/OS5702018063385/details" target="_blank">구매 →</a></td>
+        <td class="price-cell">
+          <span class="price-original" id="p-11023">
+            12,600원
+          </span>
+          <button class="edit-btn"
+                  data-item="11023"
+                  data-price="12600"
+                  data-name="레고 클래식 녹색 조립판 11023"
+                  title="정가 수정">✏</button>
+          <div class="inline-edit" id="edit-11023">
+            <input type="number" min="1" placeholder="정가(원)">
+            <button class="sv">저장</button>
+            <button class="cv">✕</button>
+          </div>
+        </td>
+        <td class="item-no mobile-hide">11023</td>
+        <td class="mobile-hide" style="font-size:.78rem;color:#868e96">네이버 레고</td>
+        <td><a class="buy-btn" href="https://search.shopping.naver.com/catalog/31654659618" target="_blank">구매 →</a></td>
       </tr>
       
-      <tr>
-        <td class="item-no">76467</td>
-        <td>해리포터 레고 루나 러브굿의 집 (76467) (10세 이상)</td>
+      
+      <tr data-threshold="0.2" data-final="82960">
+        <td>레고 개비의 매직 하우스 개비의 매직 하우스 10788</td>
         <td class="price-final">
-          106,324원
+          82,960원
           
-          <br><span style="font-size:.72rem;color:#868e96">
-            (표시가 132,905원 × 80%)
-          </span>
-          
-        </td>
-        <td>
-          <span class="price-original">
-            139,900원
-          </span>
         </td>
         <td>
           <span class="pct pct-20">
-            24.0%
+            27.8%
           </span>
         </td>
-        <td style="font-size:.78rem;color:#868e96">롯데마트 제타 레고 프로모션</td>
-        <td><a class="buy-btn" href="https://lottemartzetta.com/products/OS5702018063439/details" target="_blank">구매 →</a></td>
+        <td class="price-cell">
+          <span class="price-original" id="p-10788">
+            114,900원
+          </span>
+          <button class="edit-btn"
+                  data-item="10788"
+                  data-price="114900"
+                  data-name="레고 개비의 매직 하우스 개비의 매직 하우스 10788"
+                  title="정가 수정">✏</button>
+          <div class="inline-edit" id="edit-10788">
+            <input type="number" min="1" placeholder="정가(원)">
+            <button class="sv">저장</button>
+            <button class="cv">✕</button>
+          </div>
+        </td>
+        <td class="item-no mobile-hide">10788</td>
+        <td class="mobile-hide" style="font-size:.78rem;color:#868e96">네이버 레고</td>
+        <td><a class="buy-btn" href="https://search.shopping.naver.com/catalog/41636742618" target="_blank">구매 →</a></td>
       </tr>
       
-      <tr>
-        <td class="item-no">77242</td>
-        <td>스피드챔피언 레고 Ferrari SF 24 F1 레이스 카 (77242) (10세 이상)</td>
+      
+      <tr data-threshold="0.2" data-final="67000">
+        <td>레고 프렌즈 요트 여행 42664</td>
         <td class="price-final">
-          33,364원
+          67,000원
           
-          <br><span style="font-size:.72rem;color:#868e96">
-            (표시가 41,705원 × 80%)
-          </span>
-          
-        </td>
-        <td>
-          <span class="price-original">
-            43,900원
-          </span>
         </td>
         <td>
           <span class="pct pct-20">
-            24.0%
+            27.4%
           </span>
         </td>
-        <td style="font-size:.78rem;color:#868e96">롯데마트 제타 레고 프로모션</td>
-        <td><a class="buy-btn" href="https://lottemartzetta.com/products/OS5702017816098/details" target="_blank">구매 →</a></td>
+        <td class="price-cell">
+          <span class="price-original" id="p-42664">
+            92,300원
+          </span>
+          <button class="edit-btn"
+                  data-item="42664"
+                  data-price="92300"
+                  data-name="레고 프렌즈 요트 여행 42664"
+                  title="정가 수정">✏</button>
+          <div class="inline-edit" id="edit-42664">
+            <input type="number" min="1" placeholder="정가(원)">
+            <button class="sv">저장</button>
+            <button class="cv">✕</button>
+          </div>
+        </td>
+        <td class="item-no mobile-hide">42664</td>
+        <td class="mobile-hide" style="font-size:.78rem;color:#868e96">네이버 레고</td>
+        <td><a class="buy-btn" href="https://search.shopping.naver.com/catalog/55076813352" target="_blank">구매 →</a></td>
       </tr>
       
-      <tr>
-        <td class="item-no">76466</td>
-        <td>해리포터 레고 마법사의 돌  콜렉터 (76466) (18세 이상)</td>
+      
+      <tr data-threshold="0.2" data-final="289900">
+        <td>레고 듀플로 즐거운 우리집 10929</td>
         <td class="price-final">
-          174,724원
+          289,900원
           
-          <br><span style="font-size:.72rem;color:#868e96">
-            (표시가 218,405원 × 80%)
-          </span>
-          
-        </td>
-        <td>
-          <span class="price-original">
-            229,900원
-          </span>
         </td>
         <td>
           <span class="pct pct-20">
-            24.0%
+            27.1%
           </span>
         </td>
-        <td style="font-size:.78rem;color:#868e96">롯데마트 제타 레고 프로모션</td>
-        <td><a class="buy-btn" href="https://lottemartzetta.com/products/OS5702018063422/details" target="_blank">구매 →</a></td>
+        <td class="price-cell">
+          <span class="price-original" id="p-10929">
+            397,900원
+          </span>
+          <button class="edit-btn"
+                  data-item="10929"
+                  data-price="397900"
+                  data-name="레고 듀플로 즐거운 우리집 10929"
+                  title="정가 수정">✏</button>
+          <div class="inline-edit" id="edit-10929">
+            <input type="number" min="1" placeholder="정가(원)">
+            <button class="sv">저장</button>
+            <button class="cv">✕</button>
+          </div>
+        </td>
+        <td class="item-no mobile-hide">10929</td>
+        <td class="mobile-hide" style="font-size:.78rem;color:#868e96">네이버 레고</td>
+        <td><a class="buy-btn" href="https://search.shopping.naver.com/catalog/21995999008" target="_blank">구매 →</a></td>
       </tr>
       
-      <tr>
-        <td class="item-no">11510</td>
-        <td>아이콘 레고 목련 가지 (11510) (18세 이상)</td>
+      
+      <tr data-threshold="0.2" data-final="51000">
+        <td>레고 스피드챔피언 Mercedes-AMG G 63와 Mercedes-AMG SL 63 76924</td>
         <td class="price-final">
-          53,124원
-          
-          <br><span style="font-size:.72rem;color:#868e96">
-            (표시가 66,405원 × 80%)
-          </span>
+          51,000원
           
         </td>
         <td>
-          <span class="price-original">
+          <span class="pct pct-20">
+            27.0%
+          </span>
+        </td>
+        <td class="price-cell">
+          <span class="price-original" id="p-76924">
             69,900원
           </span>
+          <button class="edit-btn"
+                  data-item="76924"
+                  data-price="69900"
+                  data-name="레고 스피드챔피언 Mercedes-AMG G 63와 Mercedes-AMG SL 63 76924"
+                  title="정가 수정">✏</button>
+          <div class="inline-edit" id="edit-76924">
+            <input type="number" min="1" placeholder="정가(원)">
+            <button class="sv">저장</button>
+            <button class="cv">✕</button>
+          </div>
+        </td>
+        <td class="item-no mobile-hide">76924</td>
+        <td class="mobile-hide" style="font-size:.78rem;color:#868e96">네이버 레고</td>
+        <td><a class="buy-btn" href="https://search.shopping.naver.com/catalog/48072831621" target="_blank">구매 →</a></td>
+      </tr>
+      
+      
+      <tr data-threshold="0.2" data-final="54900">
+        <td>레고 마인크래프트 삼림 대저택 파이팅 링 21272</td>
+        <td class="price-final">
+          54,900원
+          
         </td>
         <td>
           <span class="pct pct-20">
-            24.0%
+            26.7%
           </span>
         </td>
-        <td style="font-size:.78rem;color:#868e96">롯데마트 제타 레고 프로모션</td>
-        <td><a class="buy-btn" href="https://lottemartzetta.com/products/OS5702018061848/details" target="_blank">구매 →</a></td>
+        <td class="price-cell">
+          <span class="price-original" id="p-21272">
+            74,900원
+          </span>
+          <button class="edit-btn"
+                  data-item="21272"
+                  data-price="74900"
+                  data-name="레고 마인크래프트 삼림 대저택 파이팅 링 21272"
+                  title="정가 수정">✏</button>
+          <div class="inline-edit" id="edit-21272">
+            <input type="number" min="1" placeholder="정가(원)">
+            <button class="sv">저장</button>
+            <button class="cv">✕</button>
+          </div>
+        </td>
+        <td class="item-no mobile-hide">21272</td>
+        <td class="mobile-hide" style="font-size:.78rem;color:#868e96">네이버 레고</td>
+        <td><a class="buy-btn" href="https://search.shopping.naver.com/catalog/53370153354" target="_blank">구매 →</a></td>
       </tr>
       
-      <tr>
-        <td class="item-no">21279</td>
-        <td>마인크래프트 레고 엔더맨 타워 (21279) (9세 이상)</td>
+      
+      <tr data-threshold="0.2" data-final="32384">
+        <td>레고 스피드 챔피언 Mercedes AMG F1 W15 레이스 카 77244</td>
         <td class="price-final">
-          113,924원
+          32,384원
           
-          <br><span style="font-size:.72rem;color:#868e96">
-            (표시가 142,405원 × 80%)
-          </span>
-          
-        </td>
-        <td>
-          <span class="price-original">
-            149,900원
-          </span>
         </td>
         <td>
           <span class="pct pct-20">
-            24.0%
+            26.2%
           </span>
         </td>
-        <td style="font-size:.78rem;color:#868e96">롯데마트 제타 레고 프로모션</td>
-        <td><a class="buy-btn" href="https://lottemartzetta.com/products/OS5702017815534/details" target="_blank">구매 →</a></td>
-      </tr>
-      
-      <tr>
-        <td class="item-no">10428</td>
-        <td>듀플로 레고 인터랙티브 기차 세트 (10428) (3세 이상)</td>
-        <td class="price-final">
-          144,324원
-          
-          <br><span style="font-size:.72rem;color:#868e96">
-            (표시가 180,405원 × 80%)
-          </span>
-          
-        </td>
-        <td>
-          <span class="price-original">
-            189,900원
-          </span>
-        </td>
-        <td>
-          <span class="pct pct-20">
-            24.0%
-          </span>
-        </td>
-        <td style="font-size:.78rem;color:#868e96">롯데마트 제타 레고 프로모션</td>
-        <td><a class="buy-btn" href="https://lottemartzetta.com/products/OS5702017583044/details" target="_blank">구매 →</a></td>
-      </tr>
-      
-      <tr>
-        <td class="item-no">42207</td>
-        <td>테크닉 레고 Ferrari SF 24 F1 레이스 카 (42207) (18세 이상)</td>
-        <td class="price-final">
-          243,124원
-          
-          <br><span style="font-size:.72rem;color:#868e96">
-            (표시가 303,905원 × 80%)
-          </span>
-          
-        </td>
-        <td>
-          <span class="price-original">
-            319,900원
-          </span>
-        </td>
-        <td>
-          <span class="pct pct-20">
-            24.0%
-          </span>
-        </td>
-        <td style="font-size:.78rem;color:#868e96">롯데마트 제타 레고 프로모션</td>
-        <td><a class="buy-btn" href="https://lottemartzetta.com/products/OS5702017816302/details" target="_blank">구매 →</a></td>
-      </tr>
-      
-      <tr>
-        <td class="item-no">77243</td>
-        <td>스피드챔피언 레고 Oracle Red Bull Racing RB20 F1(77243) (18세 이상)</td>
-        <td class="price-final">
-          33,364원
-          
-          <br><span style="font-size:.72rem;color:#868e96">
-            (표시가 41,705원 × 80%)
-          </span>
-          
-        </td>
-        <td>
-          <span class="price-original">
+        <td class="price-cell">
+          <span class="price-original" id="p-77244">
             43,900원
           </span>
+          <button class="edit-btn"
+                  data-item="77244"
+                  data-price="43900"
+                  data-name="레고 스피드 챔피언 Mercedes AMG F1 W15 레이스 카 77244"
+                  title="정가 수정">✏</button>
+          <div class="inline-edit" id="edit-77244">
+            <input type="number" min="1" placeholder="정가(원)">
+            <button class="sv">저장</button>
+            <button class="cv">✕</button>
+          </div>
+        </td>
+        <td class="item-no mobile-hide">77244</td>
+        <td class="mobile-hide" style="font-size:.78rem;color:#868e96">네이버 레고</td>
+        <td><a class="buy-btn" href="https://search.shopping.naver.com/catalog/53370604707" target="_blank">구매 →</a></td>
+      </tr>
+      
+      
+      <tr data-threshold="0.2" data-final="32384">
+        <td>레고 스피드 챔피언 Williams Racing FW46 F1 레이스 카 77249</td>
+        <td class="price-final">
+          32,384원
+          
         </td>
         <td>
           <span class="pct pct-20">
-            24.0%
+            26.2%
           </span>
         </td>
-        <td style="font-size:.78rem;color:#868e96">롯데마트 제타 레고 프로모션</td>
-        <td><a class="buy-btn" href="https://lottemartzetta.com/products/OS5702017816104/details" target="_blank">구매 →</a></td>
+        <td class="price-cell">
+          <span class="price-original" id="p-77249">
+            43,900원
+          </span>
+          <button class="edit-btn"
+                  data-item="77249"
+                  data-price="43900"
+                  data-name="레고 스피드 챔피언 Williams Racing FW46 F1 레이스 카 77249"
+                  title="정가 수정">✏</button>
+          <div class="inline-edit" id="edit-77249">
+            <input type="number" min="1" placeholder="정가(원)">
+            <button class="sv">저장</button>
+            <button class="cv">✕</button>
+          </div>
+        </td>
+        <td class="item-no mobile-hide">77249</td>
+        <td class="mobile-hide" style="font-size:.78rem;color:#868e96">네이버 레고</td>
+        <td><a class="buy-btn" href="https://search.shopping.naver.com/catalog/53370807754" target="_blank">구매 →</a></td>
       </tr>
       
-      <tr>
-        <td class="item-no">21274</td>
-        <td>마인크래프트 레고 워든과의 조우 (21274) (7세 이상)</td>
+      
+      <tr data-threshold="0.2" data-final="34640">
+        <td>레고 크리에이터 3in1 우주 탐사 망원경 31378</td>
         <td class="price-final">
-          22,724원
+          34,640원
           
-          <br><span style="font-size:.72rem;color:#868e96">
-            (표시가 28,405원 × 80%)
-          </span>
-          
-        </td>
-        <td>
-          <span class="price-original">
-            29,900원
-          </span>
         </td>
         <td>
           <span class="pct pct-20">
-            24.0%
+            26.0%
           </span>
         </td>
-        <td style="font-size:.78rem;color:#868e96">롯데마트 제타 레고 프로모션</td>
-        <td><a class="buy-btn" href="https://lottemartzetta.com/products/OS5702017815480/details" target="_blank">구매 →</a></td>
+        <td class="price-cell">
+          <span class="price-original" id="p-31378">
+            46,800원
+          </span>
+          <button class="edit-btn"
+                  data-item="31378"
+                  data-price="46800"
+                  data-name="레고 크리에이터 3in1 우주 탐사 망원경 31378"
+                  title="정가 수정">✏</button>
+          <div class="inline-edit" id="edit-31378">
+            <input type="number" min="1" placeholder="정가(원)">
+            <button class="sv">저장</button>
+            <button class="cv">✕</button>
+          </div>
+        </td>
+        <td class="item-no mobile-hide">31378</td>
+        <td class="mobile-hide" style="font-size:.78rem;color:#868e96">네이버 레고</td>
+        <td><a class="buy-btn" href="https://search.shopping.naver.com/catalog/58526447852" target="_blank">구매 →</a></td>
       </tr>
       
-      <tr>
-        <td class="item-no">10427</td>
-        <td>듀플로 레고 인터랙티브 기차 모험 (10427) (2세 이상)</td>
+      
+      <tr data-threshold="0.2" data-final="111000">
+        <td>레고 DC 배트맨 포에버 배트모빌 76304</td>
         <td class="price-final">
-          79,724원
-          
-          <br><span style="font-size:.72rem;color:#868e96">
-            (표시가 99,655원 × 80%)
-          </span>
+          111,000원
           
         </td>
         <td>
-          <span class="price-original">
+          <span class="pct pct-20">
+            25.9%
+          </span>
+        </td>
+        <td class="price-cell">
+          <span class="price-original" id="p-76304">
+            149,900원
+          </span>
+          <button class="edit-btn"
+                  data-item="76304"
+                  data-price="149900"
+                  data-name="레고 DC 배트맨 포에버 배트모빌 76304"
+                  title="정가 수정">✏</button>
+          <div class="inline-edit" id="edit-76304">
+            <input type="number" min="1" placeholder="정가(원)">
+            <button class="sv">저장</button>
+            <button class="cv">✕</button>
+          </div>
+        </td>
+        <td class="item-no mobile-hide">76304</td>
+        <td class="mobile-hide" style="font-size:.78rem;color:#868e96">네이버 레고</td>
+        <td><a class="buy-btn" href="https://search.shopping.naver.com/catalog/56091272128" target="_blank">구매 →</a></td>
+      </tr>
+      
+      
+      <tr data-threshold="0.2" data-final="89000">
+        <td>레고 듀플로 3in1 야생 동물 가족 10446</td>
+        <td class="price-final">
+          89,000원
+          
+        </td>
+        <td>
+          <span class="pct pct-20">
+            25.8%
+          </span>
+        </td>
+        <td class="price-cell">
+          <span class="price-original" id="p-10446">
+            119,900원
+          </span>
+          <button class="edit-btn"
+                  data-item="10446"
+                  data-price="119900"
+                  data-name="레고 듀플로 3in1 야생 동물 가족 10446"
+                  title="정가 수정">✏</button>
+          <div class="inline-edit" id="edit-10446">
+            <input type="number" min="1" placeholder="정가(원)">
+            <button class="sv">저장</button>
+            <button class="cv">✕</button>
+          </div>
+        </td>
+        <td class="item-no mobile-hide">10446</td>
+        <td class="mobile-hide" style="font-size:.78rem;color:#868e96">네이버 레고</td>
+        <td><a class="buy-btn" href="https://search.shopping.naver.com/catalog/52379037618" target="_blank">구매 →</a></td>
+      </tr>
+      
+      
+      <tr data-threshold="0.2" data-final="156400">
+        <td>레고 디즈니 클래식 곰돌이 푸 43300</td>
+        <td class="price-final">
+          156,400원
+          
+        </td>
+        <td>
+          <span class="pct pct-20">
+            25.5%
+          </span>
+        </td>
+        <td class="price-cell">
+          <span class="price-original" id="p-43300">
+            209,900원
+          </span>
+          <button class="edit-btn"
+                  data-item="43300"
+                  data-price="209900"
+                  data-name="레고 디즈니 클래식 곰돌이 푸 43300"
+                  title="정가 수정">✏</button>
+          <div class="inline-edit" id="edit-43300">
+            <input type="number" min="1" placeholder="정가(원)">
+            <button class="sv">저장</button>
+            <button class="cv">✕</button>
+          </div>
+        </td>
+        <td class="item-no mobile-hide">43300</td>
+        <td class="mobile-hide" style="font-size:.78rem;color:#868e96">네이버 레고</td>
+        <td><a class="buy-btn" href="https://search.shopping.naver.com/catalog/59139369615" target="_blank">구매 →</a></td>
+      </tr>
+      
+      
+      <tr data-threshold="0.2" data-final="67140">
+        <td>레고 아이콘 장미 꽃다발 10328</td>
+        <td class="price-final">
+          67,140원
+          
+        </td>
+        <td>
+          <span class="pct pct-20">
+            25.3%
+          </span>
+        </td>
+        <td class="price-cell">
+          <span class="price-original" id="p-10328">
+            89,900원
+          </span>
+          <button class="edit-btn"
+                  data-item="10328"
+                  data-price="89900"
+                  data-name="레고 아이콘 장미 꽃다발 10328"
+                  title="정가 수정">✏</button>
+          <div class="inline-edit" id="edit-10328">
+            <input type="number" min="1" placeholder="정가(원)">
+            <button class="sv">저장</button>
+            <button class="cv">✕</button>
+          </div>
+        </td>
+        <td class="item-no mobile-hide">10328</td>
+        <td class="mobile-hide" style="font-size:.78rem;color:#868e96">네이버 레고</td>
+        <td><a class="buy-btn" href="https://search.shopping.naver.com/catalog/45004230618" target="_blank">구매 →</a></td>
+      </tr>
+      
+      
+      <tr data-threshold="0.2" data-final="52272">
+        <td>레고 클래식 라지 조립 박스 10698 1개</td>
+        <td class="price-final">
+          52,272원
+          
+        </td>
+        <td>
+          <span class="pct pct-20">
+            25.2%
+          </span>
+        </td>
+        <td class="price-cell">
+          <span class="price-original" id="p-10698">
+            69,900원
+          </span>
+          <button class="edit-btn"
+                  data-item="10698"
+                  data-price="69900"
+                  data-name="레고 클래식 라지 조립 박스 10698 1개"
+                  title="정가 수정">✏</button>
+          <div class="inline-edit" id="edit-10698">
+            <input type="number" min="1" placeholder="정가(원)">
+            <button class="sv">저장</button>
+            <button class="cv">✕</button>
+          </div>
+        </td>
+        <td class="item-no mobile-hide">10698</td>
+        <td class="mobile-hide" style="font-size:.78rem;color:#868e96">네이버 레고</td>
+        <td><a class="buy-btn" href="https://search.shopping.naver.com/catalog/59572845285" target="_blank">구매 →</a></td>
+      </tr>
+      
+      
+      <tr data-threshold="0.2" data-final="78455">
+        <td>레고 아트 LOVE 31214</td>
+        <td class="price-final">
+          78,455원
+          
+        </td>
+        <td>
+          <span class="pct pct-20">
+            25.2%
+          </span>
+        </td>
+        <td class="price-cell">
+          <span class="price-original" id="p-31214">
             104,900원
           </span>
+          <button class="edit-btn"
+                  data-item="31214"
+                  data-price="104900"
+                  data-name="레고 아트 LOVE 31214"
+                  title="정가 수정">✏</button>
+          <div class="inline-edit" id="edit-31214">
+            <input type="number" min="1" placeholder="정가(원)">
+            <button class="sv">저장</button>
+            <button class="cv">✕</button>
+          </div>
+        </td>
+        <td class="item-no mobile-hide">31214</td>
+        <td class="mobile-hide" style="font-size:.78rem;color:#868e96">네이버 레고</td>
+        <td><a class="buy-btn" href="https://search.shopping.naver.com/catalog/52268670618" target="_blank">구매 →</a></td>
+      </tr>
+      
+      
+      <tr data-threshold="0.2" data-final="44900">
+        <td>레고 프렌즈 반려동물 액세서리 샵 42650</td>
+        <td class="price-final">
+          44,900원
+          
         </td>
         <td>
           <span class="pct pct-20">
-            24.0%
+            25.0%
           </span>
         </td>
-        <td style="font-size:.78rem;color:#868e96">롯데마트 제타 레고 프로모션</td>
-        <td><a class="buy-btn" href="https://lottemartzetta.com/products/OS5702017583822/details" target="_blank">구매 →</a></td>
+        <td class="price-cell">
+          <span class="price-original" id="p-42650">
+            59,900원
+          </span>
+          <button class="edit-btn"
+                  data-item="42650"
+                  data-price="59900"
+                  data-name="레고 프렌즈 반려동물 액세서리 샵 42650"
+                  title="정가 수정">✏</button>
+          <div class="inline-edit" id="edit-42650">
+            <input type="number" min="1" placeholder="정가(원)">
+            <button class="sv">저장</button>
+            <button class="cv">✕</button>
+          </div>
+        </td>
+        <td class="item-no mobile-hide">42650</td>
+        <td class="mobile-hide" style="font-size:.78rem;color:#868e96">네이버 레고</td>
+        <td><a class="buy-btn" href="https://search.shopping.naver.com/catalog/52297887456" target="_blank">구매 →</a></td>
+      </tr>
+      
+      
+      <tr data-threshold="0.2" data-final="142500">
+        <td>레고 듀플로 인터랙티브 기차 세트 10428</td>
+        <td class="price-final">
+          142,500원
+          
+        </td>
+        <td>
+          <span class="pct pct-20">
+            25.0%
+          </span>
+        </td>
+        <td class="price-cell">
+          <span class="price-original" id="p-10428">
+            189,900원
+          </span>
+          <button class="edit-btn"
+                  data-item="10428"
+                  data-price="189900"
+                  data-name="레고 듀플로 인터랙티브 기차 세트 10428"
+                  title="정가 수정">✏</button>
+          <div class="inline-edit" id="edit-10428">
+            <input type="number" min="1" placeholder="정가(원)">
+            <button class="sv">저장</button>
+            <button class="cv">✕</button>
+          </div>
+        </td>
+        <td class="item-no mobile-hide">10428</td>
+        <td class="mobile-hide" style="font-size:.78rem;color:#868e96">네이버 레고</td>
+        <td><a class="buy-btn" href="https://search.shopping.naver.com/catalog/52593709355" target="_blank">구매 →</a></td>
+      </tr>
+      
+      
+      <tr data-threshold="0.2" data-final="79500">
+        <td>레고 듀플로 인터랙티브 기차 모험 10427</td>
+        <td class="price-final">
+          79,500원
+          
+        </td>
+        <td>
+          <span class="pct pct-20">
+            24.2%
+          </span>
+        </td>
+        <td class="price-cell">
+          <span class="price-original" id="p-10427">
+            104,900원
+          </span>
+          <button class="edit-btn"
+                  data-item="10427"
+                  data-price="104900"
+                  data-name="레고 듀플로 인터랙티브 기차 모험 10427"
+                  title="정가 수정">✏</button>
+          <div class="inline-edit" id="edit-10427">
+            <input type="number" min="1" placeholder="정가(원)">
+            <button class="sv">저장</button>
+            <button class="cv">✕</button>
+          </div>
+        </td>
+        <td class="item-no mobile-hide">10427</td>
+        <td class="mobile-hide" style="font-size:.78rem;color:#868e96">네이버 레고</td>
+        <td><a class="buy-btn" href="https://search.shopping.naver.com/catalog/52379014618" target="_blank">구매 →</a></td>
+      </tr>
+      
+      
+      <tr data-threshold="0.2" data-final="22900">
+        <td>레고 마인크래프트 워든과의 조우 21274</td>
+        <td class="price-final">
+          22,900원
+          
+        </td>
+        <td>
+          <span class="pct pct-20">
+            23.4%
+          </span>
+        </td>
+        <td class="price-cell">
+          <span class="price-original" id="p-21274">
+            29,900원
+          </span>
+          <button class="edit-btn"
+                  data-item="21274"
+                  data-price="29900"
+                  data-name="레고 마인크래프트 워든과의 조우 21274"
+                  title="정가 수정">✏</button>
+          <div class="inline-edit" id="edit-21274">
+            <input type="number" min="1" placeholder="정가(원)">
+            <button class="sv">저장</button>
+            <button class="cv">✕</button>
+          </div>
+        </td>
+        <td class="item-no mobile-hide">21274</td>
+        <td class="mobile-hide" style="font-size:.78rem;color:#868e96">네이버 레고</td>
+        <td><a class="buy-btn" href="https://search.shopping.naver.com/catalog/55078713636" target="_blank">구매 →</a></td>
+      </tr>
+      
+      
+      <tr data-threshold="0.2" data-final="40730">
+        <td>레고 클래식 창의력 공룡 11041</td>
+        <td class="price-final">
+          40,730원
+          
+        </td>
+        <td>
+          <span class="pct pct-20">
+            23.0%
+          </span>
+        </td>
+        <td class="price-cell">
+          <span class="price-original" id="p-11041">
+            52,900원
+          </span>
+          <button class="edit-btn"
+                  data-item="11041"
+                  data-price="52900"
+                  data-name="레고 클래식 창의력 공룡 11041"
+                  title="정가 수정">✏</button>
+          <div class="inline-edit" id="edit-11041">
+            <input type="number" min="1" placeholder="정가(원)">
+            <button class="sv">저장</button>
+            <button class="cv">✕</button>
+          </div>
+        </td>
+        <td class="item-no mobile-hide">11041</td>
+        <td class="mobile-hide" style="font-size:.78rem;color:#868e96">네이버 레고</td>
+        <td><a class="buy-btn" href="https://search.shopping.naver.com/catalog/52268687622" target="_blank">구매 →</a></td>
+      </tr>
+      
+      
+      <tr data-threshold="0.2" data-final="16970">
+        <td>레고 마인크래프트 우민 사막 순찰대 21267</td>
+        <td class="price-final">
+          16,970원
+          
+        </td>
+        <td>
+          <span class="pct pct-20">
+            22.5%
+          </span>
+        </td>
+        <td class="price-cell">
+          <span class="price-original" id="p-21267">
+            21,900원
+          </span>
+          <button class="edit-btn"
+                  data-item="21267"
+                  data-price="21900"
+                  data-name="레고 마인크래프트 우민 사막 순찰대 21267"
+                  title="정가 수정">✏</button>
+          <div class="inline-edit" id="edit-21267">
+            <input type="number" min="1" placeholder="정가(원)">
+            <button class="sv">저장</button>
+            <button class="cv">✕</button>
+          </div>
+        </td>
+        <td class="item-no mobile-hide">21267</td>
+        <td class="mobile-hide" style="font-size:.78rem;color:#868e96">네이버 레고</td>
+        <td><a class="buy-btn" href="https://search.shopping.naver.com/catalog/52269534618" target="_blank">구매 →</a></td>
+      </tr>
+      
+      
+      <tr data-threshold="0.2" data-final="155600">
+        <td>레고 프렌즈 하트레이크 시티 아파트와 상점 42670</td>
+        <td class="price-final">
+          155,600원
+          
+        </td>
+        <td>
+          <span class="pct pct-20">
+            22.2%
+          </span>
+        </td>
+        <td class="price-cell">
+          <span class="price-original" id="p-42670">
+            199,900원
+          </span>
+          <button class="edit-btn"
+                  data-item="42670"
+                  data-price="199900"
+                  data-name="레고 프렌즈 하트레이크 시티 아파트와 상점 42670"
+                  title="정가 수정">✏</button>
+          <div class="inline-edit" id="edit-42670">
+            <input type="number" min="1" placeholder="정가(원)">
+            <button class="sv">저장</button>
+            <button class="cv">✕</button>
+          </div>
+        </td>
+        <td class="item-no mobile-hide">42670</td>
+        <td class="mobile-hide" style="font-size:.78rem;color:#868e96">네이버 레고</td>
+        <td><a class="buy-btn" href="https://search.shopping.naver.com/catalog/52298246340" target="_blank">구매 →</a></td>
+      </tr>
+      
+      
+      <tr data-threshold="0.2" data-final="218320">
+        <td>레고 해리포터 다이애건 앨리 마법의 상점 76444</td>
+        <td class="price-final">
+          218,320원
+          
+        </td>
+        <td>
+          <span class="pct pct-20">
+            22.0%
+          </span>
+        </td>
+        <td class="price-cell">
+          <span class="price-original" id="p-76444">
+            279,900원
+          </span>
+          <button class="edit-btn"
+                  data-item="76444"
+                  data-price="279900"
+                  data-name="레고 해리포터 다이애건 앨리 마법의 상점 76444"
+                  title="정가 수정">✏</button>
+          <div class="inline-edit" id="edit-76444">
+            <input type="number" min="1" placeholder="정가(원)">
+            <button class="sv">저장</button>
+            <button class="cv">✕</button>
+          </div>
+        </td>
+        <td class="item-no mobile-hide">76444</td>
+        <td class="mobile-hide" style="font-size:.78rem;color:#868e96">네이버 레고</td>
+        <td><a class="buy-btn" href="https://search.shopping.naver.com/catalog/52270082618" target="_blank">구매 →</a></td>
+      </tr>
+      
+      
+      <tr data-threshold="0.2" data-final="118000">
+        <td>레고 IDEAS 턱시도 고양이 21349</td>
+        <td class="price-final">
+          118,000원
+          
+        </td>
+        <td>
+          <span class="pct pct-20">
+            21.3%
+          </span>
+        </td>
+        <td class="price-cell">
+          <span class="price-original" id="p-21349">
+            149,900원
+          </span>
+          <button class="edit-btn"
+                  data-item="21349"
+                  data-price="149900"
+                  data-name="레고 IDEAS 턱시도 고양이 21349"
+                  title="정가 수정">✏</button>
+          <div class="inline-edit" id="edit-21349">
+            <input type="number" min="1" placeholder="정가(원)">
+            <button class="sv">저장</button>
+            <button class="cv">✕</button>
+          </div>
+        </td>
+        <td class="item-no mobile-hide">21349</td>
+        <td class="mobile-hide" style="font-size:.78rem;color:#868e96">네이버 레고</td>
+        <td><a class="buy-btn" href="https://search.shopping.naver.com/catalog/48102139619" target="_blank">구매 →</a></td>
+      </tr>
+      
+      
+      <tr data-threshold="0.2" data-final="9500">
+        <td>레고 토끼의 해 40575</td>
+        <td class="price-final">
+          9,500원
+          
+        </td>
+        <td>
+          <span class="pct pct-20">
+            20.8%
+          </span>
+        </td>
+        <td class="price-cell">
+          <span class="price-original" id="p-40575">
+            12,000원
+          </span>
+          <button class="edit-btn"
+                  data-item="40575"
+                  data-price="12000"
+                  data-name="레고 토끼의 해 40575"
+                  title="정가 수정">✏</button>
+          <div class="inline-edit" id="edit-40575">
+            <input type="number" min="1" placeholder="정가(원)">
+            <button class="sv">저장</button>
+            <button class="cv">✕</button>
+          </div>
+        </td>
+        <td class="item-no mobile-hide">40575</td>
+        <td class="mobile-hide" style="font-size:.78rem;color:#868e96">네이버 레고</td>
+        <td><a class="buy-btn" href="https://search.shopping.naver.com/catalog/37950773619" target="_blank">구매 →</a></td>
+      </tr>
+      
+      
+      <tr data-threshold="0.2" data-final="254790">
+        <td>레고 테크닉 Ferrari SF 24 F1 자동차 42207</td>
+        <td class="price-final">
+          254,790원
+          
+        </td>
+        <td>
+          <span class="pct pct-20">
+            20.3%
+          </span>
+        </td>
+        <td class="price-cell">
+          <span class="price-original" id="p-42207">
+            319,900원
+          </span>
+          <button class="edit-btn"
+                  data-item="42207"
+                  data-price="319900"
+                  data-name="레고 테크닉 Ferrari SF 24 F1 자동차 42207"
+                  title="정가 수정">✏</button>
+          <div class="inline-edit" id="edit-42207">
+            <input type="number" min="1" placeholder="정가(원)">
+            <button class="sv">저장</button>
+            <button class="cv">✕</button>
+          </div>
+        </td>
+        <td class="item-no mobile-hide">42207</td>
+        <td class="mobile-hide" style="font-size:.78rem;color:#868e96">네이버 레고</td>
+        <td><a class="buy-btn" href="https://search.shopping.naver.com/catalog/53370325056" target="_blank">구매 →</a></td>
+      </tr>
+      
+      
+      <tr data-threshold="0.2" data-final="291900">
+        <td>레고 해리포터 호그와트 성 동관 76473 1개</td>
+        <td class="price-final">
+          291,900원
+          
+        </td>
+        <td>
+          <span class="pct pct-20">
+            20.0%
+          </span>
+        </td>
+        <td class="price-cell">
+          <span class="price-original" id="p-76473">
+            364,900원
+          </span>
+          <button class="edit-btn"
+                  data-item="76473"
+                  data-price="364900"
+                  data-name="레고 해리포터 호그와트 성 동관 76473 1개"
+                  title="정가 수정">✏</button>
+          <div class="inline-edit" id="edit-76473">
+            <input type="number" min="1" placeholder="정가(원)">
+            <button class="sv">저장</button>
+            <button class="cv">✕</button>
+          </div>
+        </td>
+        <td class="item-no mobile-hide">76473</td>
+        <td class="mobile-hide" style="font-size:.78rem;color:#868e96">네이버 레고</td>
+        <td><a class="buy-btn" href="https://search.shopping.naver.com/catalog/60293955602" target="_blank">구매 →</a></td>
       </tr>
       
     </tbody>
@@ -1434,5 +1423,207 @@
   자동 생성 — LEGO 할인 봇 &nbsp;|&nbsp; 정가는 레고 공식 홈페이지 기준 &nbsp;|&nbsp;
   실제 결제 금액은 사이트에서 확인하세요.
 </footer>
+<script>
+(function () {
+  var isLocal = ['localhost', '127.0.0.1'].includes(window.location.hostname);
+
+  /* ── GitHub API 모드 (로컬 서버가 없을 때: config/prices.json 직접 수정) ── */
+  var API = 'https://api.github.com';
+  var PATH = 'config/prices.json';
+  var LS_TOKEN = 'lego_gh_token', LS_OWNER = 'lego_gh_owner', LS_REPO = 'lego_gh_repo', LS_BRANCH = 'lego_gh_branch';
+  var ghSha = null;
+
+  function ghCfg() {
+    return {
+      token: localStorage.getItem(LS_TOKEN) || '',
+      owner: localStorage.getItem(LS_OWNER) || '',
+      repo: localStorage.getItem(LS_REPO) || '',
+      branch: localStorage.getItem(LS_BRANCH) || 'main',
+    };
+  }
+  function ghConnected() {
+    var c = ghCfg();
+    return !!(c.token && c.owner && c.repo);
+  }
+  function b64EncodeUnicode(str) {
+    return btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, function (_, p1) {
+      return String.fromCharCode('0x' + p1);
+    }));
+  }
+  function b64DecodeUnicode(str) {
+    return decodeURIComponent(atob(str.replace(/\n/g, '')).split('').map(function (c) {
+      return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+    }).join(''));
+  }
+  function ghHeaders(c) {
+    return { 'Authorization': 'Bearer ' + c.token, 'Accept': 'application/vnd.github+json' };
+  }
+  function ghContentsUrl(c) {
+    return API + '/repos/' + c.owner + '/' + c.repo + '/contents/' + PATH + '?ref=' + encodeURIComponent(c.branch);
+  }
+  function ghFetchPrices() {
+    var c = ghCfg();
+    return fetch(ghContentsUrl(c), { headers: ghHeaders(c) }).then(function (r) {
+      if (!r.ok) throw new Error('GitHub API 오류 (' + r.status + ') — 토큰/권한을 확인하세요.');
+      return r.json();
+    }).then(function (data) {
+      ghSha = data.sha;
+      return JSON.parse(b64DecodeUnicode(data.content));
+    });
+  }
+  function ghSavePrices(prices, message) {
+    var c = ghCfg();
+    var body = { message: message, content: b64EncodeUnicode(JSON.stringify(prices, null, 2)), sha: ghSha, branch: c.branch };
+    return fetch(ghContentsUrl(c).split('?')[0], {
+      method: 'PUT',
+      headers: Object.assign({ 'Content-Type': 'application/json' }, ghHeaders(c)),
+      body: JSON.stringify(body),
+    }).then(function (r) {
+      if (!r.ok) return r.json().then(function (j) { throw new Error(j.message || ('GitHub API 오류 (' + r.status + ')')); });
+      return r.json();
+    }).then(function (data) { ghSha = data.content.sha; });
+  }
+  function ghUpdatePrice(itemNo, name, price) {
+    return ghFetchPrices().then(function (prices) {
+      prices[itemNo] = { name: name, official_price: price, auto: false, source: '수동 수정', currency: 'KRW' };
+      return ghSavePrices(prices, 'chore: update price ' + itemNo + ' (deals page)');
+    });
+  }
+
+  /* ── 공통: 수정 버튼 표시 ── */
+  document.querySelectorAll('.edit-btn').forEach(function (b) {
+    b.style.display = 'inline';
+  });
+
+  document.addEventListener('click', function (e) {
+    /* 수정 버튼 클릭 → 인라인 폼 표시 */
+    var editBtn = e.target.closest('.edit-btn');
+    if (editBtn) {
+      var itemNo = editBtn.dataset.item;
+      var div = document.getElementById('edit-' + itemNo);
+      div.querySelector('input').value = editBtn.dataset.price || '';
+      editBtn.style.display = 'none';
+      div.style.display = 'block';
+      div.querySelector('input').focus();
+      return;
+    }
+
+    /* 취소 버튼 */
+    var cv = e.target.closest('.cv');
+    if (cv) {
+      var div2 = cv.closest('.inline-edit');
+      var cell = div2.closest('td');
+      div2.style.display = 'none';
+      cell.querySelector('.edit-btn').style.display = 'inline';
+      return;
+    }
+
+    /* 저장 버튼 */
+    var sv = e.target.closest('.sv');
+    if (sv) {
+      var div3 = sv.closest('.inline-edit');
+      var cell2 = div3.closest('td');
+      var btn = cell2.querySelector('.edit-btn');
+      var input = div3.querySelector('input');
+      var price = parseInt(input.value, 10);
+      var itemNo2 = btn.dataset.item;
+      var name = btn.dataset.name;
+
+      if (!price || price < 1) {
+        input.style.outline = '2px solid #e63946';
+        input.focus();
+        return;
+      }
+      if (!isLocal && !ghConnected()) {
+        alert('먼저 "정가 등록/수정" 페이지에서 GitHub 연동(토큰 저장)을 해주세요.');
+        return;
+      }
+      input.style.outline = '';
+      sv.textContent = '...';
+      sv.disabled = true;
+
+      var task = isLocal
+        ? fetch('/api/prices/' + itemNo2 + '/update', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: 'official_price=' + price + '&name=' + encodeURIComponent(name),
+          }).then(function (r) { return r.json(); }).then(function (d) {
+            if (!d.ok) throw new Error(d.error || '저장 실패');
+            return d.official_price;
+          })
+        : ghUpdatePrice(itemNo2, name, price).then(function () { return price; });
+
+      task.then(function (savedPrice) {
+        sv.textContent = '저장';
+        sv.disabled = false;
+        applyPriceUpdate(btn, div3, itemNo2, savedPrice);
+      }).catch(function (err) {
+        sv.textContent = '저장';
+        sv.disabled = false;
+        alert(err.message || '저장 실패');
+      });
+    }
+  });
+
+  /* 저장 성공 후: 화면 갱신 + 정가 기준 할인율 재계산해서 기준 미달이면 목록에서 제거 */
+  function applyPriceUpdate(btn, editDiv, itemNo, newPrice) {
+    var span = document.getElementById('p-' + itemNo);
+    if (span) {
+      span.textContent = newPrice.toLocaleString('ko-KR') + '원';
+      span.style.display = '';
+    }
+    editDiv.style.display = 'none';
+    btn.dataset.price = newPrice;
+    btn.style.display = 'inline';
+    btn.style.color = '#2a9d8f';
+    btn.title = '수정됨 ✓';
+    setTimeout(function () { btn.style.color = ''; btn.title = '정가 수정'; }, 3000);
+
+    var tr = btn.closest('tr');
+    if (!tr || !tr.dataset.threshold) return; // 정가 미등록 표에는 구간 재계산이 없음
+
+    var threshold = parseFloat(tr.dataset.threshold);
+    var finalPrice = parseFloat(tr.dataset.final);
+    if (!finalPrice || !newPrice) return;
+
+    var newRate = Math.round((1 - finalPrice / newPrice) * 10000) / 10000;
+    if (newRate < threshold) {
+      removeRow(tr);
+    } else {
+      var pctEl = tr.querySelector('.pct');
+      if (pctEl) pctEl.textContent = (newRate * 100).toFixed(1) + '%';
+    }
+  }
+
+  function removeRow(tr) {
+    var table = tr.closest('table');
+    var catDiv = tr.closest('.cat');
+    tr.style.transition = 'opacity .3s';
+    tr.style.opacity = '0';
+    setTimeout(function () {
+      tr.remove();
+      if (!catDiv) return;
+      var tbody = table.querySelector('tbody');
+      var remaining = tbody ? tbody.children.length : 0;
+
+      var badge = catDiv.querySelector('.cat-header .badge');
+      if (badge) badge.textContent = remaining + '개';
+
+      var statId = catDiv.dataset.stat;
+      if (statId) {
+        var statEl = document.getElementById('stat-' + statId);
+        if (statEl) statEl.textContent = Math.max(0, (parseInt(statEl.textContent, 10) || 0) - 1);
+      }
+
+      if (remaining === 0 && table) {
+        var empty = document.createElement('div');
+        empty.className = 'empty';
+        empty.textContent = '해당 구간 상품이 없습니다.';
+        table.replaceWith(empty);
+      }
+    }, 300);
+  }
+}());
+</script>
 </body>
 </html>
