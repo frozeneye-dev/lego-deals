@@ -1,6 +1,18 @@
 {
   "40_plus": [
     {
+      "item_number": "11205",
+      "name": "레고 개비의 매직 하우스 달콤 선물 산과 요정냥의 가든 11205",
+      "official_price": 66690,
+      "listed_price": 16000,
+      "additional_discount": 0.0,
+      "final_price": 16000,
+      "discount_rate": 0.7601,
+      "product_url": "https://search.shopping.naver.com/catalog/56088921825",
+      "source_name": "네이버 레고",
+      "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
+    },
+    {
       "item_number": "76970",
       "name": "레고 쥬라기월드 아기 공룡 돌로레스 아퀼롭스 76970",
       "official_price": 36900,
@@ -161,6 +173,54 @@
       "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
     },
     {
+      "item_number": "77244",
+      "name": "레고 스피드 챔피언 Mercedes AMG F1 W15 레이스 카 77244",
+      "official_price": 43900,
+      "listed_price": 31670,
+      "additional_discount": 0.0,
+      "final_price": 31670,
+      "discount_rate": 0.2786,
+      "product_url": "https://search.shopping.naver.com/catalog/53370604707",
+      "source_name": "네이버 레고",
+      "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
+    },
+    {
+      "item_number": "77249",
+      "name": "레고 스피드 챔피언 Williams Racing FW46 F1 레이스 카 77249",
+      "official_price": 43900,
+      "listed_price": 31670,
+      "additional_discount": 0.0,
+      "final_price": 31670,
+      "discount_rate": 0.2786,
+      "product_url": "https://search.shopping.naver.com/catalog/53370807754",
+      "source_name": "네이버 레고",
+      "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
+    },
+    {
+      "item_number": "21267",
+      "name": "레고 마인크래프트 우민 사막 순찰대 21267",
+      "official_price": 21900,
+      "listed_price": 15800,
+      "additional_discount": 0.0,
+      "final_price": 15800,
+      "discount_rate": 0.2785,
+      "product_url": "https://search.shopping.naver.com/catalog/52269534618",
+      "source_name": "네이버 레고",
+      "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
+    },
+    {
+      "item_number": "11041",
+      "name": "레고 클래식 창의력 공룡 11041",
+      "official_price": 52900,
+      "listed_price": 38190,
+      "additional_discount": 0.0,
+      "final_price": 38190,
+      "discount_rate": 0.2781,
+      "product_url": "https://search.shopping.naver.com/catalog/52268687622",
+      "source_name": "네이버 레고",
+      "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
+    },
+    {
       "item_number": "10788",
       "name": "레고 개비의 매직 하우스 개비의 매직 하우스 10788",
       "official_price": 114900,
@@ -209,26 +269,14 @@
       "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
     },
     {
-      "item_number": "77244",
-      "name": "레고 스피드 챔피언 Mercedes AMG F1 W15 레이스 카 77244",
-      "official_price": 43900,
-      "listed_price": 32384,
+      "item_number": "10698",
+      "name": "레고 클래식 라지 조립 박스 10698 1개",
+      "official_price": 69900,
+      "listed_price": 51720,
       "additional_discount": 0.0,
-      "final_price": 32384,
-      "discount_rate": 0.2623,
-      "product_url": "https://search.shopping.naver.com/catalog/53370604707",
-      "source_name": "네이버 레고",
-      "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
-    },
-    {
-      "item_number": "77249",
-      "name": "레고 스피드 챔피언 Williams Racing FW46 F1 레이스 카 77249",
-      "official_price": 43900,
-      "listed_price": 32384,
-      "additional_discount": 0.0,
-      "final_price": 32384,
-      "discount_rate": 0.2623,
-      "product_url": "https://search.shopping.naver.com/catalog/53370807754",
+      "final_price": 51720,
+      "discount_rate": 0.2601,
+      "product_url": "https://search.shopping.naver.com/catalog/59572845285",
       "source_name": "네이버 레고",
       "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
     },
@@ -236,11 +284,23 @@
       "item_number": "31378",
       "name": "레고 크리에이터 3in1 우주 탐사 망원경 31378",
       "official_price": 46800,
-      "listed_price": 34640,
+      "listed_price": 34630,
       "additional_discount": 0.0,
-      "final_price": 34640,
-      "discount_rate": 0.2598,
+      "final_price": 34630,
+      "discount_rate": 0.26,
       "product_url": "https://search.shopping.naver.com/catalog/58526447852",
+      "source_name": "네이버 레고",
+      "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
+    },
+    {
+      "item_number": "42670",
+      "name": "레고 프렌즈 하트레이크 시티 아파트와 상점 42670",
+      "official_price": 199900,
+      "listed_price": 147920,
+      "additional_discount": 0.0,
+      "final_price": 147920,
+      "discount_rate": 0.26,
+      "product_url": "https://search.shopping.naver.com/catalog/52298246340",
       "source_name": "네이버 레고",
       "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
     },
@@ -269,18 +329,6 @@
       "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
     },
     {
-      "item_number": "76323",
-      "name": "레고 마블 어벤져스 엔드게임 최종 결전 76323",
-      "official_price": 197770,
-      "listed_price": 146910,
-      "additional_discount": 0.0,
-      "final_price": 146910,
-      "discount_rate": 0.2572,
-      "product_url": "https://search.shopping.naver.com/catalog/54628908051",
-      "source_name": "네이버 레고",
-      "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
-    },
-    {
       "item_number": "43300",
       "name": "레고 디즈니 클래식 곰돌이 푸 43300",
       "official_price": 209900,
@@ -289,18 +337,6 @@
       "final_price": 156400,
       "discount_rate": 0.2549,
       "product_url": "https://search.shopping.naver.com/catalog/59139369615",
-      "source_name": "네이버 레고",
-      "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
-    },
-    {
-      "item_number": "10698",
-      "name": "레고 클래식 라지 조립 박스 10698 1개",
-      "official_price": 69900,
-      "listed_price": 52272,
-      "additional_discount": 0.0,
-      "final_price": 52272,
-      "discount_rate": 0.2522,
-      "product_url": "https://search.shopping.naver.com/catalog/59572845285",
       "source_name": "네이버 레고",
       "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
     },
@@ -341,18 +377,6 @@
       "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
     },
     {
-      "item_number": "42670",
-      "name": "레고 프렌즈 하트레이크 시티 아파트와 상점 42670",
-      "official_price": 199900,
-      "listed_price": 151910,
-      "additional_discount": 0.0,
-      "final_price": 151910,
-      "discount_rate": 0.2401,
-      "product_url": "https://search.shopping.naver.com/catalog/52298246340",
-      "source_name": "네이버 레고",
-      "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
-    },
-    {
       "item_number": "21274",
       "name": "레고 마인크래프트 워든과의 조우 21274",
       "official_price": 29900,
@@ -361,30 +385,6 @@
       "final_price": 22900,
       "discount_rate": 0.2341,
       "product_url": "https://search.shopping.naver.com/catalog/55078713636",
-      "source_name": "네이버 레고",
-      "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
-    },
-    {
-      "item_number": "11041",
-      "name": "레고 클래식 창의력 공룡 11041",
-      "official_price": 52900,
-      "listed_price": 40730,
-      "additional_discount": 0.0,
-      "final_price": 40730,
-      "discount_rate": 0.2301,
-      "product_url": "https://search.shopping.naver.com/catalog/52268687622",
-      "source_name": "네이버 레고",
-      "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
-    },
-    {
-      "item_number": "21267",
-      "name": "레고 마인크래프트 우민 사막 순찰대 21267",
-      "official_price": 21900,
-      "listed_price": 16970,
-      "additional_discount": 0.0,
-      "final_price": 16970,
-      "discount_rate": 0.2251,
-      "product_url": "https://search.shopping.naver.com/catalog/52269534618",
       "source_name": "네이버 레고",
       "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
     },
@@ -413,6 +413,18 @@
       "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
     },
     {
+      "item_number": "42207",
+      "name": "레고 테크닉 Ferrari SF 24 F1 자동차 42207",
+      "official_price": 319900,
+      "listed_price": 252720,
+      "additional_discount": 0.0,
+      "final_price": 252720,
+      "discount_rate": 0.21,
+      "product_url": "https://search.shopping.naver.com/catalog/53370325056",
+      "source_name": "네이버 레고",
+      "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
+    },
+    {
       "item_number": "40575",
       "name": "레고 토끼의 해 40575",
       "official_price": 12000,
@@ -421,18 +433,6 @@
       "final_price": 9500,
       "discount_rate": 0.2083,
       "product_url": "https://search.shopping.naver.com/catalog/37950773619",
-      "source_name": "네이버 레고",
-      "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
-    },
-    {
-      "item_number": "42207",
-      "name": "레고 테크닉 Ferrari SF 24 F1 자동차 42207",
-      "official_price": 319900,
-      "listed_price": 254740,
-      "additional_discount": 0.0,
-      "final_price": 254740,
-      "discount_rate": 0.2037,
-      "product_url": "https://search.shopping.naver.com/catalog/53370325056",
       "source_name": "네이버 레고",
       "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
     },

@@ -11562,5 +11562,19 @@
     "auto": true,
     "source": "네이버 레고 표시가",
     "currency": "KRW"
+  },
+  "42702": {
+    "name": "레고 프렌즈 꽃과 요정의 찻잔 회전 놀이기구 42702 1개",
+    "official_price": 53780,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "76830": {
+    "name": "레고 라이트이어 자이클롭스 추격전 76830",
+    "official_price": 17800,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
   }
 }
