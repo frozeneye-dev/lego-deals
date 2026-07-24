@@ -1429,9 +1429,9 @@
   },
   "11205": {
     "name": "레고 개비의 매직 하우스 달콤 선물 산과 요정냥의 가든 11205",
-    "official_price": 66690,
-    "auto": true,
-    "source": "네이버 레고 표시가",
+    "official_price": 74900,
+    "auto": false,
+    "source": "수동 수정",
     "currency": "KRW"
   },
   "11206": {
@@ -5294,6 +5294,13 @@
   "42700": {
     "name": "레고 프렌즈 사탕과 컵케이크 대관람차 42700 1개",
     "official_price": 89900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "42702": {
+    "name": "레고 프렌즈 꽃과 요정의 찻잔 회전 놀이기구 42702 1개",
+    "official_price": 53780,
     "auto": true,
     "source": "네이버 레고 표시가",
     "currency": "KRW"
@@ -10660,6 +10667,13 @@
     "source": "네이버 레고 표시가",
     "currency": "KRW"
   },
+  "76830": {
+    "name": "레고 라이트이어 자이클롭스 추격전 76830",
+    "official_price": 17800,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
   "76895": {
     "name": "레고 Ferrari F8 Tributo 76895",
     "official_price": 69000,
@@ -11559,20 +11573,6 @@
   "854290": {
     "name": "레고 854290 스파이더맨 열쇠고리",
     "official_price": 8900,
-    "auto": true,
-    "source": "네이버 레고 표시가",
-    "currency": "KRW"
-  },
-  "42702": {
-    "name": "레고 프렌즈 꽃과 요정의 찻잔 회전 놀이기구 42702 1개",
-    "official_price": 53780,
-    "auto": true,
-    "source": "네이버 레고 표시가",
-    "currency": "KRW"
-  },
-  "76830": {
-    "name": "레고 라이트이어 자이클롭스 추격전 76830",
-    "official_price": 17800,
     "auto": true,
     "source": "네이버 레고 표시가",
     "currency": "KRW"
