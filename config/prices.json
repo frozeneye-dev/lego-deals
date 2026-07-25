@@ -11576,5 +11576,26 @@
     "auto": true,
     "source": "네이버 레고 표시가",
     "currency": "KRW"
+  },
+  "30370": {
+    "name": "레고 시티 해양 다이버 30370",
+    "official_price": 9100,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10974": {
+    "name": "레고 듀플로 세계동물탐험 : 아시아 10974",
+    "official_price": 129000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "30719": {
+    "name": "레고 시티 고카트 레이서 30719 1개",
+    "official_price": 4500,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
   }
 }

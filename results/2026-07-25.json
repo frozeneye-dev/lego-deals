@@ -16,10 +16,10 @@
       "item_number": "21246",
       "name": "레고 마인크래프트 깊고 어두운 전장 21246",
       "official_price": 162000,
-      "listed_price": 61750,
+      "listed_price": 65000,
       "additional_discount": 0.0,
-      "final_price": 61750,
-      "discount_rate": 0.6188,
+      "final_price": 65000,
+      "discount_rate": 0.5988,
       "product_url": "https://search.shopping.naver.com/catalog/36951526620",
       "source_name": "네이버 레고",
       "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
@@ -40,10 +40,10 @@
       "item_number": "71786",
       "name": "레고 닌자고 쟌의 아이스 드래곤 71786",
       "official_price": 169500,
-      "listed_price": 92630,
+      "listed_price": 97490,
       "additional_discount": 0.0,
-      "final_price": 92630,
-      "discount_rate": 0.4535,
+      "final_price": 97490,
+      "discount_rate": 0.4248,
       "product_url": "https://search.shopping.naver.com/catalog/36947508618",
       "source_name": "네이버 레고",
       "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
@@ -198,10 +198,10 @@
       "item_number": "31166",
       "name": "레고 크리에이터 3-in-1 아름다운 말 31166",
       "official_price": 74900,
-      "listed_price": 51690,
+      "listed_price": 51680,
       "additional_discount": 0.0,
-      "final_price": 51690,
-      "discount_rate": 0.3099,
+      "final_price": 51680,
+      "discount_rate": 0.31,
       "product_url": "https://search.shopping.naver.com/catalog/56113330794",
       "source_name": "네이버 레고",
       "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
@@ -341,6 +341,18 @@
       "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
     },
     {
+      "item_number": "43278",
+      "name": "레고 디즈니 프린세스 미니 아렌델 성과 엘사의 얼음 궁전 43278",
+      "official_price": 74900,
+      "listed_price": 54800,
+      "additional_discount": 0.0,
+      "final_price": 54800,
+      "discount_rate": 0.2684,
+      "product_url": "https://search.shopping.naver.com/catalog/55079179197",
+      "source_name": "네이버 레고",
+      "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
+    },
+    {
       "item_number": "21272",
       "name": "레고 마인크래프트 삼림 대저택 파이팅 링 21272",
       "official_price": 74900,
@@ -449,30 +461,6 @@
       "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
     },
     {
-      "item_number": "42207",
-      "name": "레고 테크닉 Ferrari SF 24 F1 자동차 42207",
-      "official_price": 319900,
-      "listed_price": 252720,
-      "additional_discount": 0.0,
-      "final_price": 252720,
-      "discount_rate": 0.21,
-      "product_url": "https://search.shopping.naver.com/catalog/53370325056",
-      "source_name": "네이버 레고",
-      "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
-    },
-    {
-      "item_number": "75379",
-      "name": "레고 스타워즈 R2-D2 75379",
-      "official_price": 121180,
-      "listed_price": 95930,
-      "additional_discount": 0.0,
-      "final_price": 95930,
-      "discount_rate": 0.2084,
-      "product_url": "https://search.shopping.naver.com/catalog/46168632621",
-      "source_name": "네이버 레고",
-      "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
-    },
-    {
       "item_number": "40575",
       "name": "레고 토끼의 해 40575",
       "official_price": 12000,
@@ -481,6 +469,18 @@
       "final_price": 9500,
       "discount_rate": 0.2083,
       "product_url": "https://search.shopping.naver.com/catalog/37950773619",
+      "source_name": "네이버 레고",
+      "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
+    },
+    {
+      "item_number": "42207",
+      "name": "레고 테크닉 Ferrari SF 24 F1 자동차 42207",
+      "official_price": 319900,
+      "listed_price": 254490,
+      "additional_discount": 0.0,
+      "final_price": 254490,
+      "discount_rate": 0.2045,
+      "product_url": "https://search.shopping.naver.com/catalog/53370325056",
       "source_name": "네이버 레고",
       "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
     },
