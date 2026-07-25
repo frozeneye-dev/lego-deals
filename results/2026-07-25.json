@@ -40,9 +40,9 @@
       "item_number": "71786",
       "name": "레고 닌자고 쟌의 아이스 드래곤 71786",
       "official_price": 169500,
-      "listed_price": 97490,
+      "listed_price": 97500,
       "additional_discount": 0.0,
-      "final_price": 97490,
+      "final_price": 97500,
       "discount_rate": 0.4248,
       "product_url": "https://search.shopping.naver.com/catalog/36947508618",
       "source_name": "네이버 레고",
@@ -95,18 +95,6 @@
       "final_price": 28510,
       "discount_rate": 0.3506,
       "product_url": "https://search.shopping.naver.com/catalog/53370595115",
-      "source_name": "네이버 레고",
-      "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
-    },
-    {
-      "item_number": "71821",
-      "name": "레고 닌자고 콜의 타이탄 드래곤 로봇 71821",
-      "official_price": 129900,
-      "listed_price": 86450,
-      "additional_discount": 0.0,
-      "final_price": 86450,
-      "discount_rate": 0.3345,
-      "product_url": "https://search.shopping.naver.com/catalog/48167973623",
       "source_name": "네이버 레고",
       "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
     },
@@ -233,14 +221,14 @@
   ],
   "20_plus": [
     {
-      "item_number": "71793",
-      "name": "레고 닌자고 히트웨이브 트랜스포밍 라바 드래곤 71793",
-      "official_price": 87000,
-      "listed_price": 61660,
+      "item_number": "71821",
+      "name": "레고 닌자고 콜의 타이탄 드래곤 로봇 71821",
+      "official_price": 129900,
+      "listed_price": 91000,
       "additional_discount": 0.0,
-      "final_price": 61660,
-      "discount_rate": 0.2913,
-      "product_url": "https://search.shopping.naver.com/catalog/40570174618",
+      "final_price": 91000,
+      "discount_rate": 0.2995,
+      "product_url": "https://search.shopping.naver.com/catalog/48167973623",
       "source_name": "네이버 레고",
       "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
     },
@@ -413,6 +401,18 @@
       "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
     },
     {
+      "item_number": "71793",
+      "name": "레고 닌자고 히트웨이브 트랜스포밍 라바 드래곤 71793",
+      "official_price": 87000,
+      "listed_price": 64900,
+      "additional_discount": 0.0,
+      "final_price": 64900,
+      "discount_rate": 0.254,
+      "product_url": "https://search.shopping.naver.com/catalog/40570174618",
+      "source_name": "네이버 레고",
+      "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
+    },
+    {
       "item_number": "10428",
       "name": "레고 듀플로 인터랙티브 기차 세트 10428",
       "official_price": 189900,
@@ -437,18 +437,6 @@
       "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
     },
     {
-      "item_number": "10427",
-      "name": "레고 듀플로 인터랙티브 기차 모험 10427",
-      "official_price": 104900,
-      "listed_price": 79500,
-      "additional_discount": 0.0,
-      "final_price": 79500,
-      "discount_rate": 0.2421,
-      "product_url": "https://search.shopping.naver.com/catalog/52379014618",
-      "source_name": "네이버 레고",
-      "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
-    },
-    {
       "item_number": "21349",
       "name": "레고 IDEAS 턱시도 고양이 21349",
       "official_price": 149900,
@@ -461,6 +449,18 @@
       "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
     },
     {
+      "item_number": "75379",
+      "name": "레고 스타워즈 R2-D2 75379",
+      "official_price": 121180,
+      "listed_price": 95930,
+      "additional_discount": 0.0,
+      "final_price": 95930,
+      "discount_rate": 0.2084,
+      "product_url": "https://search.shopping.naver.com/catalog/46168632621",
+      "source_name": "네이버 레고",
+      "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
+    },
+    {
       "item_number": "40575",
       "name": "레고 토끼의 해 40575",
       "official_price": 12000,
@@ -469,6 +469,18 @@
       "final_price": 9500,
       "discount_rate": 0.2083,
       "product_url": "https://search.shopping.naver.com/catalog/37950773619",
+      "source_name": "네이버 레고",
+      "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
+    },
+    {
+      "item_number": "10427",
+      "name": "레고 듀플로 인터랙티브 기차 모험 10427",
+      "official_price": 104900,
+      "listed_price": 83400,
+      "additional_discount": 0.0,
+      "final_price": 83400,
+      "discount_rate": 0.205,
+      "product_url": "https://search.shopping.naver.com/catalog/52379014618",
       "source_name": "네이버 레고",
       "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
     },
