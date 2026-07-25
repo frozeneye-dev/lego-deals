@@ -11597,5 +11597,19 @@
     "auto": true,
     "source": "네이버 레고 표시가",
     "currency": "KRW"
+  },
+  "76408": {
+    "name": "레고 해리포터 그리몰드가 12번지 76408",
+    "official_price": 304000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "60353": {
+    "name": "레고 시티 야생동물 구조 미션 60353",
+    "official_price": 35800,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
   }
 }

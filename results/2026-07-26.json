@@ -28,10 +28,10 @@
       "item_number": "21244",
       "name": "레고 마인크래프트 검의 전초기지 21244",
       "official_price": 139000,
-      "listed_price": 61750,
+      "listed_price": 65000,
       "additional_discount": 0.0,
-      "final_price": 61750,
-      "discount_rate": 0.5558,
+      "final_price": 65000,
+      "discount_rate": 0.5324,
       "product_url": "https://search.shopping.naver.com/catalog/36950336621",
       "source_name": "네이버 레고",
       "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
@@ -169,18 +169,6 @@
       "product_url": "https://search.shopping.naver.com/catalog/56113330794",
       "source_name": "네이버 레고",
       "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
-    },
-    {
-      "item_number": "71794",
-      "name": "레고 닌자고 로이드와 아린의 닌자 합체 로봇 71794",
-      "official_price": 125000,
-      "listed_price": 87310,
-      "additional_discount": 0.0,
-      "final_price": 87310,
-      "discount_rate": 0.3015,
-      "product_url": "https://search.shopping.naver.com/catalog/40547745625",
-      "source_name": "네이버 레고",
-      "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
     }
   ],
   "20_plus": [
@@ -281,6 +269,18 @@
       "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
     },
     {
+      "item_number": "42664",
+      "name": "레고 프렌즈 요트 여행 42664",
+      "official_price": 92300,
+      "listed_price": 67000,
+      "additional_discount": 0.0,
+      "final_price": 67000,
+      "discount_rate": 0.2741,
+      "product_url": "https://search.shopping.naver.com/catalog/55076813352",
+      "source_name": "네이버 레고",
+      "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
+    },
+    {
       "item_number": "10929",
       "name": "레고 듀플로 즐거운 우리집 10929",
       "official_price": 397900,
@@ -325,6 +325,18 @@
       "final_price": 54900,
       "discount_rate": 0.267,
       "product_url": "https://search.shopping.naver.com/catalog/53370153354",
+      "source_name": "네이버 레고",
+      "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
+    },
+    {
+      "item_number": "71794",
+      "name": "레고 닌자고 로이드와 아린의 닌자 합체 로봇 71794",
+      "official_price": 125000,
+      "listed_price": 91900,
+      "additional_discount": 0.0,
+      "final_price": 91900,
+      "discount_rate": 0.2648,
+      "product_url": "https://search.shopping.naver.com/catalog/40547745625",
       "source_name": "네이버 레고",
       "source_url": "https://openapi.naver.com/v1/search/shop?query=레고&mallTypes=OFFICIAL_BRAND&display=100&sort=sim"
     },
