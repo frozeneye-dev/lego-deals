@@ -477,9 +477,9 @@
   },
   "10338": {
     "name": "레고 아이콘 범블비 10338",
-    "official_price": 121800,
-    "auto": true,
-    "source": "네이버 레고 표시가",
+    "official_price": 129900,
+    "auto": false,
+    "source": "수동 수정 (모바일)",
     "currency": "KRW"
   },
   "10339": {
