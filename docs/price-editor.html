@@ -98,6 +98,15 @@
   #list-empty { color: var(--muted); font-size: .85rem; text-align: center; padding: 24px 0; }
   #list-count { font-size: .8rem; color: var(--muted); margin-bottom: 10px; }
 
+  .list-section-title {
+    font-size: .75rem; font-weight: 700; color: var(--muted);
+    text-transform: uppercase; letter-spacing: .04em;
+    margin: 18px 0 8px; padding-top: 10px; border-top: 1px solid var(--border);
+  }
+  .list-section-title:first-child { margin-top: 0; padding-top: 0; border-top: none; }
+  .list-section-title.suspicious { color: var(--danger); }
+  .item-suspicious { border-left: 3px solid var(--danger); padding-left: 11px; }
+
   .locked-notice { text-align: center; padding: 40px 16px; color: var(--muted); }
 </style>
 </head>
@@ -304,72 +313,97 @@
     return (n || 0).toLocaleString('ko-KR') + '원';
   }
 
+  /* 레고 국내 정가는 보통 ...900원 단위로 끝남 — 아니면 오등록 의심 */
+  function isSuspicious(info) {
+    var p = info.official_price;
+    return !p || (p % 1000 !== 900);
+  }
+
+  function buildItemEl(num, info) {
+    info = info || {};
+    var div = document.createElement('div');
+    div.className = 'item' + (isSuspicious(info) ? ' item-suspicious' : '');
+
+    var currencyBadge = (info.currency && info.currency !== 'KRW')
+      ? ' <span class="badge-currency">' + info.currency + '</span>' : '';
+    var autoBadge = info.auto ? '<span class="badge-auto">자동</span>' : '';
+
+    div.innerHTML =
+      '<div class="item-top">' +
+        '<div>' +
+          '<div class="item-num">' + num + '</div>' +
+          '<div class="item-name">' + autoBadge + (info.name || '—') + '</div>' +
+          '<div class="item-price">' + fmtWon(info.official_price) + currencyBadge + '</div>' +
+          '<div class="item-source">' + (info.source || '수동 입력') + '</div>' +
+        '</div>' +
+        '<div class="item-actions">' +
+          '<button class="btn btn-secondary btn-sm act-edit">수정</button>' +
+          '<button class="btn btn-danger btn-sm act-del">삭제</button>' +
+        '</div>' +
+      '</div>' +
+      '<div class="item-edit">' +
+        '<div class="row">' +
+          '<div class="form-group"><label>상품명</label><input type="text" class="edit-name" value="' +
+            (info.name || '').replace(/"/g, '&quot;') + '"></div>' +
+          '<div class="form-group" style="max-width:140px"><label>공식 정가(원)</label><input type="number" class="edit-price" value="' +
+            (info.official_price || '') + '"></div>' +
+        '</div>' +
+        '<button class="btn btn-primary btn-sm act-save">저장</button> ' +
+        '<button class="btn btn-secondary btn-sm act-cancel" type="button">취소</button>' +
+      '</div>';
+
+    div.querySelector('.act-edit').addEventListener('click', function () {
+      div.querySelector('.item-edit').classList.add('show');
+    });
+    div.querySelector('.act-cancel').addEventListener('click', function () {
+      div.querySelector('.item-edit').classList.remove('show');
+    });
+    div.querySelector('.act-del').addEventListener('click', function () {
+      if (!confirm(num + ' 정가를 삭제할까요?')) return;
+      mutateAndSave(function (p) { delete p[num]; }, 'chore: remove price ' + num + ' (mobile editor)')
+        .then(load)
+        .catch(function (e) { showStatus(e.message, 'error'); });
+    });
+    div.querySelector('.act-save').addEventListener('click', function (e) {
+      var btn = e.target;
+      var name = div.querySelector('.edit-name').value.trim();
+      var price = parseInt(div.querySelector('.edit-price').value, 10);
+      if (!price || price < 1) { showStatus('올바른 정가를 입력하세요.', 'error'); return; }
+      btn.disabled = true;
+      mutateAndSave(function (p) {
+        p[num] = { name: name, official_price: price, auto: false, source: '수동 수정 (모바일)', currency: 'KRW' };
+      }, 'chore: update price ' + num + ' (mobile editor)')
+        .then(load)
+        .catch(function (e2) { showStatus(e2.message, 'error'); btn.disabled = false; });
+    });
+
+    return div;
+  }
+
   function render(prices) {
     var nums = Object.keys(prices).sort();
     els.listCount.textContent = nums.length + '개 등록됨';
     els.list.innerHTML = '';
     els.listEmpty.style.display = nums.length ? 'none' : 'block';
 
-    nums.forEach(function (num) {
-      var info = prices[num] || {};
-      var div = document.createElement('div');
-      div.className = 'item';
+    var suspicious = nums.filter(function (n) { return isSuspicious(prices[n]); });
+    var normal = nums.filter(function (n) { return !isSuspicious(prices[n]); });
 
-      var currencyBadge = (info.currency && info.currency !== 'KRW')
-        ? ' <span class="badge-currency">' + info.currency + '</span>' : '';
-      var autoBadge = info.auto ? '<span class="badge-auto">자동</span>' : '';
+    if (suspicious.length) {
+      var h1 = document.createElement('div');
+      h1.className = 'list-section-title suspicious';
+      h1.textContent = '⚠️ 900원 단위 아님 — 확인 필요 (' + suspicious.length + '개)';
+      els.list.appendChild(h1);
+      suspicious.forEach(function (num) { els.list.appendChild(buildItemEl(num, prices[num])); });
+    }
 
-      div.innerHTML =
-        '<div class="item-top">' +
-          '<div>' +
-            '<div class="item-num">' + num + '</div>' +
-            '<div class="item-name">' + autoBadge + (info.name || '—') + '</div>' +
-            '<div class="item-price">' + fmtWon(info.official_price) + currencyBadge + '</div>' +
-            '<div class="item-source">' + (info.source || '수동 입력') + '</div>' +
-          '</div>' +
-          '<div class="item-actions">' +
-            '<button class="btn btn-secondary btn-sm act-edit">수정</button>' +
-            '<button class="btn btn-danger btn-sm act-del">삭제</button>' +
-          '</div>' +
-        '</div>' +
-        '<div class="item-edit">' +
-          '<div class="row">' +
-            '<div class="form-group"><label>상품명</label><input type="text" class="edit-name" value="' +
-              (info.name || '').replace(/"/g, '&quot;') + '"></div>' +
-            '<div class="form-group" style="max-width:140px"><label>공식 정가(원)</label><input type="number" class="edit-price" value="' +
-              (info.official_price || '') + '"></div>' +
-          '</div>' +
-          '<button class="btn btn-primary btn-sm act-save">저장</button> ' +
-          '<button class="btn btn-secondary btn-sm act-cancel" type="button">취소</button>' +
-        '</div>';
-
-      div.querySelector('.act-edit').addEventListener('click', function () {
-        div.querySelector('.item-edit').classList.add('show');
-      });
-      div.querySelector('.act-cancel').addEventListener('click', function () {
-        div.querySelector('.item-edit').classList.remove('show');
-      });
-      div.querySelector('.act-del').addEventListener('click', function () {
-        if (!confirm(num + ' 정가를 삭제할까요?')) return;
-        mutateAndSave(function (p) { delete p[num]; }, 'chore: remove price ' + num + ' (mobile editor)')
-          .then(load)
-          .catch(function (e) { showStatus(e.message, 'error'); });
-      });
-      div.querySelector('.act-save').addEventListener('click', function (e) {
-        var btn = e.target;
-        var name = div.querySelector('.edit-name').value.trim();
-        var price = parseInt(div.querySelector('.edit-price').value, 10);
-        if (!price || price < 1) { showStatus('올바른 정가를 입력하세요.', 'error'); return; }
-        btn.disabled = true;
-        mutateAndSave(function (p) {
-          p[num] = { name: name, official_price: price, auto: false, source: '수동 수정 (모바일)', currency: 'KRW' };
-        }, 'chore: update price ' + num + ' (mobile editor)')
-          .then(load)
-          .catch(function (e2) { showStatus(e2.message, 'error'); btn.disabled = false; });
-      });
-
-      els.list.appendChild(div);
-    });
+    if (normal.length) {
+      var h2 = document.createElement('div');
+      h2.className = 'list-section-title';
+      h2.textContent = '정상 (900원 단위) — ' + normal.length + '개';
+      els.list.appendChild(h2);
+      normal.forEach(function (num) { els.list.appendChild(buildItemEl(num, prices[num])); });
+    }
   }
 
   function load() {

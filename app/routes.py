@@ -136,9 +136,23 @@ def sources_toggle(source_id):
 
 # ── Prices ────────────────────────────────────────────────────────────────────
 
+def _price_is_suspicious(info: dict) -> bool:
+    """레고 국내 정가는 보통 ...900원 단위로 끝남 — 아니면 오등록 의심."""
+    price = info.get("official_price")
+    return not price or price % 1000 != 900
+
+
 @bp.get("/prices")
 def prices_page():
-    return render_template("admin/prices.html", prices=cfg.load_prices())
+    prices = cfg.load_prices()
+    suspicious = sorted((n, i) for n, i in prices.items() if _price_is_suspicious(i))
+    normal = sorted((n, i) for n, i in prices.items() if not _price_is_suspicious(i))
+    return render_template(
+        "admin/prices.html",
+        prices=prices,
+        suspicious_prices=suspicious,
+        normal_prices=normal,
+    )
 
 
 @bp.post("/prices/save")
