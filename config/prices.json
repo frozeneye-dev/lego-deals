@@ -139,6 +139,13 @@
     "source": "네이버 레고 표시가",
     "currency": "KRW"
   },
+  "10266": {
+    "name": "레고 크리에이터 NASA 아폴로 11호 달착륙선 10266",
+    "official_price": 162000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
   "10270": {
     "name": "레고 크리에이터 서점 10270 1개",
     "official_price": 285000,
@@ -1245,6 +1252,13 @@
     "source": "네이버 레고 표시가",
     "currency": "KRW"
   },
+  "10974": {
+    "name": "레고 듀플로 세계동물탐험 : 아시아 10974",
+    "official_price": 129000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
   "10975": {
     "name": "레고 듀플로 세계의 야생동물 10975",
     "official_price": 401300,
@@ -1863,9 +1877,9 @@
   },
   "21246": {
     "name": "레고 마인크래프트 깊고 어두운 전장 21246",
-    "official_price": 162000,
-    "auto": true,
-    "source": "네이버 쇼핑 레고 표시가",
+    "official_price": 94900,
+    "auto": false,
+    "source": "수동 수정",
     "currency": "KRW"
   },
   "21247": {
@@ -2526,6 +2540,13 @@
     "source": "네이버 레고 표시가",
     "currency": "KRW"
   },
+  "30370": {
+    "name": "레고 시티 해양 다이버 30370",
+    "official_price": 9100,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
   "30385": {
     "name": "레고 슈퍼마리오 슈퍼버섯 서프라이즈 30385",
     "official_price": 4800,
@@ -2956,6 +2977,13 @@
   "30710": {
     "name": "레고 테크닉 스키드 스티어 로더 30710",
     "official_price": 5800,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "30719": {
+    "name": "레고 시티 고카트 레이서 30719 1개",
+    "official_price": 4500,
     "auto": true,
     "source": "네이버 레고 표시가",
     "currency": "KRW"
@@ -3513,6 +3541,13 @@
     "source": "네이버 레고 표시가",
     "currency": "KRW"
   },
+  "40477": {
+    "name": "레고 브릭헤즈 스크루지 맥덕, 휴이, 듀이, 루이 40477",
+    "official_price": 21200,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
   "40478": {
     "name": "레고 디즈니 미니 캐슬 40478 1개",
     "official_price": 53900,
@@ -3537,6 +3572,13 @@
   "40499": {
     "name": "레고 산타의 썰매 40499",
     "official_price": 52800,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "40512": {
+    "name": "레고 재미있고 기발한 VIP 애드온 팩 폴리백 40512",
+    "official_price": 5380,
     "auto": true,
     "source": "네이버 레고 표시가",
     "currency": "KRW"
@@ -3600,6 +3642,13 @@
   "40528": {
     "name": "레고 브랜드 스토어 40528",
     "official_price": 36000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "40533": {
+    "name": "레고 아이디어 우주 모험 카드보드 40533",
+    "official_price": 34900,
     "auto": true,
     "source": "네이버 레고 표시가",
     "currency": "KRW"
@@ -6183,6 +6232,13 @@
   "60351": {
     "name": "레고 시티 로켓 발사 센터 60351",
     "official_price": 254000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "60353": {
+    "name": "레고 시티 야생동물 구조 미션 60353",
+    "official_price": 35800,
     "auto": true,
     "source": "네이버 레고 표시가",
     "currency": "KRW"
@@ -10310,6 +10366,13 @@
     "source": "네이버 레고 표시가",
     "currency": "KRW"
   },
+  "76408": {
+    "name": "레고 해리포터 그리몰드가 12번지 76408",
+    "official_price": 304000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
   "76410": {
     "name": "레고 해리포터 슬리데린 기숙사 배너 76410",
     "official_price": 73000,
@@ -11573,69 +11636,6 @@
   "854290": {
     "name": "레고 854290 스파이더맨 열쇠고리",
     "official_price": 8900,
-    "auto": true,
-    "source": "네이버 레고 표시가",
-    "currency": "KRW"
-  },
-  "30370": {
-    "name": "레고 시티 해양 다이버 30370",
-    "official_price": 9100,
-    "auto": true,
-    "source": "네이버 레고 표시가",
-    "currency": "KRW"
-  },
-  "10974": {
-    "name": "레고 듀플로 세계동물탐험 : 아시아 10974",
-    "official_price": 129000,
-    "auto": true,
-    "source": "네이버 레고 표시가",
-    "currency": "KRW"
-  },
-  "30719": {
-    "name": "레고 시티 고카트 레이서 30719 1개",
-    "official_price": 4500,
-    "auto": true,
-    "source": "네이버 레고 표시가",
-    "currency": "KRW"
-  },
-  "76408": {
-    "name": "레고 해리포터 그리몰드가 12번지 76408",
-    "official_price": 304000,
-    "auto": true,
-    "source": "네이버 레고 표시가",
-    "currency": "KRW"
-  },
-  "60353": {
-    "name": "레고 시티 야생동물 구조 미션 60353",
-    "official_price": 35800,
-    "auto": true,
-    "source": "네이버 레고 표시가",
-    "currency": "KRW"
-  },
-  "40477": {
-    "name": "레고 브릭헤즈 스크루지 맥덕, 휴이, 듀이, 루이 40477",
-    "official_price": 21200,
-    "auto": true,
-    "source": "네이버 레고 표시가",
-    "currency": "KRW"
-  },
-  "10266": {
-    "name": "레고 크리에이터 NASA 아폴로 11호 달착륙선 10266",
-    "official_price": 162000,
-    "auto": true,
-    "source": "네이버 레고 표시가",
-    "currency": "KRW"
-  },
-  "40512": {
-    "name": "레고 재미있고 기발한 VIP 애드온 팩 폴리백 40512",
-    "official_price": 5380,
-    "auto": true,
-    "source": "네이버 레고 표시가",
-    "currency": "KRW"
-  },
-  "40533": {
-    "name": "레고 아이디어 우주 모험 카드보드 40533",
-    "official_price": 34900,
     "auto": true,
     "source": "네이버 레고 표시가",
     "currency": "KRW"
