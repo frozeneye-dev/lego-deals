@@ -11611,5 +11611,33 @@
     "auto": true,
     "source": "네이버 레고 표시가",
     "currency": "KRW"
+  },
+  "40477": {
+    "name": "레고 브릭헤즈 스크루지 맥덕, 휴이, 듀이, 루이 40477",
+    "official_price": 21200,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "10266": {
+    "name": "레고 크리에이터 NASA 아폴로 11호 달착륙선 10266",
+    "official_price": 162000,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "40512": {
+    "name": "레고 재미있고 기발한 VIP 애드온 팩 폴리백 40512",
+    "official_price": 5380,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
+  },
+  "40533": {
+    "name": "레고 아이디어 우주 모험 카드보드 40533",
+    "official_price": 34900,
+    "auto": true,
+    "source": "네이버 레고 표시가",
+    "currency": "KRW"
   }
 }
