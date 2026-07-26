@@ -43,9 +43,9 @@
   },
   "10233": {
     "name": "레고 크리에이터 호라이즌 익스프레스 기차 10233 1개",
-    "official_price": 390000,
-    "auto": true,
-    "source": "네이버 레고 표시가",
+    "official_price": 164900,
+    "auto": false,
+    "source": "수동 수정 (모바일)",
     "currency": "KRW"
   },
   "10234": {
