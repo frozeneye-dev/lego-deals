@@ -7799,9 +7799,9 @@
   },
   "71786": {
     "name": "레고 닌자고 쟌의 아이스 드래곤 71786",
-    "official_price": 169500,
-    "auto": true,
-    "source": "네이버 레고 표시가",
+    "official_price": 149900,
+    "auto": false,
+    "source": "수동 수정",
     "currency": "KRW"
   },
   "71790": {
