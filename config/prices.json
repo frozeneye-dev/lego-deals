@@ -7834,9 +7834,9 @@
   },
   "71794": {
     "name": "레고 닌자고 로이드와 아린의 닌자 합체 로봇 71794",
-    "official_price": 125000,
-    "auto": true,
-    "source": "네이버 레고 표시가",
+    "official_price": 122900,
+    "auto": false,
+    "source": "수동 수정",
     "currency": "KRW"
   },
   "71795": {
