@@ -8,9 +8,9 @@
   },
   "10211": {
     "name": "레고 그랜드 엠포리움 대형 백화점 10211",
-    "official_price": 500000,
-    "auto": true,
-    "source": "네이버 레고 표시가",
+    "official_price": 210000,
+    "auto": false,
+    "source": "수동 수정 (모바일)",
     "currency": "KRW"
   },
   "10214": {
