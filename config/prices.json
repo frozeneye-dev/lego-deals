@@ -3704,9 +3704,9 @@
   },
   "40575": {
     "name": "레고 토끼의 해 40575",
-    "official_price": 12000,
-    "auto": true,
-    "source": "네이버 레고 표시가",
+    "official_price": 13500,
+    "auto": false,
+    "source": "수동 수정",
     "currency": "KRW"
   },
   "40579": {
