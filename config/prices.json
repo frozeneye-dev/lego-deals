@@ -5216,9 +5216,9 @@
   },
   "42664": {
     "name": "레고 프렌즈 요트 여행 42664",
-    "official_price": 92300,
-    "auto": true,
-    "source": "네이버 레고 표시가",
+    "official_price": 109900,
+    "auto": false,
+    "source": "수동 수정",
     "currency": "KRW"
   },
   "42665": {
