@@ -3374,10 +3374,10 @@
     "currency": "KRW"
   },
   "31378": {
-    "name": "레고 크리에이터 3in1 우주 탐사 망원경 31378 1개",
-    "official_price": 46800,
-    "auto": true,
-    "source": "네이버 레고 표시가",
+    "name": "레고 크리에이터 3in1 우주 탐사 망원경 31378",
+    "official_price": 49900,
+    "auto": false,
+    "source": "수동 수정",
     "currency": "KRW"
   },
   "31379": {
