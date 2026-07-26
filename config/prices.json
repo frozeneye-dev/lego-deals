@@ -50,9 +50,9 @@
   },
   "10234": {
     "name": "레고 크리에이터 시드니 오페라 하우스 10234",
-    "official_price": 440000,
-    "auto": true,
-    "source": "네이버 레고 표시가",
+    "official_price": 299900,
+    "auto": false,
+    "source": "수동 수정 (모바일)",
     "currency": "KRW"
   },
   "10241": {
