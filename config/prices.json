@@ -1863,9 +1863,9 @@
   },
   "21244": {
     "name": "레고 마인크래프트 검의 전초기지 21244",
-    "official_price": 139000,
-    "auto": true,
-    "source": "네이버 레고 표시가",
+    "official_price": 64900,
+    "auto": false,
+    "source": "수동 수정",
     "currency": "KRW"
   },
   "21245": {
