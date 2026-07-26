@@ -147,11 +147,25 @@ def prices_page():
     prices = cfg.load_prices()
     suspicious = sorted((n, i) for n, i in prices.items() if _price_is_suspicious(i))
     normal = sorted((n, i) for n, i in prices.items() if not _price_is_suspicious(i))
+
+    by_year: dict[int, list] = {}
+    no_year = []
+    for n, i in sorted(prices.items()):
+        year = i.get("year")
+        if year:
+            by_year.setdefault(year, []).append((n, i))
+        else:
+            no_year.append((n, i))
+    years_desc = sorted(by_year.keys(), reverse=True)
+
     return render_template(
         "admin/prices.html",
         prices=prices,
         suspicious_prices=suspicious,
         normal_prices=normal,
+        years_desc=years_desc,
+        by_year=by_year,
+        no_year=no_year,
     )
 
 
@@ -200,6 +214,7 @@ def prices_add():
         return redirect(url_for("main.prices_page"))
 
     prices = cfg.load_prices()
+    existing = prices.get(item_number, {})
     prices[item_number] = {
         "name": name,
         "official_price": official_price,
@@ -207,6 +222,8 @@ def prices_add():
         "source": "수동 입력",
         "currency": "KRW",
     }
+    if existing.get("year"):
+        prices[item_number]["year"] = existing["year"]
     cfg.save_prices(prices)
     flash(f"품번 {item_number} 정가가 등록되었습니다.", "success")
     return redirect(url_for("main.prices_page"))
@@ -233,6 +250,8 @@ def prices_edit(item_number):
         "source": "수동 수정",
         "currency": "KRW",
     }
+    if existing.get("year"):
+        prices[item_number]["year"] = existing["year"]
     cfg.save_prices(prices)
     flash(f"품번 {item_number} 정가가 수정되었습니다.", "success")
     return redirect(url_for("main.prices_page"))
@@ -260,6 +279,8 @@ def api_price_update(item_number):
         "source": "수동 수정",
         "currency": "KRW",
     }
+    if existing.get("year"):
+        prices[item_number]["year"] = existing["year"]
     cfg.save_prices(prices)
     log.info("인라인 정가 수정: %s → %s원", item_number, official_price)
     return jsonify({"ok": True, "official_price": official_price})

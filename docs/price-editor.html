@@ -98,6 +98,14 @@
   #list-empty { color: var(--muted); font-size: .85rem; text-align: center; padding: 24px 0; }
   #list-count { font-size: .8rem; color: var(--muted); margin-bottom: 10px; }
 
+  .tabs { display: flex; gap: 6px; margin-bottom: 10px; }
+  .tab-btn {
+    flex: 1; padding: 8px 10px; border: 1px solid var(--border); border-radius: 6px;
+    background: var(--card); color: var(--muted); font-size: .82rem; font-weight: 600;
+    cursor: pointer;
+  }
+  .tab-btn.active { background: var(--primary); color: #fff; border-color: var(--primary); }
+
   .list-section-title {
     font-size: .75rem; font-weight: 700; color: var(--muted);
     text-transform: uppercase; letter-spacing: .04em;
@@ -183,6 +191,10 @@
     <!-- 목록 -->
     <div class="section">
       <h2>등록된 정가</h2>
+      <div class="tabs" id="view-tabs">
+        <button class="tab-btn active" data-mode="suspicious">확인 필요순</button>
+        <button class="tab-btn" data-mode="year">출시년도별</button>
+      </div>
       <div id="list-count"></div>
       <div id="list"></div>
       <div id="list-empty" style="display:none">등록된 정가가 없습니다.</div>
@@ -213,9 +225,22 @@
     list: document.getElementById('list'),
     listCount: document.getElementById('list-count'),
     listEmpty: document.getElementById('list-empty'),
+    viewTabs: document.getElementById('view-tabs'),
   };
 
   var sha = null; // 현재 파일의 최신 sha (충돌 방지용)
+  var lastPrices = null; // 마지막으로 불러온 prices (탭 전환 시 재요청 없이 재사용)
+  var viewMode = 'suspicious'; // 'suspicious' | 'year'
+
+  els.viewTabs.addEventListener('click', function (e) {
+    var btn = e.target.closest('.tab-btn');
+    if (!btn) return;
+    viewMode = btn.dataset.mode;
+    els.viewTabs.querySelectorAll('.tab-btn').forEach(function (b) {
+      b.classList.toggle('active', b === btn);
+    });
+    if (lastPrices) render(lastPrices);
+  });
 
   function cfg() {
     return {
@@ -371,7 +396,9 @@
       if (!price || price < 1) { showStatus('올바른 정가를 입력하세요.', 'error'); return; }
       btn.disabled = true;
       mutateAndSave(function (p) {
+        var year = (p[num] && p[num].year) || info.year;
         p[num] = { name: name, official_price: price, auto: false, source: '수동 수정 (모바일)', currency: 'KRW' };
+        if (year) p[num].year = year;
       }, 'chore: update price ' + num + ' (mobile editor)')
         .then(load)
         .catch(function (e2) { showStatus(e2.message, 'error'); btn.disabled = false; });
@@ -380,34 +407,54 @@
     return div;
   }
 
+  function appendSection(title, className, nums, prices) {
+    if (!nums.length) return;
+    var h = document.createElement('div');
+    h.className = 'list-section-title' + (className ? ' ' + className : '');
+    h.textContent = title;
+    els.list.appendChild(h);
+    nums.forEach(function (num) { els.list.appendChild(buildItemEl(num, prices[num])); });
+  }
+
+  function renderBySuspicion(prices, nums) {
+    var suspicious = nums.filter(function (n) { return isSuspicious(prices[n]); });
+    var normal = nums.filter(function (n) { return !isSuspicious(prices[n]); });
+    appendSection('⚠️ 900원 단위 아님 — 확인 필요 (' + suspicious.length + '개)', 'suspicious', suspicious, prices);
+    appendSection('정상 (900원 단위) — ' + normal.length + '개', '', normal, prices);
+  }
+
+  function renderByYear(prices, nums) {
+    var byYear = {};
+    var noYear = [];
+    nums.forEach(function (num) {
+      var y = prices[num].year;
+      if (!y) { noYear.push(num); return; }
+      (byYear[y] = byYear[y] || []).push(num);
+    });
+    Object.keys(byYear).sort(function (a, b) { return b - a; }).forEach(function (y) {
+      appendSection(y + '년 — ' + byYear[y].length + '개', '', byYear[y], prices);
+    });
+    appendSection('연도 미확인 — ' + noYear.length + '개', 'suspicious', noYear, prices);
+  }
+
   function render(prices) {
     var nums = Object.keys(prices).sort();
     els.listCount.textContent = nums.length + '개 등록됨';
     els.list.innerHTML = '';
     els.listEmpty.style.display = nums.length ? 'none' : 'block';
 
-    var suspicious = nums.filter(function (n) { return isSuspicious(prices[n]); });
-    var normal = nums.filter(function (n) { return !isSuspicious(prices[n]); });
-
-    if (suspicious.length) {
-      var h1 = document.createElement('div');
-      h1.className = 'list-section-title suspicious';
-      h1.textContent = '⚠️ 900원 단위 아님 — 확인 필요 (' + suspicious.length + '개)';
-      els.list.appendChild(h1);
-      suspicious.forEach(function (num) { els.list.appendChild(buildItemEl(num, prices[num])); });
-    }
-
-    if (normal.length) {
-      var h2 = document.createElement('div');
-      h2.className = 'list-section-title';
-      h2.textContent = '정상 (900원 단위) — ' + normal.length + '개';
-      els.list.appendChild(h2);
-      normal.forEach(function (num) { els.list.appendChild(buildItemEl(num, prices[num])); });
+    if (viewMode === 'year') {
+      renderByYear(prices, nums);
+    } else {
+      renderBySuspicion(prices, nums);
     }
   }
 
   function load() {
-    return fetchPrices().then(render).catch(function (e) { showStatus(e.message, 'error'); });
+    return fetchPrices().then(function (prices) {
+      lastPrices = prices;
+      render(prices);
+    }).catch(function (e) { showStatus(e.message, 'error'); });
   }
 
   document.getElementById('btn-connect').addEventListener('click', function () {
@@ -448,7 +495,9 @@
       return;
     }
     mutateAndSave(function (p) {
+      var year = p[num] && p[num].year;
       p[num] = { name: name, official_price: price, auto: false, source: '수동 입력 (모바일)', currency: 'KRW' };
+      if (year) p[num].year = year;
     }, 'chore: add price ' + num + ' (mobile editor)')
       .then(function () {
         document.getElementById('add-num').value = '';

@@ -30,6 +30,7 @@ class DealItem:
     product_url: str
     source_name: str
     source_url: str
+    scraped_at: Optional[str] = None
 
 
 def _get_parser(url: str):
@@ -52,11 +53,12 @@ def scrape_sources(sources: list[dict]) -> list[ScrapedItem]:
             continue
         try:
             items = parser.parse(url, src["name"])
-            # Attach per-source additional_discount if set
             src_discount = src.get("additional_discount")
+            src_trusted = src.get("trusted_price", False)
             for item in items:
                 if src_discount is not None:
                     item.additional_discount = src_discount
+                item.trusted_price = src_trusted
             raw.extend(items)
             log.info("Source '%s' → %d items", src["name"], len(items))
         except Exception:
@@ -104,6 +106,7 @@ def calculate_deals(
             product_url=item.product_url,
             source_name=item.source_name,
             source_url=item.source_url,
+            scraped_at=item.scraped_at,
         )
 
         key = item.item_number
@@ -156,28 +159,66 @@ def enrich_prices(raw: list[ScrapedItem], prices: dict, settings: dict | None = 
 
     brickset_key = (settings or {}).get("brickset_api_key", "").strip()
 
-    # 소스별로 대표 ScrapedItem 하나만 유지 (같은 품번 중복 제거)
-    new_items: dict[str, ScrapedItem] = {}
+    # 처리 대상:
+    #   - prices에 없는 새 품번
+    #   - prices에 있지만 official_price가 null인 품번 (신뢰 소스에서 채울 기회)
+    # 같은 품번이 여러 소스에 있으면 "신뢰+original_price"를 우선 선택
+    candidates: dict[str, ScrapedItem] = {}
     for item in raw:
-        if item.item_number not in prices and item.item_number not in new_items:
-            new_items[item.item_number] = item
+        is_new = item.item_number not in prices
+        needs_price = (
+            not is_new
+            and prices[item.item_number].get("official_price") is None
+            and item.trusted_price
+            and item.original_price
+        )
+        if not (is_new or needs_price):
+            continue
+        existing = candidates.get(item.item_number)
+        if existing is None:
+            candidates[item.item_number] = item
+        elif (not existing.trusted_price or not existing.original_price) and (item.trusted_price and item.original_price):
+            candidates[item.item_number] = item
+        elif existing.original_price is None and item.original_price is not None:
+            candidates[item.item_number] = item
 
     added = 0
-    for item_number, item in new_items.items():
-        # 1순위: 소스 페이지 원가 (KRW) — 취소선 또는 표시가
-        if item.original_price:
-            if "openapi.naver.com" in item.source_url:
-                source_label = f"{item.source_name} 표시가"
-            else:
+    for item_number, item in candidates.items():
+        is_new = item_number not in prices
+
+        # 신뢰 소스 + original_price → 정가 등록 (신규 또는 null 업데이트)
+        if item.original_price and item.trusted_price:
+            if item.original_price > item.listed_price:
                 source_label = f"{item.source_name} 취소선 정가"
+            else:
+                source_label = f"{item.source_name} 표시가"
+            if is_new:
+                prices[item_number] = {
+                    "name": item.name,
+                    "official_price": item.original_price,
+                    "auto": True,
+                    "source": source_label,
+                    "currency": "KRW",
+                }
+            else:
+                prices[item_number]["official_price"] = item.original_price
+                prices[item_number]["source"] = source_label
+                if not prices[item_number].get("name"):
+                    prices[item_number]["name"] = item.name
+            log.info("[enrich] [%s] %d원 등록 (%s)", item_number, item.original_price, source_label)
+            added += 1
+            continue
+
+        # 신규 + 비신뢰 소스: 품번·이름만 등록, 정가는 비워둠
+        if is_new and item.original_price and not item.trusted_price:
             prices[item_number] = {
                 "name": item.name,
-                "official_price": item.original_price,
+                "official_price": None,
                 "auto": True,
-                "source": source_label,
+                "source": f"{item.source_name} (정가 미인증)",
                 "currency": "KRW",
             }
-            log.info("[enrich] [%s] %d원 등록 (%s)", item_number, item.original_price, source_label)
+            log.info("[enrich] [%s] 이름만 등록 (비신뢰 소스: %s)", item_number, item.source_name)
             added += 1
             continue
 
@@ -207,14 +248,53 @@ def enrich_prices(raw: list[ScrapedItem], prices: dict, settings: dict | None = 
     return added
 
 
+_MAX_YEAR_LOOKUPS_PER_RUN = 20
+
+
+def enrich_years(prices: dict, settings: dict | None = None) -> int:
+    """
+    출시년도(year)가 없는 품번에 대해 brickset API로 연도를 채웁니다.
+    정가 출처와 무관하게 동작 (취소선 정가로 이미 official_price가 있어도
+    year가 없으면 채움). 매 실행마다 최대 _MAX_YEAR_LOOKUPS_PER_RUN개까지만
+    조회해 브릭셋 API 호출을 완만하게 분산시킵니다 — 한 번 채운 연도는
+    다시 조회하지 않으므로 몇 번의 실행이면 전체가 채워집니다.
+
+    Returns: 새로 채운 개수.
+    """
+    from app.price_lookup import lookup_set_year
+
+    brickset_key = (settings or {}).get("brickset_api_key", "").strip()
+    if not brickset_key:
+        return 0
+
+    added = 0
+    for item_number, info in prices.items():
+        if added >= _MAX_YEAR_LOOKUPS_PER_RUN:
+            break
+        if info.get("year"):
+            continue
+        try:
+            year = lookup_set_year(item_number, brickset_key)
+        except Exception:
+            log.exception("[enrich-year] [%s] brickset API 오류", item_number)
+            continue
+        if year:
+            info["year"] = year
+            log.info("[enrich-year] [%s] %d년 등록", item_number, year)
+            added += 1
+
+    return added
+
+
 def run_pipeline(sources: list[dict], prices: dict, settings: dict) -> dict:
     """
-    Full pipeline: scrape → enrich prices → calculate → categorize.
+    Full pipeline: scrape → enrich prices → enrich years → calculate → categorize.
     prices dict가 갱신되면 호출 측에서 save_prices()로 저장해야 합니다.
     Returns a result dict ready for the HTML generator and JSON storage.
     """
     raw = scrape_sources(sources)
     enrich_prices(raw, prices, settings)   # prices dict 제자리 갱신
+    enrich_years(prices, settings)         # prices dict 제자리 갱신 (연도)
     deals = calculate_deals(raw, prices, settings)
     cats = categorize(deals)
 
@@ -230,6 +310,7 @@ def run_pipeline(sources: list[dict], prices: dict, settings: dict) -> dict:
             "product_url": d.product_url,
             "source_name": d.source_name,
             "source_url": d.source_url,
+            "scraped_at": d.scraped_at,
         }
 
     return {

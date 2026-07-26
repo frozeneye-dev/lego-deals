@@ -34,53 +34,17 @@ def lookup_official_price(item_number: str, api_key: str = "") -> Optional[dict]
         "name": str,
         "source": "brickset API",
         "auto": True,
+        "year": int,   # 있으면 포함
       }
     or None.
     """
     if not api_key:
         return None
-    return _lookup_brickset_api(item_number, api_key)
 
-
-def _lookup_brickset_api(item_number: str, api_key: str) -> Optional[dict]:
-    """
-    brickset API v3 getSets 엔드포인트 호출.
-    공식 문서: https://brickset.com/article/52664/api-version-3-documentation
-    """
-    params = {
-        "apiKey": api_key,
-        "userHash": "",
-        "params": f'{{"setNumber":"{item_number}-1"}}',
-    }
-    try:
-        resp = requests.get(_BRICKSET_API_URL, params=params, timeout=15)
-        resp.raise_for_status()
-        data = resp.json()
-    except Exception as e:
-        log.debug("[brickset API] 오류 (%s): %s", item_number, e)
+    s = _brickset_get_set(item_number, api_key)
+    if not s:
         return None
 
-    if data.get("status") != "success":
-        log.debug("[brickset API] 실패 응답 (%s): %s", item_number, data.get("message"))
-        return None
-
-    sets = data.get("sets", [])
-    if not sets:
-        # variant -2 시도
-        params["params"] = f'{{"setNumber":"{item_number}-2"}}'
-        try:
-            resp = requests.get(_BRICKSET_API_URL, params=params, timeout=15)
-            resp.raise_for_status()
-            data = resp.json()
-            sets = data.get("sets", [])
-        except Exception:
-            pass
-
-    if not sets:
-        log.debug("[brickset API] 검색 결과 없음: %s", item_number)
-        return None
-
-    s = sets[0]
     name = s.get("name", "")
 
     # retailPrice / retailPriceCurrency 필드 사용
@@ -94,10 +58,60 @@ def _lookup_brickset_api(item_number: str, api_key: str) -> Optional[dict]:
     price_int = int(float(retail_price))
 
     log.info("[brickset API] %s → %s %s  (%s)", item_number, price_int, currency, name[:40])
-    return {
+    result = {
         "official_price": price_int,
         "currency": currency,
         "name": name,
         "source": "brickset API",
         "auto": True,
     }
+    year = s.get("year")
+    if year:
+        result["year"] = int(year)
+    return result
+
+
+def lookup_set_year(item_number: str, api_key: str = "") -> Optional[int]:
+    """
+    brickset 공식 API로 품번의 출시년도만 조회합니다 (정가 유무와 무관).
+    api_key 가 비어 있으면 즉시 None 반환.
+    """
+    if not api_key:
+        return None
+    s = _brickset_get_set(item_number, api_key)
+    if not s:
+        return None
+    year = s.get("year")
+    return int(year) if year else None
+
+
+def _brickset_get_set(item_number: str, api_key: str) -> Optional[dict]:
+    """
+    brickset API v3 getSets 엔드포인트 호출. 첫 매칭 set 객체를 반환.
+    공식 문서: https://brickset.com/article/52664/api-version-3-documentation
+    -1(정식판) variant를 먼저 시도하고, 없으면 -2(대체판)를 시도합니다.
+    """
+    for variant in ("-1", "-2"):
+        params = {
+            "apiKey": api_key,
+            "userHash": "",
+            "params": f'{{"setNumber":"{item_number}{variant}"}}',
+        }
+        try:
+            resp = requests.get(_BRICKSET_API_URL, params=params, timeout=15)
+            resp.raise_for_status()
+            data = resp.json()
+        except Exception as e:
+            log.debug("[brickset API] 오류 (%s%s): %s", item_number, variant, e)
+            continue
+
+        if data.get("status") != "success":
+            log.debug("[brickset API] 실패 응답 (%s%s): %s", item_number, variant, data.get("message"))
+            continue
+
+        sets = data.get("sets", [])
+        if sets:
+            return sets[0]
+
+    log.debug("[brickset API] 검색 결과 없음: %s", item_number)
+    return None
