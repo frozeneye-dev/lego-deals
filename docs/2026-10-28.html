@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>레고 할인 2026-10-28</title>
+  <style>
+    :root {
+      --yellow: #FFD700;
+      --red: #e63946;
+      --green: #2a9d8f;
+      --blue: #457b9d;
+      --bg: #f8f9fa;
+      --card-bg: #fff;
+      --text: #212529;
+      --muted: #6c757d;
+      --border: #dee2e6;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+           background: var(--bg); color: var(--text); padding: 16px; }
+    header { background: var(--text); color: #fff; padding: 16px 20px;
+             border-radius: 10px; margin-bottom: 24px; }
+    header h1 { font-size: 1.4rem; display: flex; align-items: center; gap: 10px; }
+    header p { font-size: .85rem; color: #adb5bd; margin-top: 4px; }
+    .stats { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 24px; }
+    .stat { background: var(--card-bg); border: 1px solid var(--border);
+            border-radius: 8px; padding: 12px 16px; flex: 1; min-width: 120px; text-align: center; }
+    .stat-num { font-size: 1.6rem; font-weight: 700; }
+    .stat-label { font-size: .75rem; color: var(--muted); margin-top: 2px; }
+    .cat { margin-bottom: 32px; }
+    .cat-header { display: flex; align-items: center; gap: 10px;
+                  padding: 10px 14px; border-radius: 8px 8px 0 0;
+                  font-weight: 700; font-size: 1rem; }
+    .cat-40 { background: var(--red); color: #fff; }
+    .cat-30 { background: var(--blue); color: #fff; }
+    .cat-20 { background: var(--green); color: #fff; }
+    .cat-none { background: #868e96; color: #fff; }
+    .badge { background: rgba(255,255,255,0.25); border-radius: 20px;
+             padding: 2px 10px; font-size: .8rem; }
+    table { width: 100%; border-collapse: collapse; background: var(--card-bg);
+            border: 1px solid var(--border); border-top: none; }
+    th { background: #f1f3f5; text-align: left; padding: 9px 12px;
+         font-size: .8rem; color: var(--muted); font-weight: 600; white-space: nowrap; }
+    td { padding: 10px 12px; border-top: 1px solid var(--border);
+         font-size: .88rem; vertical-align: middle; }
+    tr:hover td { background: #f8f9fa; }
+    .price-final { font-weight: 700; font-size: 1rem; }
+    .price-original { color: var(--muted); text-decoration: line-through; font-size: .8rem; }
+    .pct { font-weight: 700; }
+    .pct-40 { color: var(--red); }
+    .pct-30 { color: var(--blue); }
+    .pct-20 { color: var(--green); }
+    .item-no { font-family: monospace; color: var(--muted); font-size: .8rem; }
+    .buy-btn { display: inline-block; padding: 5px 12px; border-radius: 5px;
+               background: var(--yellow); color: var(--text); font-weight: 600;
+               font-size: .8rem; text-decoration: none; white-space: nowrap; }
+    .buy-btn:hover { background: #e6c200; }
+    .empty { padding: 20px; text-align: center; color: var(--muted); font-size: .9rem;
+             background: var(--card-bg); border: 1px solid var(--border); border-top: none; }
+    .badge-new { display: inline-block; background: #e63946; color: #fff;
+                 font-size: .62rem; font-weight: 700; padding: 1px 6px;
+                 border-radius: 10px; margin-right: 5px; vertical-align: middle;
+                 letter-spacing: .04em; }
+    .row-new td { background: #fff5f5; }
+    .row-new td:first-child { border-left: 3px solid #e63946; padding-left: 9px; }
+    .new-summary { display: inline-block; background: #e63946; color: #fff;
+                   font-size: .78rem; font-weight: 600; padding: 3px 10px;
+                   border-radius: 20px; margin-left: 8px; vertical-align: middle; }
+    footer { text-align: center; color: var(--muted); font-size: .78rem;
+             margin-top: 32px; padding-top: 16px; border-top: 1px solid var(--border); }
+    .edit-btn { background: none; border: none; cursor: pointer; padding: 0 3px;
+                color: #adb5bd; font-size: .78rem; vertical-align: middle; display: none; }
+    .edit-btn:hover { color: var(--blue); }
+    .price-cell { white-space: nowrap; }
+    .inline-edit { display: none; margin-top: 4px; white-space: nowrap; }
+    .inline-edit input { width: 82px; padding: 2px 5px; border: 1px solid #ced4da;
+                         border-radius: 3px; font-size: .8rem; }
+    .inline-edit .sv { padding: 2px 8px; background: var(--green); color: #fff;
+                       border: none; border-radius: 3px; cursor: pointer; font-size: .78rem; }
+    .inline-edit .cv { padding: 2px 6px; background: #e9ecef; color: var(--text);
+                       border: none; border-radius: 3px; cursor: pointer; font-size: .78rem; }
+    @media (max-width: 640px) {
+      /* 모바일: 품번·출처는 숨기고 공식 정가(수정 버튼 포함)는 계속 표시 */
+      .mobile-hide { display: none; }
+      .buy-btn { padding: 5px 8px; }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1>🧱 레고 할인 목록</h1>
+  <p>
+    기준일: 2026-10-28 &nbsp;|&nbsp;
+    레고 공식 정가 대비 최종 할인가 기준 &nbsp;|&nbsp;
+    총 0개 상품
+    
+  </p>
+  <p style="margin-top:6px"><a href="price-editor.html" style="color:#FFD700;font-size:.82rem">📱 정가 등록/수정 →</a></p>
+</header>
+
+<div class="stats">
+  <div class="stat">
+    <div class="stat-num" id="stat-40" style="color:#e63946">0</div>
+    <div class="stat-label">40% 이상</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num" id="stat-30" style="color:#457b9d">0</div>
+    <div class="stat-label">30%대</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num" id="stat-20" style="color:#2a9d8f">0</div>
+    <div class="stat-label">20%대</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num" id="stat-none" style="color:#868e96">0</div>
+    <div class="stat-label">정가 미등록</div>
+  </div>
+</div>
+
+
+
+<div class="cat" data-stat="40">
+  <div class="cat-header cat-40">
+    🔥 40% 이상 할인
+    <span class="badge">0개</span>
+  </div>
+  
+  
+  <div class="empty">해당 구간 상품이 없습니다.</div>
+  
+
+</div>
+
+<div class="cat" data-stat="30">
+  <div class="cat-header cat-30">
+    ✨ 30%대 할인
+    <span class="badge">0개</span>
+  </div>
+  
+  
+  <div class="empty">해당 구간 상품이 없습니다.</div>
+  
+
+</div>
+
+<div class="cat" data-stat="20">
+  <div class="cat-header cat-20">
+    💡 20%대 할인
+    <span class="badge">0개</span>
+  </div>
+  
+  
+  <div class="empty">해당 구간 상품이 없습니다.</div>
+  
+
+</div>
+
+
+
+<footer>
+  자동 생성 — LEGO 할인 봇 &nbsp;|&nbsp; 정가는 레고 공식 홈페이지 기준 &nbsp;|&nbsp;
+  실제 결제 금액은 사이트에서 확인하세요.
+</footer>
+<script>
+(function () {
+  var isLocal = ['localhost', '127.0.0.1'].includes(window.location.hostname);
+
+  /* ── GitHub API 모드 (로컬 서버가 없을 때: config/prices.json 직접 수정) ── */
+  var API = 'https://api.github.com';
+  var PATH = 'config/prices.json';
+  var LS_TOKEN = 'lego_gh_token', LS_OWNER = 'lego_gh_owner', LS_REPO = 'lego_gh_repo', LS_BRANCH = 'lego_gh_branch';
+  var ghSha = null;
+
+  function ghCfg() {
+    return {
+      token: localStorage.getItem(LS_TOKEN) || '',
+      owner: localStorage.getItem(LS_OWNER) || '',
+      repo: localStorage.getItem(LS_REPO) || '',
+      branch: localStorage.getItem(LS_BRANCH) || 'main',
+    };
+  }
+  function ghConnected() {
+    var c = ghCfg();
+    return !!(c.token && c.owner && c.repo);
+  }
+  function b64EncodeUnicode(str) {
+    return btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, function (_, p1) {
+      return String.fromCharCode('0x' + p1);
+    }));
+  }
+  function b64DecodeUnicode(str) {
+    return decodeURIComponent(atob(str.replace(/\n/g, '')).split('').map(function (c) {
+      return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+    }).join(''));
+  }
+  function ghHeaders(c) {
+    return { 'Authorization': 'Bearer ' + c.token, 'Accept': 'application/vnd.github+json' };
+  }
+  function ghContentsUrl(c) {
+    return API + '/repos/' + c.owner + '/' + c.repo + '/contents/' + PATH + '?ref=' + encodeURIComponent(c.branch);
+  }
+  function ghFetchPrices() {
+    var c = ghCfg();
+    return fetch(ghContentsUrl(c), { headers: ghHeaders(c) }).then(function (r) {
+      if (!r.ok) throw new Error('GitHub API 오류 (' + r.status + ') — 토큰/권한을 확인하세요.');
+      return r.json();
+    }).then(function (data) {
+      ghSha = data.sha;
+      return JSON.parse(b64DecodeUnicode(data.content));
+    });
+  }
+  function ghSavePrices(prices, message) {
+    var c = ghCfg();
+    var body = { message: message, content: b64EncodeUnicode(JSON.stringify(prices, null, 2)), sha: ghSha, branch: c.branch };
+    return fetch(ghContentsUrl(c).split('?')[0], {
+      method: 'PUT',
+      headers: Object.assign({ 'Content-Type': 'application/json' }, ghHeaders(c)),
+      body: JSON.stringify(body),
+    }).then(function (r) {
+      if (!r.ok) return r.json().then(function (j) { throw new Error(j.message || ('GitHub API 오류 (' + r.status + ')')); });
+      return r.json();
+    }).then(function (data) { ghSha = data.content.sha; });
+  }
+  function ghUpdatePrice(itemNo, name, price) {
+    return ghFetchPrices().then(function (prices) {
+      var year = prices[itemNo] && prices[itemNo].year;
+      prices[itemNo] = { name: name, official_price: price, auto: false, source: '수동 수정', currency: 'KRW' };
+      if (year) prices[itemNo].year = year;
+      return ghSavePrices(prices, 'chore: update price ' + itemNo + ' (deals page)');
+    });
+  }
+
+  /* ── 공통: 수정 버튼 표시 ── */
+  document.querySelectorAll('.edit-btn').forEach(function (b) {
+    b.style.display = 'inline';
+  });
+
+  document.addEventListener('click', function (e) {
+    /* 수정 버튼 클릭 → 인라인 폼 표시 */
+    var editBtn = e.target.closest('.edit-btn');
+    if (editBtn) {
+      var itemNo = editBtn.dataset.item;
+      var div = document.getElementById('edit-' + itemNo);
+      div.querySelector('input').value = editBtn.dataset.price || '';
+      editBtn.style.display = 'none';
+      div.style.display = 'block';
+      div.querySelector('input').focus();
+      return;
+    }
+
+    /* 취소 버튼 */
+    var cv = e.target.closest('.cv');
+    if (cv) {
+      var div2 = cv.closest('.inline-edit');
+      var cell = div2.closest('td');
+      div2.style.display = 'none';
+      cell.querySelector('.edit-btn').style.display = 'inline';
+      return;
+    }
+
+    /* 저장 버튼 */
+    var sv = e.target.closest('.sv');
+    if (sv) {
+      var div3 = sv.closest('.inline-edit');
+      var cell2 = div3.closest('td');
+      var btn = cell2.querySelector('.edit-btn');
+      var input = div3.querySelector('input');
+      var price = parseInt(input.value, 10);
+      var itemNo2 = btn.dataset.item;
+      var name = btn.dataset.name;
+
+      if (!price || price < 1) {
+        input.style.outline = '2px solid #e63946';
+        input.focus();
+        return;
+      }
+      if (!isLocal && !ghConnected()) {
+        alert('먼저 "정가 등록/수정" 페이지에서 GitHub 연동(토큰 저장)을 해주세요.');
+        return;
+      }
+      input.style.outline = '';
+      sv.textContent = '...';
+      sv.disabled = true;
+
+      var task = isLocal
+        ? fetch('/api/prices/' + itemNo2 + '/update', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: 'official_price=' + price + '&name=' + encodeURIComponent(name),
+          }).then(function (r) { return r.json(); }).then(function (d) {
+            if (!d.ok) throw new Error(d.error || '저장 실패');
+            return d.official_price;
+          })
+        : ghUpdatePrice(itemNo2, name, price).then(function () { return price; });
+
+      task.then(function (savedPrice) {
+        sv.textContent = '저장';
+        sv.disabled = false;
+        applyPriceUpdate(btn, div3, itemNo2, savedPrice);
+      }).catch(function (err) {
+        sv.textContent = '저장';
+        sv.disabled = false;
+        alert(err.message || '저장 실패');
+      });
+    }
+  });
+
+  /* 저장 성공 후: 화면 갱신 + 정가 기준 할인율 재계산해서 기준 미달이면 목록에서 제거 */
+  function applyPriceUpdate(btn, editDiv, itemNo, newPrice) {
+    var span = document.getElementById('p-' + itemNo);
+    if (span) {
+      span.textContent = newPrice.toLocaleString('ko-KR') + '원';
+      span.style.display = '';
+    }
+    editDiv.style.display = 'none';
+    btn.dataset.price = newPrice;
+    btn.style.display = 'inline';
+    btn.style.color = '#2a9d8f';
+    btn.title = '수정됨 ✓';
+    setTimeout(function () { btn.style.color = ''; btn.title = '정가 수정'; }, 3000);
+
+    var tr = btn.closest('tr');
+    if (!tr || !tr.dataset.threshold) return; // 정가 미등록 표에는 구간 재계산이 없음
+
+    var threshold = parseFloat(tr.dataset.threshold);
+    var finalPrice = parseFloat(tr.dataset.final);
+    if (!finalPrice || !newPrice) return;
+
+    var newRate = Math.round((1 - finalPrice / newPrice) * 10000) / 10000;
+    if (newRate < threshold) {
+      removeRow(tr);
+    } else {
+      var pctEl = tr.querySelector('.pct');
+      if (pctEl) pctEl.textContent = (newRate * 100).toFixed(1) + '%';
+    }
+  }
+
+  function removeRow(tr) {
+    var table = tr.closest('table');
+    var catDiv = tr.closest('.cat');
+    tr.style.transition = 'opacity .3s';
+    tr.style.opacity = '0';
+    setTimeout(function () {
+      tr.remove();
+      if (!catDiv) return;
+      var tbody = table.querySelector('tbody');
+      var remaining = tbody ? tbody.children.length : 0;
+
+      var badge = catDiv.querySelector('.cat-header .badge');
+      if (badge) badge.textContent = remaining + '개';
+
+      var statId = catDiv.dataset.stat;
+      if (statId) {
+        var statEl = document.getElementById('stat-' + statId);
+        if (statEl) statEl.textContent = Math.max(0, (parseInt(statEl.textContent, 10) || 0) - 1);
+      }
+
+      if (remaining === 0 && table) {
+        var empty = document.createElement('div');
+        empty.className = 'empty';
+        empty.textContent = '해당 구간 상품이 없습니다.';
+        table.replaceWith(empty);
+      }
+    }, 300);
+  }
+}());
+</script>
+</body>
+</html>
